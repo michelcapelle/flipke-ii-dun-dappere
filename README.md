@@ -15,21 +15,51 @@ Flipke is an API for network analysis and visualization of named entities in his
 pip install -r requirements.txt
 ```
 
+## Dowload, Install, and Start Docker (Desktop)
+
+`https://www.docker.com/products/docker-desktop/`
+
 ## Start Services
 
 ```bash
 docker-compose up -d
 ```
 
+## Start Flipke API & Worker
+
+**Important:** Start both the API and Worker for full functionality.
+
+### Terminal 1 - API Server
+
+```bash
+python main.py
+```
+
+API will be available at: `http://localhost:8000/`
+
+### Terminal 2 - Background Worker
+```bash
+python worker.py
+```
+
+Or use the batch file (Windows):
+```bash
+start_worker.bat
+```
+
+The worker processes download tasks from the RabbitMQ queue. Check `http://localhost:8000/queue/status` to verify the worker is connected (consumers should be > 0).
+
+### Service URLs
+
 ### Queuing
 
-`http://localhost:15672/`
+`http://localhost:15672/#/queues/%2F/tasks`
 
 Username/password: `admin/admin`
 
 ### Document Store
 
-`http://localhost:8081/`
+`http://localhost:8081/db/flipke_db/`
 
 Username/password: `admin/admin`
 
@@ -38,6 +68,8 @@ Username/password: `admin/admin`
 `http://localhost:7474/`
 
 Username/password: `neo4j/password`
+
+Query: `MATCH (n)-[r]->(m) RETURN n, r, m`
 
 ## Start Flipke
 

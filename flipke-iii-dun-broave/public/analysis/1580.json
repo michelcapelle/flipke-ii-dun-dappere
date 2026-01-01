@@ -1,0 +1,3277 @@
+{
+  "status": "success",
+  "count": 196,
+  "total": 196,
+  "skip": 0,
+  "limit": 10000,
+  "persons": [
+    {
+      "person_id": "P0008439",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.548000",
+      "connection_count": 18,
+      "centrality_updated_at": "2026-01-01T04:28:21.386000",
+      "eigenvector_centrality": 0.4787846169412383,
+      "names": [
+        "thiery van beken",
+        "steuen martni es den tresorier van beken",
+        "tresorier der oorloghe dienck van beken",
+        "van beken",
+        "tresonier van beken",
+        "tresorier van beken",
+        "tresorier vander beken",
+        "vander beken",
+        "thury vander beken",
+        "thiery vander beken",
+        "tresouirier de guerres vander beken",
+        "weduwe phles van beken wilen soldat onder des"
+      ],
+      "documents": [
+        "session-3104-num-177-resolution-3",
+        "session-3104-num-178-resolution-1",
+        "session-3104-num-178-resolution-6",
+        "session-3104-num-179-resolution-2",
+        "session-3104-num-180-resolution-2",
+        "session-3104-num-195-resolution-2",
+        "session-3104-num-224-resolution-5",
+        "session-3104-num-259-resolution-3",
+        "session-3104-num-263-resolution-2",
+        "session-3104-num-273-resolution-1",
+        "session-3104-num-292-resolution-1",
+        "session-3104-num-295-resolution-3",
+        "session-3104-num-297-resolution-10",
+        "session-3104-num-297-resolution-9",
+        "session-3104-num-299-resolution-12",
+        "session-3104-num-299-resolution-7",
+        "session-3104-num-302-resolution-2",
+        "session-3104-num-303-resolution-1",
+        "session-3104-num-305-resolution-1",
+        "session-3104-num-309-resolution-1",
+        "session-3104-num-309-resolution-2",
+        "session-3104-num-4-resolution-2",
+        "session-3104-num-45-resolution-3",
+        "session-3104-num-68-resolution-2",
+        "session-3104-num-9-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0000673",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.256000",
+      "connection_count": 11,
+      "centrality_updated_at": "2026-01-01T04:28:21.677000",
+      "eigenvector_centrality": 0.3629777837981075,
+      "names": [
+        "comis reingoult als tresorier van espargne zyns",
+        "tresorier laurin",
+        "tresorier taffin",
+        "tresorier des espargues",
+        "steuen martni es den tresorier van beken",
+        "tresorier der oorloghe dienck van beken",
+        "tresorier van beken",
+        "tresorier vander beken",
+        "adoes malckeman tresorier des guerres"
+      ],
+      "documents": [
+        "session-3104-num-112-resolution-1",
+        "session-3104-num-180-resolution-2",
+        "session-3104-num-195-resolution-2",
+        "session-3104-num-259-resolution-3",
+        "session-3104-num-263-resolution-2",
+        "session-3104-num-292-resolution-1",
+        "session-3104-num-295-resolution-3",
+        "session-3104-num-302-resolution-2",
+        "session-3104-num-303-resolution-1",
+        "session-3104-num-304-resolution-1",
+        "session-3104-num-305-resolution-1",
+        "session-3104-num-309-resolution-1",
+        "session-3104-num-309-resolution-2",
+        "session-3104-num-4-resolution-2",
+        "session-3104-num-41-resolution-3",
+        "session-3104-num-68-resolution-2",
+        "session-3104-num-85-resolution-1",
+        "session-3106-num-18-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004356",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.375000",
+      "connection_count": 45,
+      "centrality_updated_at": "2026-01-01T04:28:21.369000",
+      "eigenvector_centrality": 0.29761780468088694,
+      "names": [
+        "messrs. des aydes",
+        "tresorier des espargues",
+        "guillame de lohierville comis des enfans et heritiers de",
+        "messrs. des finances et aydes",
+        "myn heere des comis van financien reyngont",
+        "steuen martni es den tresorier van beken",
+        "michiel des aldres",
+        "messrs des aydes",
+        "michiel des andres",
+        "srs. pompeiis vfkens, lieutenant des ommelandes & de la ville de groeningen et",
+        "dedee van es",
+        "michiel des ardes",
+        "adoes malckeman tresorier des guerres",
+        "johan sloeth drost des landes van vollenhoven, gedeputeerde der ridderschap, ende der drie steden van overijssel",
+        "monsieur le president de la chambre des comptes en flandres jacques taffin",
+        "michiel des ardres contrerolleur general des tenans table de prest",
+        "weduwe phles van beken wilen soldat onder des",
+        "adrien manmaker recepur des conuois en zeelande",
+        "willen de rouck comis des finantien",
+        "jacques hannot comernant les faint du mae general des postes"
+      ],
+      "documents": [
+        "session-3104-num-112-resolution-1",
+        "session-3104-num-12-resolution-4",
+        "session-3104-num-13-resolution-1",
+        "session-3104-num-139-resolution-1",
+        "session-3104-num-185-resolution-6",
+        "session-3104-num-211-resolution-1",
+        "session-3104-num-217-resolution-5",
+        "session-3104-num-223-resolution-3",
+        "session-3104-num-226-resolution-5",
+        "session-3104-num-238-resolution-1",
+        "session-3104-num-244-resolution-8",
+        "session-3104-num-256-resolution-1",
+        "session-3104-num-257-resolution-5",
+        "session-3104-num-263-resolution-1",
+        "session-3104-num-263-resolution-2",
+        "session-3104-num-276-resolution-3",
+        "session-3104-num-278-resolution-1",
+        "session-3104-num-287-resolution-3",
+        "session-3104-num-299-resolution-7",
+        "session-3104-num-301-resolution-4",
+        "session-3104-num-302-resolution-3",
+        "session-3104-num-304-resolution-1",
+        "session-3104-num-308-resolution-4",
+        "session-3104-num-310-resolution-2",
+        "session-3104-num-318-resolution-1",
+        "session-3104-num-4-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0005028",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.185000",
+      "connection_count": 20,
+      "centrality_updated_at": "2026-01-01T04:28:21.409000",
+      "eigenvector_centrality": 0.1089601744535654,
+      "names": [
+        "monsieur le duc d'arschot",
+        "monsieur le prince d'espinon",
+        "monsieur le conte de la rochepot",
+        "monsieur le docteur leoninus du conseil",
+        "feu monsieur le conte de boussa",
+        "monsieur de fama",
+        "monsieur lambassadeur",
+        "monsieur le conte de swatsemborch",
+        "monsieur de faia",
+        "monsieur le gnal",
+        "monsieur le prince d'espinoy",
+        "monsieur le conte jehan de nassauwe",
+        "monsieur le prince d'espmoy",
+        "monsieur le marquis de haurech",
+        "monsieur de voisin",
+        "monsieur le baron de merode",
+        "monsieur le president de la chambre des comptes en flandres jacques taffin"
+      ],
+      "documents": [
+        "session-3104-num-12-resolution-1",
+        "session-3104-num-12-resolution-5",
+        "session-3104-num-128-resolution-1",
+        "session-3104-num-175-resolution-3",
+        "session-3104-num-19-resolution-1",
+        "session-3104-num-191-resolution-3",
+        "session-3104-num-199-resolution-1",
+        "session-3104-num-200-resolution-1",
+        "session-3104-num-216-resolution-3",
+        "session-3104-num-217-resolution-5",
+        "session-3104-num-227-resolution-2",
+        "session-3104-num-258-resolution-1",
+        "session-3104-num-302-resolution-1",
+        "session-3104-num-310-resolution-2",
+        "session-3104-num-316-resolution-2",
+        "session-3104-num-4-resolution-2",
+        "session-3104-num-55-resolution-2",
+        "session-3104-num-69-resolution-1",
+        "session-3106-num-2-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004989",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.986000",
+      "connection_count": 14,
+      "centrality_updated_at": "2026-01-01T04:28:21.815000",
+      "eigenvector_centrality": 0.10618448545790944,
+      "names": [
+        "mathias laurin"
+      ],
+      "documents": [
+        "session-3104-num-192-resolution-3",
+        "session-3104-num-205-resolution-9",
+        "session-3104-num-218-resolution-1",
+        "session-3104-num-226-resolution-1",
+        "session-3104-num-232-resolution-10",
+        "session-3104-num-244-resolution-7",
+        "session-3104-num-254-resolution-4",
+        "session-3104-num-258-resolution-1",
+        "session-3104-num-273-resolution-1",
+        "session-3104-num-287-resolution-2",
+        "session-3104-num-297-resolution-10",
+        "session-3104-num-302-resolution-2",
+        "session-3104-num-9-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0005468",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.945000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.775000",
+      "eigenvector_centrality": 0.07853930052292395,
+      "names": [
+        "thiery van beken",
+        "thiery vander beken"
+      ],
+      "documents": [
+        "session-3104-num-178-resolution-1",
+        "session-3104-num-297-resolution-10",
+        "session-3104-num-297-resolution-9",
+        "session-3104-num-299-resolution-12",
+        "session-3104-num-9-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0005267",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.637000",
+      "connection_count": 11,
+      "centrality_updated_at": "2026-01-01T04:28:21.377000",
+      "eigenvector_centrality": 0.0646562036423185,
+      "names": [
+        "willem de rouck cums van financien",
+        "comis de rouck",
+        "comis guille de rouck",
+        "guillame de rouck",
+        "rouck",
+        "guille de rouck",
+        "willen de rouck comis des finantien"
+      ],
+      "documents": [
+        "session-3104-num-201-resolution-2",
+        "session-3104-num-205-resolution-3",
+        "session-3104-num-241-resolution-3",
+        "session-3104-num-241-resolution-4",
+        "session-3104-num-244-resolution-7",
+        "session-3104-num-245-resolution-4",
+        "session-3104-num-246-resolution-2",
+        "session-3104-num-260-resolution-3",
+        "session-3104-num-276-resolution-3",
+        "session-3104-num-279-resolution-5",
+        "session-3104-num-281-resolution-2",
+        "session-3104-num-283-resolution-2",
+        "session-3104-num-285-resolution-2",
+        "session-3104-num-287-resolution-3",
+        "session-3104-num-289-resolution-3",
+        "session-3104-num-294-resolution-1",
+        "session-3104-num-297-resolution-10"
+      ]
+    },
+    {
+      "person_id": "P0004991",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.029000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.706000",
+      "eigenvector_centrality": 0.048858861992602295,
+      "names": [
+        "matthias laurin de paier",
+        "generael ontfangher matthias laurin",
+        "matthias lauren",
+        "matthias lauryn",
+        "matthias laurin"
+      ],
+      "documents": [
+        "session-3104-num-12-resolution-6",
+        "session-3104-num-143-resolution-1",
+        "session-3104-num-177-resolution-3",
+        "session-3104-num-179-resolution-2",
+        "session-3104-num-287-resolution-1",
+        "session-3104-num-296-resolution-5",
+        "session-3104-num-296-resolution-8",
+        "session-3104-num-299-resolution-13",
+        "session-3104-num-33-resolution-3",
+        "session-3104-num-35-resolution-1",
+        "session-3104-num-36-resolution-2",
+        "session-3104-num-36-resolution-4",
+        "session-3104-num-48-resolution-3",
+        "session-3104-num-63-resolution-3",
+        "session-3104-num-78-resolution-1",
+        "session-3104-num-79-resolution-1",
+        "session-3104-num-9-resolution-1",
+        "session-3104-num-9-resolution-2",
+        "session-3104-num-90-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004793",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.467000",
+      "connection_count": 20,
+      "centrality_updated_at": "2026-01-01T04:28:21.373000",
+      "eigenvector_centrality": 0.033794516920794146,
+      "names": [
+        "jacques cayaert",
+        "jacques jansz",
+        "jacques bylandt general de la monoye",
+        "jacques valckenbourgh",
+        "jacques van falquenborch, de comisen van camere van beden",
+        "jacques gotiers",
+        "jacques tassin, e charles calonne mr van voers camere",
+        "monsieur le president de la chambre des comptes en flandres jacques taffin",
+        "jacques hannot comernant les faint du mae general des postes"
+      ],
+      "documents": [
+        "session-3104-num-217-resolution-5",
+        "session-3104-num-219-resolution-1",
+        "session-3104-num-297-resolution-4",
+        "session-3104-num-304-resolution-4",
+        "session-3104-num-308-resolution-3",
+        "session-3104-num-310-resolution-2",
+        "session-3104-num-42-resolution-2",
+        "session-3104-num-43-resolution-1",
+        "session-3104-num-48-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0005004",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.123000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:21.547000",
+      "eigenvector_centrality": 0.03283540686899296,
+      "names": [
+        "tvendel colonnel van baenderheere van merode",
+        "jonckheer henderick van merode",
+        "monsieur le baron de merode"
+      ],
+      "documents": [
+        "session-3104-num-12-resolution-5",
+        "session-3104-num-258-resolution-1",
+        "session-3104-num-297-resolution-1",
+        "session-3104-num-305-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004477",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.773000",
+      "connection_count": 10,
+      "centrality_updated_at": "2026-01-01T04:28:21.725000",
+      "eigenvector_centrality": 0.031190670948762836,
+      "names": [
+        "monseigneur le duc d'arsou",
+        "monseigneur le duc d‛arschot",
+        "monsieur le duc d'arschot",
+        "monseigeur le duc d'anjau",
+        "monseigneur le duc d'anzou",
+        "monseigneur le duc danssou",
+        "monsr. le duc dausou",
+        "monseigneur le duc danjou",
+        "monseigneur le duc dauior",
+        "monseigneur le duc d‛anfou",
+        "monseigneur le duc d'anjou"
+      ],
+      "documents": [
+        "session-3104-num-13-resolution-1",
+        "session-3104-num-173-resolution-3",
+        "session-3104-num-204-resolution-6",
+        "session-3104-num-214-resolution-5",
+        "session-3104-num-218-resolution-1",
+        "session-3104-num-271-resolution-5",
+        "session-3104-num-283-resolution-3",
+        "session-3104-num-315-resolution-1",
+        "session-3104-num-315-resolution-2",
+        "session-3104-num-316-resolution-2",
+        "session-3104-num-337-resolution-1",
+        "session-3104-num-338-resolution-2",
+        "session-3104-num-55-resolution-2",
+        "session-3104-num-59-resolution-1",
+        "session-3104-num-8-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0009227",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.487000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.943000",
+      "eigenvector_centrality": 0.02958974395264962,
+      "names": [
+        "capiteyn blair"
+      ],
+      "documents": [
+        "session-3104-num-263-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0008867",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.143000",
+      "connection_count": 25,
+      "centrality_updated_at": "2026-01-01T04:28:21.311000",
+      "eigenvector_centrality": 0.02822187663829627,
+      "names": [
+        "myn heeren valck en de voocht",
+        "valck",
+        "srs. deputez van vocht et valcke",
+        "heeren den pensionanis valck",
+        "borgemr. van harlem, verlaen, valcke",
+        "srs de sauenthem jehan gillis prouin adriaen van keckenroe valcke grammays",
+        "srs. cant, tayaert & valcke",
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3104-num-135-resolution-1",
+        "session-3104-num-178-resolution-6",
+        "session-3104-num-219-resolution-5",
+        "session-3104-num-254-resolution-3",
+        "session-3104-num-265-resolution-2",
+        "session-3104-num-278-resolution-1",
+        "session-3104-num-340-resolution-1",
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0012678",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.474000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.803000",
+      "eigenvector_centrality": 0.0249342923055502,
+      "names": [
+        "michiel des andres"
+      ],
+      "documents": [
+        "session-3104-num-185-resolution-6",
+        "session-3104-num-244-resolution-8",
+        "session-3104-num-263-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0010214",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.803000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.989000",
+      "eigenvector_centrality": 0.024616491372865684,
+      "names": [
+        "jehanne hamers"
+      ],
+      "documents": [
+        "session-3104-num-302-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0014427",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.801000",
+      "connection_count": 11,
+      "centrality_updated_at": "2026-01-01T04:28:21.403000",
+      "eigenvector_centrality": 0.024268710430491208,
+      "names": [
+        "tresorier taffin",
+        "monsieur le president de la chambre des comptes en flandres jacques taffin"
+      ],
+      "documents": [
+        "session-3104-num-310-resolution-2",
+        "session-3104-num-41-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0005387",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.821000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.598000",
+      "eigenvector_centrality": 0.023705849977984684,
+      "names": [
+        "horatie ghalanicmo en baptiste spinola",
+        "baptista spinola"
+      ],
+      "documents": [
+        "session-3104-num-289-resolution-2",
+        "session-3104-num-303-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0008430",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.515000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.594000",
+      "eigenvector_centrality": 0.023705849977984684,
+      "names": [
+        "horatie ghalanicmo en baptiste spinola",
+        "baptista spinola"
+      ],
+      "documents": [
+        "session-3104-num-289-resolution-2",
+        "session-3104-num-303-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0008413",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.460000",
+      "connection_count": 8,
+      "centrality_updated_at": "2026-01-01T04:28:21.721000",
+      "eigenvector_centrality": 0.02336274763647642,
+      "names": [
+        "hertoge van anjou",
+        "hertoghe van anjou",
+        "monseigneur le ducq d'anjou",
+        "monseigneur le duc d'anjou"
+      ],
+      "documents": [
+        "session-3104-num-13-resolution-1",
+        "session-3104-num-173-resolution-2",
+        "session-3104-num-206-resolution-1",
+        "session-3104-num-214-resolution-5",
+        "session-3104-num-216-resolution-4",
+        "session-3104-num-219-resolution-4",
+        "session-3104-num-248-resolution-3",
+        "session-3104-num-316-resolution-2",
+        "session-3104-num-337-resolution-1",
+        "session-3104-num-338-resolution-2",
+        "session-3104-num-340-resolution-2",
+        "session-3104-num-343-resolution-1",
+        "session-3106-num-1-resolution-1",
+        "session-3106-num-24-resolution-4",
+        "session-3106-num-26-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0008749",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.111000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.569000",
+      "eigenvector_centrality": 0.019931225418727796,
+      "names": [
+        "heere van oirschot",
+        "heeren van oirschot, den doctoor leonimen raedt van"
+      ],
+      "documents": [
+        "session-3104-num-292-resolution-3",
+        "session-3104-num-297-resolution-10"
+      ]
+    },
+    {
+      "person_id": "P0003858",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.086000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.573000",
+      "eigenvector_centrality": 0.01942675861666374,
+      "names": [
+        "heeren van oirschot, den doctoor leonimen raedt van"
+      ],
+      "documents": [
+        "session-3104-num-297-resolution-10"
+      ]
+    },
+    {
+      "person_id": "P0004364",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.581000",
+      "connection_count": 11,
+      "centrality_updated_at": "2026-01-01T04:28:21.347000",
+      "eigenvector_centrality": 0.018233856980451872,
+      "names": [
+        "aert van oiste",
+        "aert butkendest",
+        "aert prienen, lazarus struck en otto de backere"
+      ],
+      "documents": [
+        "session-3104-num-303-resolution-3",
+        "session-3104-num-310-resolution-2",
+        "session-3104-num-69-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0003489",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.727000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:21.681000",
+      "eigenvector_centrality": 0.01821549938531163,
+      "names": [
+        "comte de hardeck",
+        "sr. de la noue et du fre dud comte",
+        "comte de meghem"
+      ],
+      "documents": [
+        "session-3104-num-112-resolution-1",
+        "session-3104-num-166-resolution-2",
+        "session-3104-num-31-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004086",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.171000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.697000",
+      "eigenvector_centrality": 0.01716527278543437,
+      "names": [
+        "michiel des ardes"
+      ],
+      "documents": [
+        "session-3104-num-12-resolution-4",
+        "session-3104-num-257-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0011067",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.157000",
+      "connection_count": 9,
+      "centrality_updated_at": "2026-01-01T04:28:21.527000",
+      "eigenvector_centrality": 0.016706477268532506,
+      "names": [
+        "srs prouin",
+        "srs. junnus duffle, diericx, prouin et vosbergen",
+        "srs de sauenthem jehan gillis prouin adriaen van keckenroe valcke grammays",
+        "srs schurmans, acxpoele, prouin, hellinck et andrieu jacobss"
+      ],
+      "documents": [
+        "session-3104-num-137-resolution-2",
+        "session-3104-num-178-resolution-6",
+        "session-3104-num-246-resolution-2",
+        "session-3104-num-275-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0008614",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.813000",
+      "connection_count": 13,
+      "centrality_updated_at": "2026-01-01T04:28:21.505000",
+      "eigenvector_centrality": 0.015810609749397124,
+      "names": [
+        "conseilliers jehan gilles, vander haghen et nde",
+        "pensionnaris der stadt van brussel mre willem van haghen",
+        "jehan vander haghen",
+        "george van haghen"
+      ],
+      "documents": [
+        "session-3104-num-134-resolution-1",
+        "session-3104-num-239-resolution-3",
+        "session-3104-num-310-resolution-2",
+        "session-3104-num-8-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0003357",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.540000",
+      "connection_count": 10,
+      "centrality_updated_at": "2026-01-01T04:28:21.336000",
+      "eigenvector_centrality": 0.014842691342450112,
+      "names": [
+        "michiel de backere",
+        "aert prienen, lazarus struck en otto de backere"
+      ],
+      "documents": [
+        "session-3104-num-174-resolution-1",
+        "session-3104-num-310-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0003644",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.919000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:21.613000",
+      "eigenvector_centrality": 0.014759695491026757,
+      "names": [
+        "gillis wolfzwinckle",
+        "gillis wolffwinckel",
+        "srs de sauenthem jehan gillis prouin adriaen van keckenroe valcke grammays"
+      ],
+      "documents": [
+        "session-3104-num-139-resolution-3",
+        "session-3104-num-178-resolution-6",
+        "session-3104-num-260-resolution-1",
+        "session-3104-num-61-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0003465",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.706000",
+      "connection_count": 10,
+      "centrality_updated_at": "2026-01-01T04:28:21.394000",
+      "eigenvector_centrality": 0.014466859746218353,
+      "names": [
+        "monsieur le president de la chambre des comptes en flandres jacques taffin"
+      ],
+      "documents": [
+        "session-3104-num-310-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0003828",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.045000",
+      "connection_count": 10,
+      "centrality_updated_at": "2026-01-01T04:28:21.340000",
+      "eigenvector_centrality": 0.014466859746218353,
+      "names": [
+        "aert prienen, lazarus struck en otto de backere"
+      ],
+      "documents": [
+        "session-3104-num-310-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0013121",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.519000",
+      "connection_count": 10,
+      "centrality_updated_at": "2026-01-01T04:28:21.398000",
+      "eigenvector_centrality": 0.014466859746218353,
+      "names": [
+        "monsieur le president de la chambre des comptes en flandres jacques taffin"
+      ],
+      "documents": [
+        "session-3104-num-310-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0014415",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.733000",
+      "connection_count": 10,
+      "centrality_updated_at": "2026-01-01T04:28:21.331000",
+      "eigenvector_centrality": 0.014466859746218353,
+      "names": [
+        "aert prienen, lazarus struck en otto de backere"
+      ],
+      "documents": [
+        "session-3104-num-310-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0000835",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.414000",
+      "connection_count": 28,
+      "centrality_updated_at": "2026-01-01T04:28:21.281000",
+      "eigenvector_centrality": 0.012765622294378323,
+      "names": [
+        "doctor malsem",
+        "heer lambert ther cuelen inden rechten doctor ende borgemeester der stede swoll",
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3104-num-318-resolution-1",
+        "session-3104-num-340-resolution-1",
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0014401",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.709000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:22.054000",
+      "eigenvector_centrality": 0.01243308463904871,
+      "names": [
+        "adam van stockum"
+      ],
+      "documents": [
+        "session-3104-num-45-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0005532",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.018000",
+      "connection_count": 8,
+      "centrality_updated_at": "2026-01-01T04:28:21.701000",
+      "eigenvector_centrality": 0.011834763958150338,
+      "names": [
+        "greffier de brabant et bosberghen",
+        "monsr. le chancellier de brabant",
+        "ceulx de brabant brouxaulx, aebyaesius desquelmes et marotelles",
+        "chancellier de brabant"
+      ],
+      "documents": [
+        "session-3104-num-12-resolution-4",
+        "session-3104-num-241-resolution-3",
+        "session-3104-num-304-resolution-4",
+        "session-3104-num-5-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0004405",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.731000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.364000",
+      "eigenvector_centrality": 0.011438953171591318,
+      "names": [
+        "jacques hannot comernant les faint du mae general des postes"
+      ],
+      "documents": [
+        "session-3104-num-217-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0004870",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.662000",
+      "connection_count": 10,
+      "centrality_updated_at": "2026-01-01T04:28:21.445000",
+      "eigenvector_centrality": 0.010279977885653872,
+      "names": [
+        "lambert beuoyt, ende gilles de lagace coopluyden ende innegesetene eer stede van antwerpen",
+        "mijn heere lambert ter ceulen",
+        "heer lambert ther cuelen inden rechten doctor ende borgemeester der stede swoll"
+      ],
+      "documents": [
+        "session-3104-num-318-resolution-1",
+        "session-3104-num-322-resolution-1",
+        "session-3106-num-30-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0014425",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.758000",
+      "connection_count": 8,
+      "centrality_updated_at": "2026-01-01T04:28:21.449000",
+      "eigenvector_centrality": 0.010107322315391418,
+      "names": [
+        "borgmre van swol",
+        "borgemeester van swoll",
+        "heer lambert ther cuelen inden rechten doctor ende borgemeester der stede swoll"
+      ],
+      "documents": [
+        "session-3104-num-318-resolution-1",
+        "session-3104-num-323-resolution-1",
+        "session-3106-num-9-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004881",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.730000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.662000",
+      "eigenvector_centrality": 0.00990588894931491,
+      "names": [
+        "laurens de blione",
+        "monstres laurens du blioul",
+        "laurens de brier remonstrant",
+        "laurens ttuckinck",
+        "laurens tuckinck marchant dem a wesel"
+      ],
+      "documents": [
+        "session-3104-num-164-resolution-2",
+        "session-3104-num-257-resolution-5",
+        "session-3104-num-55-resolution-1",
+        "session-3104-num-68-resolution-1",
+        "session-3104-num-74-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0010954",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.042000",
+      "connection_count": 8,
+      "centrality_updated_at": "2026-01-01T04:28:21.424000",
+      "eigenvector_centrality": 0.009844750388224029,
+      "names": [
+        "ontfanger van ouerissel",
+        "johan sloeth drost des landes van vollenhoven, gedeputeerde der ridderschap, ende der drie steden van overijssel"
+      ],
+      "documents": [
+        "session-3104-num-311-resolution-1",
+        "session-3104-num-318-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0000853",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.456000",
+      "connection_count": 8,
+      "centrality_updated_at": "2026-01-01T04:28:21.418000",
+      "eigenvector_centrality": 0.009595477158480959,
+      "names": [
+        "johan sloeth drost des landes van vollenhoven, gedeputeerde der ridderschap, ende der drie steden van overijssel"
+      ],
+      "documents": [
+        "session-3104-num-318-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0005360",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.801000",
+      "connection_count": 8,
+      "centrality_updated_at": "2026-01-01T04:28:21.414000",
+      "eigenvector_centrality": 0.009595477158480959,
+      "names": [
+        "johan sloeth drost des landes van vollenhoven, gedeputeerde der ridderschap, ende der drie steden van overijssel"
+      ],
+      "documents": [
+        "session-3104-num-318-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0005409",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.872000",
+      "connection_count": 8,
+      "centrality_updated_at": "2026-01-01T04:28:21.428000",
+      "eigenvector_centrality": 0.009595477158480959,
+      "names": [
+        "johan sloeth drost des landes van vollenhoven, gedeputeerde der ridderschap, ende der drie steden van overijssel"
+      ],
+      "documents": [
+        "session-3104-num-318-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0008924",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.280000",
+      "connection_count": 8,
+      "centrality_updated_at": "2026-01-01T04:28:21.432000",
+      "eigenvector_centrality": 0.009595477158480959,
+      "names": [
+        "johan sloeth drost des landes van vollenhoven, gedeputeerde der ridderschap, ende der drie steden van overijssel"
+      ],
+      "documents": [
+        "session-3104-num-318-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0008701",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.972000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.381000",
+      "eigenvector_centrality": 0.00940991078117811,
+      "names": [
+        "adrien manmaker recepur des conuois en zeelande"
+      ],
+      "documents": [
+        "session-3104-num-287-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0013241",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.542000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.954000",
+      "eigenvector_centrality": 0.00940991078117811,
+      "names": [
+        "jehan deschamps pensionnane de nyuelles"
+      ],
+      "documents": [
+        "session-3104-num-276-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0008936",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.412000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.654000",
+      "eigenvector_centrality": 0.008896091825385585,
+      "names": [
+        "laurens tuckinck marchant dem a wesel"
+      ],
+      "documents": [
+        "session-3104-num-257-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0011911",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.358000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.658000",
+      "eigenvector_centrality": 0.008896091825385585,
+      "names": [
+        "laurens tuckinck marchant dem a wesel"
+      ],
+      "documents": [
+        "session-3104-num-257-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0013903",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.611000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.650000",
+      "eigenvector_centrality": 0.008896091825385585,
+      "names": [
+        "laurens tuckinck marchant dem a wesel"
+      ],
+      "documents": [
+        "session-3104-num-257-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0004634",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.248000",
+      "connection_count": 13,
+      "centrality_updated_at": "2026-01-01T04:28:21.733000",
+      "eigenvector_centrality": 0.008783911942541573,
+      "names": [
+        "ceulx de groeninghen",
+        "srs. pompeiis vfkens, lieutenant des ommelandes & de la ville de groeningen et"
+      ],
+      "documents": [
+        "session-3104-num-139-resolution-1",
+        "session-3104-num-33-resolution-1",
+        "session-3104-num-5-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004868",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.618000",
+      "connection_count": 8,
+      "centrality_updated_at": "2026-01-01T04:28:21.531000",
+      "eigenvector_centrality": 0.008750853363283803,
+      "names": [
+        "sr. schurmanns eschoum de la ville d'anners",
+        "srs. pompeiis vfkens, lieutenant des ommelandes & de la ville de groeningen et",
+        "secretaire de la ville d'anners martini"
+      ],
+      "documents": [
+        "session-3104-num-139-resolution-1",
+        "session-3104-num-229-resolution-1",
+        "session-3104-num-296-resolution-9"
+      ]
+    },
+    {
+      "person_id": "P0001280",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.477000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.876000",
+      "eigenvector_centrality": 0.008689362938203033,
+      "names": [
+        "myn heeren valck en de voocht",
+        "mr. nicolaes de voocht"
+      ],
+      "documents": [
+        "session-3104-num-225-resolution-3",
+        "session-3104-num-278-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0003430",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.614000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.935000",
+      "eigenvector_centrality": 0.008601826039995191,
+      "names": [
+        "maria van broecke"
+      ],
+      "documents": [
+        "session-3104-num-263-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004978",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.964000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.939000",
+      "eigenvector_centrality": 0.008601826039995191,
+      "names": [
+        "maria van broecke"
+      ],
+      "documents": [
+        "session-3104-num-263-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004890",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.793000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.737000",
+      "eigenvector_centrality": 0.008186151842108864,
+      "names": [
+        "wouter leyten"
+      ],
+      "documents": [
+        "session-3104-num-139-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0000808",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.393000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.390000",
+      "eigenvector_centrality": 0.007936817710073388,
+      "names": [
+        "michiel des ardres contrerolleur general des tenans table de prest"
+      ],
+      "documents": [
+        "session-3104-num-226-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0004550",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.033000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.880000",
+      "eigenvector_centrality": 0.007936817710073388,
+      "names": [
+        "francisco bergaingne"
+      ],
+      "documents": [
+        "session-3104-num-226-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0004293",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.309000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.931000",
+      "eigenvector_centrality": 0.007730640225559813,
+      "names": [
+        "prince van chimay"
+      ],
+      "documents": [
+        "session-3104-num-256-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0008405",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.428000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:21.709000",
+      "eigenvector_centrality": 0.005663630268929613,
+      "names": [
+        "seigneur de st. aldegonde",
+        "sr. de st. aldegonde"
+      ],
+      "documents": [
+        "session-3104-num-12-resolution-6",
+        "session-3104-num-316-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0008519",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.778000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:22.068000",
+      "eigenvector_centrality": 0.00456985302406006,
+      "names": [
+        "monseigneur le duc d‛arschot",
+        "monsieur le duc d'arschot"
+      ],
+      "documents": [
+        "session-3104-num-55-resolution-2",
+        "session-3104-num-59-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0008931",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.307000",
+      "connection_count": 29,
+      "centrality_updated_at": "2026-01-01T04:28:21.482000",
+      "eigenvector_centrality": 0.004441744189097208,
+      "names": [
+        "warcke romere et casenbroot",
+        "conseillier vanden warcke",
+        "srs. junius van warcke",
+        "hee van berchem, de borgmre van bruessel adriaen van conincxloo, jan van santboert schepen van antwerpen, de pensionariss van warcke",
+        "srs. junius van warcke et jour",
+        "heere van warcke, somere, van mylen, steenberge reynier cant, floris thin en van dyeue",
+        "heeren van berchem, conincxlar, van warcke, meganck, steenberge, somere, casembroot, penteman, floris thijn, ende van dyene"
+      ],
+      "documents": [
+        "session-3104-num-199-resolution-4",
+        "session-3104-num-23-resolution-1",
+        "session-3104-num-275-resolution-3",
+        "session-3104-num-283-resolution-3",
+        "session-3106-num-16-resolution-1",
+        "session-3106-num-21-resolution-2",
+        "session-3106-num-27-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004599",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.142000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:21.819000",
+      "eigenvector_centrality": 0.003907826167512255,
+      "names": [
+        "lambert beuoyt, ende gilles de lagace coopluyden ende innegesetene eer stede van antwerpen",
+        "conseilliers jehan gilles, vander haghen et nde",
+        "mre jehan gilles.",
+        "gilles wolffzwinclle",
+        "gilles wolfwinckel"
+      ],
+      "documents": [
+        "session-3104-num-192-resolution-3",
+        "session-3104-num-197-resolution-2",
+        "session-3104-num-66-resolution-1",
+        "session-3104-num-8-resolution-1",
+        "session-3106-num-30-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0003454",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.656000",
+      "connection_count": 23,
+      "centrality_updated_at": "2026-01-01T04:28:21.269000",
+      "eigenvector_centrality": 0.0037646464680291124,
+      "names": [
+        "cant",
+        "srs. cant, tayaert & valcke",
+        "heere van warcke, somere, van mylen, steenberge reynier cant, floris thin en van dyeue",
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3104-num-135-resolution-1",
+        "session-3104-num-166-resolution-2",
+        "session-3106-num-21-resolution-2",
+        "session-3106-num-27-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0000772",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.372000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.868000",
+      "eigenvector_centrality": 0.003567762283374372,
+      "names": [
+        "den bisschops broeder pointhz"
+      ],
+      "documents": [
+        "session-3104-num-218-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004961",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.899000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:21.897000",
+      "eigenvector_centrality": 0.0033527175746612455,
+      "names": [
+        "guillame maes",
+        "premierhuyssier guillame maes",
+        "guille maes"
+      ],
+      "documents": [
+        "session-3104-num-233-resolution-3",
+        "session-3104-num-245-resolution-4",
+        "session-3104-num-297-resolution-4",
+        "session-3104-num-303-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0005203",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.540000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.893000",
+      "eigenvector_centrality": 0.0029860815053739135,
+      "names": [
+        "raphael cronwel",
+        "raphael de deckere",
+        "capitaine raphael cromwel anglois les estatz"
+      ],
+      "documents": [
+        "session-3104-num-232-resolution-10",
+        "session-3104-num-236-resolution-3",
+        "session-3104-num-251-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0005708",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.192000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.638000",
+      "eigenvector_centrality": 0.002905862506686998,
+      "names": [
+        "sr. de voisin lrentenant generael de la cauaillerie",
+        "monsieur de voisin"
+      ],
+      "documents": [
+        "session-3104-num-227-resolution-2",
+        "session-3104-num-297-resolution-7"
+      ]
+    },
+    {
+      "person_id": "P0008515",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.757000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.888000",
+      "eigenvector_centrality": 0.0028349272162565995,
+      "names": [
+        "capitaine raphael cromwel anglois les estatz"
+      ],
+      "documents": [
+        "session-3104-num-232-resolution-10"
+      ]
+    },
+    {
+      "person_id": "P0004542",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.990000",
+      "connection_count": 23,
+      "centrality_updated_at": "2026-01-01T04:28:21.466000",
+      "eigenvector_centrality": 0.002678114782113419,
+      "names": [
+        "heere floris hermaele mechelen de pensionaris van dyenen",
+        "heere van warcke, somere, van mylen, steenberge reynier cant, floris thin en van dyeue",
+        "heeren van berchem, conincxlar, van warcke, meganck, steenberge, somere, casembroot, penteman, floris thijn, ende van dyene"
+      ],
+      "documents": [
+        "session-3106-num-16-resolution-1",
+        "session-3106-num-21-resolution-2",
+        "session-3106-num-27-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004082",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.129000",
+      "connection_count": 20,
+      "centrality_updated_at": "2026-01-01T04:28:21.646000",
+      "eigenvector_centrality": 0.002566313636613078,
+      "names": [
+        "lambert beuoyt, ende gilles de lagace coopluyden ende innegesetene eer stede van antwerpen",
+        "heere van wante raetsheere der stede van antwerpen",
+        "hee van berchem, de borgmre van bruessel adriaen van conincxloo, jan van santboert schepen van antwerpen, de pensionariss van warcke"
+      ],
+      "documents": [
+        "session-3104-num-213-resolution-3",
+        "session-3106-num-21-resolution-2",
+        "session-3106-num-30-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0006117",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.335000",
+      "connection_count": 21,
+      "centrality_updated_at": "2026-01-01T04:28:21.469000",
+      "eigenvector_centrality": 0.0023712691371464848,
+      "names": [
+        "hee van berchem, de borgmre van bruessel adriaen van conincxloo, jan van santboert schepen van antwerpen, de pensionariss van warcke",
+        "heeren van berchem, conincxlar, van warcke, meganck, steenberge, somere, casembroot, penteman, floris thijn, ende van dyene"
+      ],
+      "documents": [
+        "session-3106-num-16-resolution-1",
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004395",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.700000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.441000",
+      "eigenvector_centrality": 0.0023290985231211336,
+      "names": [
+        "jacques van falquenborch, de comisen van camere van beden",
+        "jacques tassin, e charles calonne mr van voers camere"
+      ],
+      "documents": [
+        "session-3104-num-297-resolution-4",
+        "session-3104-num-304-resolution-4"
+      ]
+    },
+    {
+      "person_id": "P0005514",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.977000",
+      "connection_count": 20,
+      "centrality_updated_at": "2026-01-01T04:28:21.305000",
+      "eigenvector_centrality": 0.002208770173114761,
+      "names": [
+        "herman d‛utrecht",
+        "herman van utrecht",
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3104-num-297-resolution-2",
+        "session-3104-num-304-resolution-3",
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0003342",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.508000",
+      "connection_count": 19,
+      "centrality_updated_at": "2026-01-01T04:28:21.263000",
+      "eigenvector_centrality": 0.0021326524366374897,
+      "names": [
+        "andries du camp",
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3104-num-239-resolution-1",
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004392",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.665000",
+      "connection_count": 18,
+      "centrality_updated_at": "2026-01-01T04:28:21.276000",
+      "eigenvector_centrality": 0.002131086139183237,
+      "names": [
+        "de jonge, de buckere",
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3104-num-229-resolution-4",
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0005786",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.285000",
+      "connection_count": 18,
+      "centrality_updated_at": "2026-01-01T04:28:21.322000",
+      "eigenvector_centrality": 0.002131086139183237,
+      "names": [
+        "ontfanger van conuoien in zeelandt n. manmiacker",
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3104-num-283-resolution-4",
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0003622",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.899000",
+      "connection_count": 18,
+      "centrality_updated_at": "2026-01-01T04:28:21.286000",
+      "eigenvector_centrality": 0.002077114755473458,
+      "names": [
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0003652",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.962000",
+      "connection_count": 18,
+      "centrality_updated_at": "2026-01-01T04:28:21.291000",
+      "eigenvector_centrality": 0.002077114755473458,
+      "names": [
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0005760",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.244000",
+      "connection_count": 18,
+      "centrality_updated_at": "2026-01-01T04:28:21.318000",
+      "eigenvector_centrality": 0.002077114755473458,
+      "names": [
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0008722",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.036000",
+      "connection_count": 18,
+      "centrality_updated_at": "2026-01-01T04:28:21.300000",
+      "eigenvector_centrality": 0.002077114755473458,
+      "names": [
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0010708",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.859000",
+      "connection_count": 18,
+      "centrality_updated_at": "2026-01-01T04:28:21.296000",
+      "eigenvector_centrality": 0.002077114755473458,
+      "names": [
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0010745",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.944000",
+      "connection_count": 18,
+      "centrality_updated_at": "2026-01-01T04:28:22.085000",
+      "eigenvector_centrality": 0.002077114755473458,
+      "names": [
+        "heere floris hermaele mechelen de pensionaris van dyenen"
+      ],
+      "documents": [
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0010868",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.991000",
+      "connection_count": 18,
+      "centrality_updated_at": "2026-01-01T04:28:21.326000",
+      "eigenvector_centrality": 0.002077114755473458,
+      "names": [
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0013791",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.587000",
+      "connection_count": 18,
+      "centrality_updated_at": "2026-01-01T04:28:21.257000",
+      "eigenvector_centrality": 0.002077114755473458,
+      "names": [
+        "adriaen joppe, nicolas van lanen, gouaert willemss brasseret, reymier cant vorgmre van amstelredam, ende doctor frans manson, zeelandt andries de jonge burgmre van middelborch en de pensionaris van goes valcke, utrecht de heere van braekele"
+      ],
+      "documents": [
+        "session-3106-num-21-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004299",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.332000",
+      "connection_count": 10,
+      "centrality_updated_at": "2026-01-01T04:28:21.360000",
+      "eigenvector_centrality": 0.0020625377635188923,
+      "names": [
+        "clercq phle de zoete",
+        "melchoor modelius wilen gesvooren clercq van generaliteyt",
+        "jehan fabri clercq de la greffe"
+      ],
+      "documents": [
+        "session-3104-num-241-resolution-2",
+        "session-3104-num-296-resolution-8",
+        "session-3104-num-296-resolution-9",
+        "session-3104-num-5-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0009962",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.739000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.356000",
+      "eigenvector_centrality": 0.0017104917359687388,
+      "names": [
+        "jehan fabri clercqure de la greffe",
+        "jehan fabri clercq de la greffe"
+      ],
+      "documents": [
+        "session-3104-num-241-resolution-2",
+        "session-3104-num-36-resolution-4",
+        "session-3104-num-5-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0010728",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.910000",
+      "connection_count": 10,
+      "centrality_updated_at": "2026-01-01T04:28:21.535000",
+      "eigenvector_centrality": 0.0016726463229541169,
+      "names": [
+        "guillamme martini a",
+        "secretaire de la ville d'anners martini"
+      ],
+      "documents": [
+        "session-3104-num-296-resolution-9",
+        "session-3104-num-304-resolution-4"
+      ]
+    },
+    {
+      "person_id": "P0004285",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.265000",
+      "connection_count": 8,
+      "centrality_updated_at": "2026-01-01T04:28:21.436000",
+      "eigenvector_centrality": 0.001545457657031134,
+      "names": [
+        "charles de lescluye",
+        "charles de beaulieu",
+        "jacques tassin, e charles calonne mr van voers camere"
+      ],
+      "documents": [
+        "session-3104-num-205-resolution-8",
+        "session-3104-num-257-resolution-3",
+        "session-3104-num-257-resolution-4",
+        "session-3104-num-300-resolution-1",
+        "session-3104-num-304-resolution-4",
+        "session-3104-num-91-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0010877",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.015000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:22.019000",
+      "eigenvector_centrality": 0.0014174231998236274,
+      "names": [
+        "grave van nieuwenaer"
+      ],
+      "documents": [
+        "session-3104-num-338-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0005292",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.777000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.993000",
+      "eigenvector_centrality": 0.0013295149848783251,
+      "names": [
+        "samuel dalueringhen"
+      ],
+      "documents": [
+        "session-3104-num-304-resolution-4"
+      ]
+    },
+    {
+      "person_id": "P0004553",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.053000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:22.072000",
+      "eigenvector_centrality": 0.0012687052694823134,
+      "names": [
+        "francois hanon"
+      ],
+      "documents": [
+        "session-3104-num-63-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0005049",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.377000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:21.693000",
+      "eigenvector_centrality": 0.0012600705804283704,
+      "names": [
+        "nayarus muller",
+        "muller",
+        "lazarns muller",
+        "lazarus muller"
+      ],
+      "documents": [
+        "session-3104-num-12-resolution-3",
+        "session-3104-num-187-resolution-2",
+        "session-3104-num-203-resolution-3",
+        "session-3104-num-237-resolution-1",
+        "session-3104-num-239-resolution-3",
+        "session-3104-num-248-resolution-3",
+        "session-3104-num-266-resolution-1",
+        "session-3104-num-266-resolution-4"
+      ]
+    },
+    {
+      "person_id": "P0004277",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.233000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.462000",
+      "eigenvector_centrality": 0.0012275931844597506,
+      "names": [
+        "warcke romere et casenbroot",
+        "heeren van berchem, conincxlar, van warcke, meganck, steenberge, somere, casembroot, penteman, floris thijn, ende van dyene"
+      ],
+      "documents": [
+        "session-3104-num-283-resolution-3",
+        "session-3106-num-16-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004650",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.279000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.618000",
+      "eigenvector_centrality": 0.0010930303804239055,
+      "names": [
+        "borgemr. van harlem, verlaen, valcke"
+      ],
+      "documents": [
+        "session-3104-num-340-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004970",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.941000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:22.027000",
+      "eigenvector_centrality": 0.0010930303804239055,
+      "names": [
+        "doctor malsem"
+      ],
+      "documents": [
+        "session-3104-num-340-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0003447",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.634000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:22.041000",
+      "eigenvector_centrality": 0.0008779418761384256,
+      "names": [
+        "jacques bylandt general de la monoye"
+      ],
+      "documents": [
+        "session-3104-num-42-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004795",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.572000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:22.049000",
+      "eigenvector_centrality": 0.0008779418761384256,
+      "names": [
+        "jacques jansz"
+      ],
+      "documents": [
+        "session-3104-num-43-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0008649",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.939000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.642000",
+      "eigenvector_centrality": 0.0007176966629471001,
+      "names": [
+        "srs. junius van warcke",
+        "srs. junius van warcke et jour"
+      ],
+      "documents": [
+        "session-3104-num-199-resolution-4",
+        "session-3104-num-275-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0003620",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.856000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.959000",
+      "eigenvector_centrality": 0.0007030038629479498,
+      "names": [
+        "commisen, franchoijs ende julius balochi",
+        "julius et franchois ballochy",
+        "julius et franchois balochy"
+      ],
+      "documents": [
+        "session-3104-num-282-resolution-2",
+        "session-3104-num-297-resolution-2",
+        "session-3104-num-343-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0008906",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.243000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:22.030000",
+      "eigenvector_centrality": 0.0006232466030026304,
+      "names": [
+        "heeren van sweeten",
+        "heere van sweeten"
+      ],
+      "documents": [
+        "session-3104-num-341-resolution-1",
+        "session-3106-num-26-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0005411",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.894000",
+      "connection_count": 8,
+      "centrality_updated_at": "2026-01-01T04:28:21.477000",
+      "eigenvector_centrality": 0.0006010000266399608,
+      "names": [
+        "heere van warcke, somere, van mylen, steenberge reynier cant, floris thin en van dyeue",
+        "heeren van berchem, conincxlar, van warcke, meganck, steenberge, somere, casembroot, penteman, floris thijn, ende van dyene"
+      ],
+      "documents": [
+        "session-3106-num-16-resolution-1",
+        "session-3106-num-27-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0011298",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.219000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:21.519000",
+      "eigenvector_centrality": 0.0005986033133406848,
+      "names": [
+        "srs. schurmans et ymans",
+        "srs schurmans, acxpoele, prouin, hellinck et andrieu jacobss"
+      ],
+      "documents": [
+        "session-3104-num-243-resolution-1",
+        "session-3104-num-275-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0004791",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.446000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:21.522000",
+      "eigenvector_centrality": 0.0005834492367655526,
+      "names": [
+        "srs schurmans, acxpoele, prouin, hellinck et andrieu jacobss"
+      ],
+      "documents": [
+        "session-3104-num-275-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0008748",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.090000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.771000",
+      "eigenvector_centrality": 0.0005709107027898028,
+      "names": [
+        "sr. de la noue et du fre dud comte"
+      ],
+      "documents": [
+        "session-3104-num-166-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004586",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.075000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.495000",
+      "eigenvector_centrality": 0.0004691770076771405,
+      "names": [
+        "george van haghen",
+        "george gilpin"
+      ],
+      "documents": [
+        "session-3104-num-141-resolution-3",
+        "session-3104-num-199-resolution-2",
+        "session-3104-num-239-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0012627",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.416000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.634000",
+      "eigenvector_centrality": 0.0004454066308326734,
+      "names": [
+        "sr. de vosberge",
+        "srs. junnus duffle, diericx, prouin et vosbergen"
+      ],
+      "documents": [
+        "session-3104-num-137-resolution-2",
+        "session-3104-num-161-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0014730",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.836000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.631000",
+      "eigenvector_centrality": 0.00038327320671164894,
+      "names": [
+        "gillis wolffwinckel"
+      ],
+      "documents": [
+        "session-3104-num-260-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004878",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.708000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.967000",
+      "eigenvector_centrality": 0.0003614363738672849,
+      "names": [
+        "secretaire alleman jehan van langhen"
+      ],
+      "documents": [
+        "session-3104-num-296-resolution-9",
+        "session-3104-num-301-resolution-6"
+      ]
+    },
+    {
+      "person_id": "P0009057",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.462000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.972000",
+      "eigenvector_centrality": 0.0003614363738672849,
+      "names": [
+        "secretaire alleman jehan van langhen"
+      ],
+      "documents": [
+        "session-3104-num-296-resolution-9",
+        "session-3104-num-301-resolution-6"
+      ]
+    },
+    {
+      "person_id": "P0012614",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.381000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:21.689000",
+      "eigenvector_centrality": 0.00034380373347540005,
+      "names": [
+        "comne hesselz",
+        "conseillier d'estatt rcommis et hesselz"
+      ],
+      "documents": [
+        "session-3104-num-12-resolution-2",
+        "session-3104-num-5-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004917",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.815000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.962000",
+      "eigenvector_centrality": 0.00034313133807579153,
+      "names": [
+        "herman de linden"
+      ],
+      "documents": [
+        "session-3104-num-296-resolution-9"
+      ]
+    },
+    {
+      "person_id": "P0004618",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.228000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:22.059000",
+      "eigenvector_centrality": 0.0003350987398649937,
+      "names": [
+        "docteur gouda"
+      ],
+      "documents": [
+        "session-3104-num-5-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0008739",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.059000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.484000",
+      "eigenvector_centrality": 0.0003232226688697287,
+      "names": [
+        "vander mylen",
+        "heere van warcke, somere, van mylen, steenberge reynier cant, floris thin en van dyeue"
+      ],
+      "documents": [
+        "session-3104-num-9-resolution-3",
+        "session-3106-num-15-resolution-1",
+        "session-3106-num-27-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0005225",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.583000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.491000",
+      "eigenvector_centrality": 0.0003068456449669339,
+      "names": [
+        "heere van warcke, somere, van mylen, steenberge reynier cant, floris thin en van dyeue"
+      ],
+      "documents": [
+        "session-3106-num-27-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0013934",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.635000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.473000",
+      "eigenvector_centrality": 0.0002941543816730268,
+      "names": [
+        "heeren van berchem, conincxlar, van warcke, meganck, steenberge, somere, casembroot, penteman, floris thijn, ende van dyene"
+      ],
+      "documents": [
+        "session-3106-num-16-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0005001",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.091000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.552000",
+      "eigenvector_centrality": 0.00026948572555703137,
+      "names": [
+        "melchior coch, den remonstrant",
+        "lenaert van impeghem et melchior vanden perre"
+      ],
+      "documents": [
+        "session-3104-num-297-resolution-3",
+        "session-3104-num-33-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0009603",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.655000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.902000",
+      "eigenvector_centrality": 0.00026948572555703137,
+      "names": [
+        "coenraert cuypere",
+        "hans de cuypere"
+      ],
+      "documents": [
+        "session-3104-num-234-resolution-4",
+        "session-3104-num-33-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0005273",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.752000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.582000",
+      "eigenvector_centrality": 0.0002626613605677139,
+      "names": [
+        "waerden van ruyters"
+      ],
+      "documents": [
+        "session-3104-num-33-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0008477",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.735000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:22.018000",
+      "eigenvector_centrality": 0.0002626613605677139,
+      "names": [
+        "mre de la monnoye a bruges"
+      ],
+      "documents": [
+        "session-3104-num-33-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0010999",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.112000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.555000",
+      "eigenvector_centrality": 0.0002626613605677139,
+      "names": [
+        "lenaert van impeghem et melchior vanden perre"
+      ],
+      "documents": [
+        "session-3104-num-33-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0011863",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.308000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.578000",
+      "eigenvector_centrality": 0.0002626613605677139,
+      "names": [
+        "waerden van ruyters"
+      ],
+      "documents": [
+        "session-3104-num-33-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0008472",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.715000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:22.063000",
+      "eigenvector_centrality": 0.0002573368006814143,
+      "names": [
+        "laurens de brier remonstrant"
+      ],
+      "documents": [
+        "session-3104-num-55-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0006116",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.315000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.843000",
+      "eigenvector_centrality": 0.00017680276153428089,
+      "names": [
+        "charles de beaulieu"
+      ],
+      "documents": [
+        "session-3104-num-205-resolution-8",
+        "session-3104-num-257-resolution-4",
+        "session-3104-num-300-resolution-1",
+        "session-3104-num-91-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0003361",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.571000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.834000",
+      "eigenvector_centrality": 0.0001414120677768378,
+      "names": [
+        "colonnel balfour"
+      ],
+      "documents": [
+        "session-3104-num-199-resolution-4",
+        "session-3104-num-202-resolution-3",
+        "session-3104-num-202-resolution-6"
+      ]
+    },
+    {
+      "person_id": "P0005094",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.431000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.838000",
+      "eigenvector_centrality": 7.76840339315243e-05,
+      "names": [
+        "heere van oorschot"
+      ],
+      "documents": [
+        "session-3104-num-203-resolution-4",
+        "session-3104-num-297-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0006120",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.368000",
+      "connection_count": 4,
+      "centrality_updated_at": "2026-01-01T04:28:21.351000",
+      "eigenvector_centrality": 6.026000416380354e-05,
+      "names": [
+        "adrien baltyn auditeur du camp",
+        "guillame dax preuosz du camp",
+        "lauditeur general du camp",
+        "andries du camp"
+      ],
+      "documents": [
+        "session-3104-num-239-resolution-1",
+        "session-3104-num-306-resolution-4",
+        "session-3104-num-313-resolution-1",
+        "session-3104-num-41-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0005404",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.852000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.607000",
+      "eigenvector_centrality": 4.594660731375171e-05,
+      "names": [
+        "guillame doux preuost generael van staten"
+      ],
+      "documents": [
+        "session-3104-num-257-resolution-4"
+      ]
+    },
+    {
+      "person_id": "P0011061",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.134000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.603000",
+      "eigenvector_centrality": 4.594660731375171e-05,
+      "names": [
+        "guillame doux preuost generael van staten"
+      ],
+      "documents": [
+        "session-3104-num-257-resolution-4"
+      ]
+    },
+    {
+      "person_id": "P0010170",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.780000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.807000",
+      "eigenvector_centrality": 3.274770621649082e-05,
+      "names": [
+        "heere van gruyter"
+      ],
+      "documents": [
+        "session-3104-num-187-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004601",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.207000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.500000",
+      "eigenvector_centrality": 2.5033229320863215e-05,
+      "names": [
+        "george gilpin"
+      ],
+      "documents": [
+        "session-3104-num-141-resolution-3",
+        "session-3104-num-199-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0008634",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.872000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.951000",
+      "eigenvector_centrality": 2.0994370112440788e-06,
+      "names": [
+        "secreteire houfflin",
+        "secretaire houfflin",
+        "jehan houfflin"
+      ],
+      "documents": [
+        "session-3104-num-273-resolution-5",
+        "session-3104-num-288-resolution-5",
+        "session-3104-num-295-resolution-2",
+        "session-3104-num-299-resolution-4",
+        "session-3104-num-313-resolution-1",
+        "session-3104-num-314-resolution-2",
+        "session-3104-num-40-resolution-1",
+        "session-3104-num-73-resolution-1",
+        "session-3104-num-98-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0005631",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.093000",
+      "connection_count": 6,
+      "centrality_updated_at": "2026-01-01T04:28:21.586000",
+      "eigenvector_centrality": 1.8104425221049026e-06,
+      "names": [
+        "jehan ryck sur zeelande",
+        "denis van ryck",
+        "elias l‛esch et jehan ryck",
+        "helias lesch, de sagan et jehan ryck de spiers"
+      ],
+      "documents": [
+        "session-3104-num-161-resolution-3",
+        "session-3104-num-241-resolution-1",
+        "session-3104-num-248-resolution-1",
+        "session-3104-num-313-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0003754",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.005000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:21.823000",
+      "eigenvector_centrality": 1.7125295636570482e-06,
+      "names": [
+        "nicollas van keppel"
+      ],
+      "documents": [
+        "session-3104-num-194-resolution-2",
+        "session-3104-num-313-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004702",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.363000",
+      "connection_count": 5,
+      "centrality_updated_at": "2026-01-01T04:28:21.560000",
+      "eigenvector_centrality": 6.259441347167182e-08,
+      "names": [
+        "henrick vanden heyden schepenen der stede vanden meyden van mechele",
+        "henrick van caerlewyck",
+        "mathous van cotthen, jan cassropin ende henrick pastenalen",
+        "henrick philips ville de malines"
+      ],
+      "documents": [
+        "session-3104-num-121-resolution-1",
+        "session-3104-num-209-resolution-2",
+        "session-3104-num-302-resolution-5",
+        "session-3104-num-314-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004387",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.644000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:22.014000",
+      "eigenvector_centrality": 5.7743574585579996e-08,
+      "names": [
+        "henrick vanden heyden schepenen der stede vanden meyden van mechele"
+      ],
+      "documents": [
+        "session-3104-num-314-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0005011",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.165000",
+      "connection_count": 3,
+      "centrality_updated_at": "2026-01-01T04:28:22.009000",
+      "eigenvector_centrality": 5.7743574585579996e-08,
+      "names": [
+        "henrick vanden heyden schepenen der stede vanden meyden van mechele"
+      ],
+      "documents": [
+        "session-3104-num-314-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0003590",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.836000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.627000",
+      "eigenvector_centrality": 4.834370073839921e-08,
+      "names": [
+        "elias l‛esch et jehan ryck"
+      ],
+      "documents": [
+        "session-3104-num-241-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004516",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.967000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.622000",
+      "eigenvector_centrality": 4.834370073839921e-08,
+      "names": [
+        "elias l‛esch et jehan ryck"
+      ],
+      "documents": [
+        "session-3104-num-241-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0011383",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.256000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.590000",
+      "eigenvector_centrality": 4.708534707732561e-08,
+      "names": [
+        "helias lesch, de sagan et jehan ryck de spiers"
+      ],
+      "documents": [
+        "session-3104-num-161-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0005150",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.499000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.564000",
+      "eigenvector_centrality": 1.673670966325769e-09,
+      "names": [
+        "henrick philips ville de malines"
+      ],
+      "documents": [
+        "session-3104-num-121-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0009340",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.510000",
+      "connection_count": 2,
+      "centrality_updated_at": "2026-01-01T04:28:21.714000",
+      "eigenvector_centrality": 1.673670966325769e-09,
+      "names": [
+        "huy brecht gillemans"
+      ],
+      "documents": [
+        "session-3104-num-121-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0005690",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.147000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.884000",
+      "eigenvector_centrality": 1.0670383569711422e-22,
+      "names": [
+        "heere van villiers",
+        "heere van villers",
+        "sieur de villers"
+      ],
+      "documents": [
+        "session-3104-num-228-resolution-3",
+        "session-3104-num-344-resolution-1",
+        "session-3106-num-29-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004804",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.597000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:22.034000",
+      "eigenvector_centrality": 4.419817590313883e-23,
+      "names": [
+        "jonas"
+      ],
+      "documents": [
+        "session-3104-num-344-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004500",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.904000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.763000",
+      "eigenvector_centrality": 1.2111705063595576e-23,
+      "names": [
+        "graue van egmont",
+        "van egmont",
+        "grave van egmont"
+      ],
+      "documents": [
+        "session-3104-num-160-resolution-1",
+        "session-3104-num-164-resolution-3",
+        "session-3104-num-211-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0008468",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.684000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.927000",
+      "eigenvector_centrality": 1.1311892047759357e-24,
+      "names": [
+        "reu le bossu, barcart",
+        "conte de boussu"
+      ],
+      "documents": [
+        "session-3104-num-250-resolution-2",
+        "session-3104-num-299-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004587",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.108000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.539000",
+      "eigenvector_centrality": 1.1311892047759354e-24,
+      "names": [
+        "gerard gramay",
+        "gerard michiels"
+      ],
+      "documents": [
+        "session-3104-num-214-resolution-3",
+        "session-3104-num-42-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0005271",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.721000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.864000",
+      "eigenvector_centrality": 1.1311892047759354e-24,
+      "names": [
+        "roy de france",
+        "roy de portugal"
+      ],
+      "documents": [
+        "session-3104-num-213-resolution-1",
+        "session-3104-num-238-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0014169",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.658000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.981000",
+      "eigenvector_centrality": 6.991133762584932e-25,
+      "names": [
+        "reu le bossu, barcart"
+      ],
+      "documents": [
+        "session-3104-num-299-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0010789",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.968000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.544000",
+      "eigenvector_centrality": 6.99113376258493e-25,
+      "names": [
+        "gerard michiels"
+      ],
+      "documents": [
+        "session-3104-num-42-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0003854",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.066000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.859000",
+      "eigenvector_centrality": 6.991133762584928e-25,
+      "names": [
+        "roy de portugal"
+      ],
+      "documents": [
+        "session-3104-num-213-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0003809",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.025000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.907000",
+      "eigenvector_centrality": 1.7235016947900117e-26,
+      "names": [
+        "colonnel morgan"
+      ],
+      "documents": [
+        "session-3104-num-238-resolution-3",
+        "session-3104-num-273-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0005241",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.605000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.795000",
+      "eigenvector_centrality": 1.7235016947900117e-26,
+      "names": [
+        "robert hungart",
+        "robert sucquet"
+      ],
+      "documents": [
+        "session-3104-num-184-resolution-2",
+        "session-3104-num-63-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0000617",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.211000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.454000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "dourve talles bode van emden"
+      ],
+      "documents": [
+        "session-3104-num-223-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0003496",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.770000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.787000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "cornelis de vos"
+      ],
+      "documents": [
+        "session-3104-num-180-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0004101",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.193000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:22.004000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "ontfanghere gnal van finantien nicolaes baert"
+      ],
+      "documents": [
+        "session-3104-num-306-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004508",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.946000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.458000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "dourve talles bode van emden"
+      ],
+      "documents": [
+        "session-3104-num-223-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004698",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.339000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.514000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "hans van opberghe et joos helle marchans d'anuers"
+      ],
+      "documents": [
+        "session-3104-num-203-resolution-8"
+      ]
+    },
+    {
+      "person_id": "P0004768",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.419000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.998000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "hubert de sohan"
+      ],
+      "documents": [
+        "session-3104-num-306-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004949",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.856000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.668000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "vng louis"
+      ],
+      "documents": [
+        "session-3104-num-11-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0005442",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.924000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.673000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "commissaires tserratz, longin et swarts"
+      ],
+      "documents": [
+        "session-3104-num-11-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0005615",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.070000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.783000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "cornelis de vos"
+      ],
+      "documents": [
+        "session-3104-num-180-resolution-5"
+      ]
+    },
+    {
+      "person_id": "P0008647",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.916000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.510000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "hans van opberghe et joos helle marchans d'anuers"
+      ],
+      "documents": [
+        "session-3104-num-203-resolution-8"
+      ]
+    },
+    {
+      "person_id": "P0008713",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.014000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.746000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "sieurs de st. aldehoude et meetkercke"
+      ],
+      "documents": [
+        "session-3104-num-141-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0009046",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.436000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.238000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "ge. van aken, de forge ennes van alen, huvert de forge"
+      ],
+      "documents": [
+        "session-3104-num-1-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0009478",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.541000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.914000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "chasteau sjehan van cloot"
+      ],
+      "documents": [
+        "session-3104-num-243-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0009502",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.574000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.911000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "chasteau sjehan van cloot"
+      ],
+      "documents": [
+        "session-3104-num-243-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0012667",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.450000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.251000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "ge. van aken, de forge ennes van alen, huvert de forge"
+      ],
+      "documents": [
+        "session-3104-num-1-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0013549",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.565000",
+      "connection_count": 1,
+      "centrality_updated_at": "2026-01-01T04:28:21.741000",
+      "eigenvector_centrality": 1.2186997357725246e-26,
+      "names": [
+        "fherosmne van hamme"
+      ],
+      "documents": [
+        "session-3104-num-141-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0003367",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.594000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:22.081000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "bartholomeus eystmaecke"
+      ],
+      "documents": [
+        "session-3104-num-74-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0003514",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.793000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.750000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "cuijlenborch"
+      ],
+      "documents": [
+        "session-3104-num-154-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0003572",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.815000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.977000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "sirome ardt butkens, alexandre doublet, et augustin stroebant"
+      ],
+      "documents": [
+        "session-3104-num-297-resolution-8"
+      ]
+    },
+    {
+      "person_id": "P0003716",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:04.985000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.685000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "bummech et hes"
+      ],
+      "documents": [
+        "session-3104-num-118-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0003955",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.108000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.779000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "heere van dort"
+      ],
+      "documents": [
+        "session-3104-num-179-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004227",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.213000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.847000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "bourgmre de breda montens"
+      ],
+      "documents": [
+        "session-3104-num-210-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004456",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:05.752000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.826000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "dom anthonio"
+      ],
+      "documents": [
+        "session-3104-num-198-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004653",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.299000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.830000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "jan van halen en peeter vanen plaest halen van plaest"
+      ],
+      "documents": [
+        "session-3104-num-198-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004697",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.319000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.759000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "hel myn hel de prince van oraengnien"
+      ],
+      "documents": [
+        "session-3104-num-157-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004943",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.836000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:22.094000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "heere conincx loo en baseliers"
+      ],
+      "documents": [
+        "session-3106-num-29-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0004951",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:06.878000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:22.077000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "lucas volberch"
+      ],
+      "documents": [
+        "session-3104-num-74-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0004990",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.009000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.923000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "mathieu van cotthen"
+      ],
+      "documents": [
+        "session-3104-num-249-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0005134",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.455000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:22.090000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "paul van asseliers"
+      ],
+      "documents": [
+        "session-3106-num-25-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0005145",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.477000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.665000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "myaise petit"
+      ],
+      "documents": [
+        "session-3104-num-10-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0005170",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:07.519000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:22.038000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "heeren van poelgeest"
+      ],
+      "documents": [
+        "session-3104-num-345-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0005710",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.223000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.850000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "capn. vriendt liggende in garnisoene tot nynelles"
+      ],
+      "documents": [
+        "session-3104-num-210-resolution-4"
+      ]
+    },
+    {
+      "person_id": "P0005773",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.264000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.811000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "wolff wincker et de bruyser"
+      ],
+      "documents": [
+        "session-3104-num-192-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0008706",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:08.993000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.767000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "martina depute de la prouince de frize"
+      ],
+      "documents": [
+        "session-3104-num-161-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0009551",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.624000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.791000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "t roeland, de corte wille"
+      ],
+      "documents": [
+        "session-3104-num-183-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0009807",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.688000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.754000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "ecoumiet tot deuenter"
+      ],
+      "documents": [
+        "session-3104-num-154-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0009919",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.713000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.985000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "elizabeth van voorden vesne"
+      ],
+      "documents": [
+        "session-3104-num-301-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0010428",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.833000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.854000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "joris de champs"
+      ],
+      "documents": [
+        "session-3104-num-211-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0010711",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:09.884000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.729000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "marck hanegraue"
+      ],
+      "documents": [
+        "session-3104-num-131-resolution-2"
+      ]
+    },
+    {
+      "person_id": "P0010979",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.087000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.919000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "prince van parme"
+      ],
+      "documents": [
+        "session-3104-num-245-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0011494",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.281000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.799000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "thielens"
+      ],
+      "documents": [
+        "session-3104-num-184-resolution-4"
+      ]
+    },
+    {
+      "person_id": "P0011906",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.335000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.717000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "werner van honte"
+      ],
+      "documents": [
+        "session-3104-num-122-resolution-1"
+      ]
+    },
+    {
+      "person_id": "P0012929",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.497000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.872000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "capen. lagan"
+      ],
+      "documents": [
+        "session-3104-num-219-resolution-3"
+      ]
+    },
+    {
+      "person_id": "P0014278",
+      "year": 1580,
+      "analyzed_at": "2026-01-01T04:28:10.684000",
+      "connection_count": 0,
+      "centrality_updated_at": "2026-01-01T04:28:21.947000",
+      "eigenvector_centrality": 8.014753357129024e-31,
+      "names": [
+        "jehan anthony schets"
+      ],
+      "documents": [
+        "session-3104-num-271-resolution-4"
+      ]
+    }
+  ],
+  "year": 1580
+}

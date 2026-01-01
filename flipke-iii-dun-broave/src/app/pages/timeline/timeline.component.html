@@ -1,0 +1,72 @@
+<div class="page-container">
+  <header class="title-bar">
+    <div class="title-content" [class.has-person]="getDisplayedPersonId()" [class.no-person]="!getDisplayedPersonId()">
+      <h1><a href="https://github.com/michelcapelle/flipke-ii-dun-dappere" target="_blank" rel="noopener">Flipke d'n Dappere<span class="external-link-icon">↗</span></a></h1>
+      <p class="subtitle">Historical Governance Analysis • Pre-modern Era (1576-1796)</p>
+    </div>
+    <div class="person-info" *ngIf="getDisplayedPersonId()">
+      <div class="person-names" *ngIf="getHoveredPersonNames().length > 0">
+        <strong><a [href]="getPersonSearchUrl()" target="_blank" rel="noopener" [class.no-wiki]="!hasWikipediaLink()">{{ getPersonDisplayName() }}<span class="external-link-icon">↗</span></a></strong>
+        <span class="aka-names" *ngIf="getHoveredPersonNames().length > 0"><em>, a.k.a.</em><br>
+          <ng-container *ngIf="hasWikipediaLink()">{{ getHoveredPersonNames().join(' • ') }}</ng-container>
+          <ng-container *ngIf="!hasWikipediaLink() && getHoveredPersonNames().length > 1">{{ getHoveredPersonNames().slice(1).join(' • ') }}</ng-container>
+        </span>
+      </div>
+      <div class="person-details">
+        <div class="person-id"><span class="mobile-format">(</span>{{ getDisplayedPersonId() }}<span class="mobile-format">)</span></div>
+        <div class="person-centrality"><a href="https://en.wikipedia.org/wiki/Eigenvector_centrality" target="_blank" rel="noopener">Centrality<span class="external-link-icon">↗</span></a>: {{ getHoveredPersonCentrality() }}</div>
+      </div>
+    </div>
+  </header>
+  
+  <main class="timeline-container">
+    <div class="years-wrapper">
+      <div class="conflict-blocks">
+        <div class="conflict-block" 
+             *ngFor="let block of getConflictBlocks()"
+             [style.left.px]="block.startIndex * 80"
+             [style.width.px]="block.width">
+          <a [href]="block.wiki" target="_blank" rel="noopener">
+            {{ block.name }}<span class="external-link-icon">↗</span>
+          </a>
+        </div>
+      </div>
+      <svg class="connection-lines" [attr.width]="loadedYears.length * 80" [attr.height]="1200">
+        <g *ngFor="let line of getConnectionLines()">
+          <!-- Border path (alleen bij pinned) -->
+          <path *ngIf="isPersonPinned(line.personId)"
+                [attr.d]="getCurvePath(line.x1, line.y1, line.x2, line.y2)"
+                stroke="#E8DFF5"
+                [attr.stroke-width]="9"
+                fill="none" />
+          <!-- Main path -->
+          <path [attr.d]="getCurvePath(line.x1, line.y1, line.x2, line.y2)"
+                [attr.stroke]="line.color"
+                [attr.stroke-width]="2"
+                fill="none" />
+        </g>
+      </svg>
+      <div class="circles-column" *ngFor="let year of loadedYears" [class.has-conflict]="hasConflict(year)">
+        <div class="year-label">
+          <a *ngIf="getConflictWikiUrl(year); else plainYear" [href]="getConflictWikiUrl(year)" target="_blank" rel="noopener" class="year-link">{{ year }}</a>
+          <ng-template #plainYear>{{ year }}</ng-template>
+        </div>
+        <div class="circle" 
+             *ngFor="let person of getTopPersonsForYear(year)"
+             [class.hovered]="isPersonHovered(person.person_id)"
+             [class.pinned]="isPersonPinned(person.person_id)"
+             (mouseenter)="onPersonHover(person.person_id, year)"
+             (mouseleave)="onPersonLeave()"
+             (click)="onPersonClick(person.person_id, year)"
+             [style.width.px]="getCircleSize(person.eigenvector_centrality)"
+             [style.height.px]="getCircleSize(person.eigenvector_centrality)"
+             [style.background-color]="getPersonColor(person.person_id)">
+        </div>
+      </div>
+    </div>
+    
+    <div class="timeline-info" *ngIf="loading">
+      <p>Loading {{ currentYear }}...</p>
+    </div>
+  </main>
+</div>
