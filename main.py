@@ -119,7 +119,7 @@ async def root():
                 margin-right: 10px;
                 margin-bottom: 10px;
                 transition: transform 0.2s;
-                width: 20%;
+                width: 15%;
                 text-align: center;
             }
             .btn:hover {
@@ -186,10 +186,10 @@ async def root():
                 </div>
                 <div class="section">
                     <h2>🚀 Quick Links</h2>
-                    <a href="/docs" target="_blank" class="btn">📖 API Doc (Swagger)</a>
-                    <a href="http://localhost:15672/#/queues/%2F/tasks" target="_blank" class="btn">⏳ Queuing (Rabbit)</a>
-                    <a href="http://localhost:8081/db/flipke_db/" target="_blank" class="btn">📂 Docs (Mongo)</a>
-                    <a href="http://localhost:7474/" target="_blank" class="btn">🔗 Graph (Neo4j)</a>
+                    <a href="/docs" target="_blank" class="btn">📖 API</a>
+                    <a href="http://localhost:15672/#/queues/%2F/tasks" target="_blank" class="btn">⏳ Queues</a>
+                    <a href="http://localhost:8081/db/flipke_db/" target="_blank" class="btn">📂 Docs</a>
+                    <a href="http://localhost:7474/" target="_blank" class="btn">🔗 Graph</a>
                     <a href="http://localhost:4200/" target="_blank" class="btn">📅 Timeline</a>
                 </div>
             </div>
@@ -673,7 +673,6 @@ async def purge_all_queues():
         }
         result = tasks_collection.insert_one(task_doc)
         task_id = str(result.inserted_id)
-        
         connection = pika.BlockingConnection(
             pika.ConnectionParameters(
                 host='localhost',
@@ -682,23 +681,21 @@ async def purge_all_queues():
             )
         )
         channel = connection.channel()
+        channel.queue_declare(queue='maintenance', durable=True, passive=False)
         queue_info = channel.queue_declare(queue='tasks', durable=True, passive=False)
         worker_connected = queue_info.method.consumer_count > 0
-        
         message = {
             "task_id": task_id,
             "task": "purge_queues",
             "timestamp": datetime.now().isoformat()
         }
-        
         channel.basic_publish(
             exchange='',
-            routing_key='tasks',
+            routing_key='maintenance',
             body=json.dumps(message),
             properties=pika.BasicProperties(delivery_mode=2)
         )
         connection.close()
-        
         response = {
             "status": "queued",
             "message": "Queue purge task has been queued successfully",
@@ -708,9 +705,7 @@ async def purge_all_queues():
         }
         if not worker_connected:
             response["warning"] = "No worker is currently connected! Start the worker with: python worker.py"
-        
         return response
-        
     except pika.exceptions.AMQPConnectionError:
         raise HTTPException(
             status_code=503,
@@ -749,6 +744,7 @@ async def delete_all_tasks():
             )
         )
         channel = connection.channel()
+        channel.queue_declare(queue='maintenance', durable=True, passive=False)
         queue_info = channel.queue_declare(queue='tasks', durable=True, passive=False)
         worker_connected = queue_info.method.consumer_count > 0
         message = {
@@ -758,7 +754,7 @@ async def delete_all_tasks():
         }
         channel.basic_publish(
             exchange='',
-            routing_key='tasks',
+            routing_key='maintenance',
             body=json.dumps(message),
             properties=pika.BasicProperties(delivery_mode=2)
         )
@@ -817,6 +813,7 @@ async def clear_graph():
             )
         )
         channel = connection.channel()
+        channel.queue_declare(queue='maintenance', durable=True, passive=False)
         queue_info = channel.queue_declare(queue='tasks', durable=True, passive=False)
         worker_connected = queue_info.method.consumer_count > 0
         message = {
@@ -826,7 +823,7 @@ async def clear_graph():
         }
         channel.basic_publish(
             exchange='',
-            routing_key='tasks',
+            routing_key='maintenance',
             body=json.dumps(message),
             properties=pika.BasicProperties(delivery_mode=2)
         )
@@ -879,6 +876,7 @@ async def delete_all_documents():
             )
         )
         channel = connection.channel()
+        channel.queue_declare(queue='maintenance', durable=True, passive=False)
         queue_info = channel.queue_declare(queue='tasks', durable=True, passive=False)
         worker_connected = queue_info.method.consumer_count > 0
         message = {
@@ -888,7 +886,7 @@ async def delete_all_documents():
         }
         channel.basic_publish(
             exchange='',
-            routing_key='tasks',
+            routing_key='maintenance',
             body=json.dumps(message),
             properties=pika.BasicProperties(delivery_mode=2)
         )
@@ -936,6 +934,7 @@ async def delete_all():
             )
         )
         channel = connection.channel()
+        channel.queue_declare(queue='maintenance', durable=True, passive=False)
         queue_info = channel.queue_declare(queue='tasks', durable=True, passive=False)
         worker_connected = queue_info.method.consumer_count > 0
         queued_tasks = []
@@ -958,7 +957,7 @@ async def delete_all():
             }
             channel.basic_publish(
                 exchange='',
-                routing_key='tasks',
+                routing_key='maintenance',
                 body=json.dumps(message),
                 properties=pika.BasicProperties(delivery_mode=2)
             )
@@ -1437,7 +1436,9 @@ async def download_post_modern_data(doForce: bool = Query(False, description="Fo
         )
 
 @app.post("/eras/pre-modern/pipeline/full", tags=["eras", "pipelines"])
-async def run_pre_modern_full_pipeline():
+async def run_pre_modern_full_pipeline(
+    doForce: bool = Query(False, description="Force pipeline to run for all years even if analysis files exist")
+):
     """
     Execute complete analysis pipeline for all pre-modern years (1576-1796).
     
@@ -1456,11 +1457,33 @@ async def run_pre_modern_full_pipeline():
     
     Note: This endpoint queues the master pipeline task. A worker process will handle
     the sequential execution of year pipelines via the queue system.
+    
+    - **doForce**: If False (default), skip years where data/analysis/{year}.json already exists
     """
     try:
         start_year = 1576
         end_year = 1796
         total_years = end_year - start_year + 1
+        
+        # If doForce is False, check if there are any years that need processing
+        if not doForce:
+            years_to_process = []
+            for year in range(start_year, end_year + 1):
+                analysis_file = Path(f"data/analysis/{year}.json")
+                if not analysis_file.exists():
+                    years_to_process.append(year)
+            
+            if not years_to_process:
+                return {
+                    "status": "skipped",
+                    "message": f"All years ({start_year}-{end_year}) already have analysis files. Use doForce=true to reprocess.",
+                    "start_year": start_year,
+                    "end_year": end_year,
+                    "total_years": total_years,
+                    "years_to_process": 0
+                }
+            
+            logger.info(f"Found {len(years_to_process)} years to process (out of {total_years})")
         
         master_pipeline_doc = {
             "task_type": "pre_modern_full_pipeline",
@@ -1474,7 +1497,8 @@ async def run_pre_modern_full_pipeline():
             "total_years": total_years,
             "completed_years": 0,
             "year_pipelines": {},
-            "message": f"Pipeline initialized. Will process years {start_year}-{end_year} sequentially"
+            "doForce": doForce,
+            "message": f"Pipeline initialized. Will process years {start_year}-{end_year} sequentially{' (forced)' if doForce else ''}"
         }
         result = tasks_collection.insert_one(master_pipeline_doc)
         master_pipeline_id = str(result.inserted_id)
@@ -1494,6 +1518,7 @@ async def run_pre_modern_full_pipeline():
             "start_year": start_year,
             "end_year": end_year,
             "current_year": start_year,
+            "doForce": doForce,
             "timestamp": datetime.now().isoformat()
         }
         
@@ -1507,13 +1532,14 @@ async def run_pre_modern_full_pipeline():
         
         return {
             "status": "queued",
-            "message": f"Pre-modern full pipeline started. Processing years {start_year}-{end_year} sequentially",
+            "message": f"Pre-modern full pipeline started. Processing years {start_year}-{end_year} sequentially{' (forced)' if doForce else ''}",
             "master_pipeline_id": master_pipeline_id,
             "start_year": start_year,
             "end_year": end_year,
             "total_years": total_years,
+            "doForce": doForce,
             "status_endpoint": f"/tasks/{master_pipeline_id}",
-            "note": "Each year will be processed completely before the next begins"
+            "note": "Each year will be processed completely before the next begins" + (" (will skip years with existing analysis files)" if not doForce else " (will force all years)")
         }
     except Exception as e:
         raise HTTPException(
@@ -1574,7 +1600,8 @@ def get_latest_full_pipeline_status():
 
 @app.post("/eras/pre-modern/pipeline/year", tags=["eras", "pipelines"])
 def run_pre_modern_year_pipeline(
-    year: int = Query(..., description="Year to analyze (e.g., 1600)")
+    year: int = Query(..., description="Year to analyze (e.g., 1600)"),
+    doForce: bool = Query(False, description="Force pipeline to run even if analysis file exists")
 ):
     """
     Execute a complete analysis pipeline for a specific year.
@@ -1584,13 +1611,26 @@ def run_pre_modern_year_pipeline(
     2. Parse entities - Parse and import entities for the specified year
     3. Analyze persons - Analyze connections between persons
     4. Calculate centrality - Calculate eigenvector centrality
+    5. Export analysis - Export results to data/analysis/{year}.json
     
     Each step is monitored and the next step only starts when the previous completes successfully.
     Use the returned status_endpoint to monitor the pipeline progress.
     
     - **year**: Year to analyze (e.g., 1600)
+    - **doForce**: If False (default), skip pipeline if data/analysis/{year}.json already exists
     """
     try:
+        # Check if analysis file already exists
+        analysis_file = Path(f"data/analysis/{year}.json")
+        if analysis_file.exists() and not doForce:
+            return {
+                "status": "skipped",
+                "message": f"Analysis for year {year} already exists. Use doForce=true to rerun.",
+                "year": year,
+                "file": str(analysis_file),
+                "note": "Set doForce=true in query parameters to force pipeline execution"
+            }
+        
         pipeline_doc = {
             "task_type": "year_analysis_pipeline",
             "year": year,

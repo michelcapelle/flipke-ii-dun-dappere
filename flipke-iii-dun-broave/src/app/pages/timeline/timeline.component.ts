@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AnalysisService, YearAnalysisResponse } from '../../services/analysis.service';
+import { AnalysisService, PersonAnalysis, YearAnalysisResponse } from '../../services/analysis.service';
 
 @Component({
   selector: 'app-timeline',
@@ -138,7 +138,7 @@ export class TimelineComponent implements OnInit {
   }
 
   getCircleSize(centrality: number | undefined): number {
-    if (centrality === undefined || centrality === null) return 20;
+    if (centrality === undefined || centrality === null) return 0;
     // Schaal van 15px (min) tot 45px (max) gebaseerd op centrality (0-1)
     const minSize = 15;
     const maxSize = 45;
@@ -261,52 +261,46 @@ export class TimelineComponent implements OnInit {
     
     // Detecteer mobiel scherm (check of window beschikbaar is voor SSR)
     const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
-    
+  
     for (let i = 0; i < this.loadedYears.length - 1; i++) {
       const currentYear = this.loadedYears[i];
       const nextYear = this.loadedYears[i + 1];
-      
       const currentPersons = this.getTopPersonsForYear(currentYear);
       const nextPersons = this.getTopPersonsForYear(nextYear);
       
       // Bereken startpositie voor circles:
-      // Desktop: padding-top (10px) + year-label height (~15px) + margin-bottom (45px) = 70px
-      // Mobile: padding-top (10px) + year-label height (~15px) + margin-bottom (10px) = 35px
-      const circlesStartY = isMobile ? 48 : 88;
-      const columnWidth = isMobile ? 60 : 80;
+      // Desktop: padding-top (10px) + year-label (23px with padding) + margin-bottom (45px) + first circle top margin (7px) + half circle height (15px) = 100px
+      // Mobile: padding-top (10px) + year-label (15px) + margin-bottom (30px) + first circle top margin (4px) + half circle height (10px) = 69px
+      // Adjust upward (lower Y value) to better align with actual circle centers
+      const circlesStartY = isMobile ? 63 : 90;
+      const columnWidth = isMobile ? 50 : 80;
+      
+      // Calculate Y position for each person based on actual circle sizes
+      const getCircleCenterY = (persons: PersonAnalysis[], index: number): number => {
+        let yPos = circlesStartY;
+        const topMargin = isMobile ? 4 : 7;
+        const bottomMargin = isMobile ? 4 : 7;
+        
+        for (let i = 0; i < index; i++) {
+          const circleSize = this.getCircleSize(persons[i].eigenvector_centrality);
+          yPos += topMargin + circleSize + bottomMargin;
+        }
+        
+        // Add top margin and half of current circle
+        const currentCircleSize = this.getCircleSize(persons[index].eigenvector_centrality);
+        yPos += topMargin + (currentCircleSize / 2);
+        
+        return yPos;
+      };
       
       currentPersons.forEach((person, personIndex) => {
         const nextYearIndex = nextPersons.findIndex(p => p.person_id === person.person_id);
-        
         if (nextYearIndex !== -1) {
-          // Bereken Y positie voor volgend jaar
-          let nextY = circlesStartY;
-          const nextPersonsSubset = nextPersons.slice(0, nextYearIndex);
+          // Bereken Y positie voor beide jaren op basis van werkelijke cirkel groottes
+          const y1 = getCircleCenterY(currentPersons, personIndex);
+          const y2 = getCircleCenterY(nextPersons, nextYearIndex);
           
-          // Tel alle voorgaande cirkels op voor nextY
-          for (let j = 0; j < nextYearIndex; j++) {
-            const circleSizeNext = this.getCircleSize(nextPersonsSubset[j].eigenvector_centrality);
-            const circleMargin = isMobile ? 5 : 7;
-            nextY += circleMargin + circleSizeNext + circleMargin;
-          }
-          
-          // Add center offset voor de target cirkel
-          const nextCircleSize = this.getCircleSize(nextPersons[nextYearIndex].eigenvector_centrality);
-          const circleMargin = isMobile ? 5 : 7;
-          nextY += circleMargin + (nextCircleSize / 2);
-          
-          // Bereken currentY inclusief center offset
-          const currentCircleSize = this.getCircleSize(person.eigenvector_centrality);
-          const currentPersonsSubset = currentPersons.slice(0, personIndex);
-          let yForThisPerson = circlesStartY;
-          
-          for (let j = 0; j < personIndex; j++) {
-            const circleSizeCurrent = this.getCircleSize(currentPersonsSubset[j].eigenvector_centrality);
-            const circleMargin = isMobile ? 5 : 7;
-            yForThisPerson += circleMargin + circleSizeCurrent + circleMargin;
-          }
-          yForThisPerson += circleMargin + (currentCircleSize / 2);
-          
+          const xOffset = isMobile ? 0 : 0;
           lines.push({
             fromYear: i,
             fromIndex: personIndex,
@@ -314,15 +308,14 @@ export class TimelineComponent implements OnInit {
             toIndex: nextYearIndex,
             color: this.getPersonColor(person.person_id),
             personId: person.person_id,
-            y1: yForThisPerson,
-            y2: nextY,
-            x1: (i * columnWidth) + (columnWidth / 2),
-            x2: ((i + 1) * columnWidth) + (columnWidth / 2)
+            y1: y1,
+            y2: y2,
+            x1: (i * columnWidth) + (columnWidth / 2) + xOffset,
+            x2: ((i + 1) * columnWidth) + (columnWidth / 2) + xOffset
           });
         }
       });
     }
-    
     return lines;
   }
 

@@ -1,17 +1,14 @@
 {
   "hosting": {
-    "public": "dist/flipke-iii-dun-broave/browser",
+    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "frameworksBackend": {
+      "region": "europe-west1"
+    }
   },
   "emulators": {
     "dataconnect": {

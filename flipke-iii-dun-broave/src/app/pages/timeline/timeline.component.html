@@ -7,6 +7,7 @@
     <div class="person-info" *ngIf="getDisplayedPersonId()">
       <div class="person-names" *ngIf="getHoveredPersonNames().length > 0">
         <strong><a [href]="getPersonSearchUrl()" target="_blank" rel="noopener" [class.no-wiki]="!hasWikipediaLink()">{{ getPersonDisplayName() }}<span class="external-link-icon">↗</span></a></strong>
+        <span class="centrality-mobile"><a href="https://en.wikipedia.org/wiki/Eigenvector_centrality" target="_blank" rel="noopener">{{ getHoveredPersonCentrality() }}<span class="external-link-icon">↗</span></a></span>
         <span class="aka-names" *ngIf="getHoveredPersonNames().length > 0"><em>, a.k.a.</em><br>
           <ng-container *ngIf="hasWikipediaLink()">{{ getHoveredPersonNames().join(' • ') }}</ng-container>
           <ng-container *ngIf="!hasWikipediaLink() && getHoveredPersonNames().length > 1">{{ getHoveredPersonNames().slice(1).join(' • ') }}</ng-container>
@@ -31,13 +32,13 @@
           </a>
         </div>
       </div>
-      <svg class="connection-lines" [attr.width]="loadedYears.length * 80" [attr.height]="1200">
+      <svg class="connection-lines" [attr.width]="loadedYears.length * 80" [attr.height]="800">
         <g *ngFor="let line of getConnectionLines()">
-          <!-- Border path (alleen bij pinned) -->
-          <path *ngIf="isPersonPinned(line.personId)"
+          <!-- Border path (bij hover of pinned) -->
+          <path *ngIf="isPersonHovered(line.personId) || isPersonPinned(line.personId)"
                 [attr.d]="getCurvePath(line.x1, line.y1, line.x2, line.y2)"
                 stroke="#E8DFF5"
-                [attr.stroke-width]="9"
+                [attr.stroke-width]="isPersonPinned(line.personId) ? 9 : 7"
                 fill="none" />
           <!-- Main path -->
           <path [attr.d]="getCurvePath(line.x1, line.y1, line.x2, line.y2)"

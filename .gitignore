@@ -1,3 +1,5 @@
 __pycache__/*
 data/*
 flipke-iii-dun-broave/src/environments/environment.ts
+flipke-iii-dun-broave/.firebase/*
+flipke-iii-dun-broave/firebase-debug.log

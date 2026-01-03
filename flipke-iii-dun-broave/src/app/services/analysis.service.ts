@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Observable, of } from 'rxjs';
+import { map, tap } from 'rxjs/operators';
 
 export interface PersonAnalysis {
   person_id: string;
@@ -27,6 +27,8 @@ export interface YearAnalysisResponse {
   providedIn: 'root'
 })
 export class AnalysisService {
+  private yearCache: Map<number, YearAnalysisResponse> = new Map();
+  private wikipediaCache: { [key: string]: string } | null = null;
 
   constructor(private http: HttpClient) { }
 
@@ -36,6 +38,11 @@ export class AnalysisService {
    * @returns Observable with the year's analysis data (sorted by centrality, top 10)
    */
   getYearAnalysis(year: number): Observable<YearAnalysisResponse> {
+    // Check cache first
+    if (this.yearCache.has(year)) {
+      return of(this.yearCache.get(year)!);
+    }
+
     return this.http.get<YearAnalysisResponse>(`/analysis/${year}.json`).pipe(
       map(response => {
         // Sort persons by eigenvector_centrality (high to low) and take top 10
@@ -45,11 +52,25 @@ export class AnalysisService {
             .slice(0, 10);
         }
         return response;
+      }),
+      tap(response => {
+        // Store in cache
+        this.yearCache.set(year, response);
       })
     );
   }
 
   getWikipediaMapping(): Observable<{ [key: string]: string }> {
-    return this.http.get<{ [key: string]: string }>('/wikipedia.json');
+    // Check cache first
+    if (this.wikipediaCache) {
+      return of(this.wikipediaCache);
+    }
+
+    return this.http.get<{ [key: string]: string }>('/wikipedia.json').pipe(
+      tap(mapping => {
+        // Store in cache
+        this.wikipediaCache = mapping;
+      })
+    );
   }
 }

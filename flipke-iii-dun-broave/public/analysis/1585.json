@@ -8,9 +8,9 @@
     {
       "person_id": "P0004285",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.672000",
+      "analyzed_at": "2026-01-03T18:14:14.649000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.724000",
+      "centrality_updated_at": "2026-01-03T18:14:21.575000",
       "eigenvector_centrality": 0.4980326172572861,
       "names": [
         "charles de beaulieu"
@@ -34,9 +34,9 @@
     {
       "person_id": "P0006116",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.337000",
+      "analyzed_at": "2026-01-03T18:14:16.727000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.720000",
+      "centrality_updated_at": "2026-01-03T18:14:21.538000",
       "eigenvector_centrality": 0.4980326172572861,
       "names": [
         "charles de beaulieu"
@@ -60,9 +60,9 @@
     {
       "person_id": "P0003319",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.665000",
+      "analyzed_at": "2026-01-03T18:14:13.544000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.913000",
+      "centrality_updated_at": "2026-01-03T18:14:23.120000",
       "eigenvector_centrality": 0.044914051687478945,
       "names": [
         "heere van almonde"
@@ -77,9 +77,9 @@
     {
       "person_id": "P0005550",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.089000",
+      "analyzed_at": "2026-01-03T18:14:16.456000",
       "connection_count": 6,
-      "centrality_updated_at": "2026-01-01T04:41:25.996000",
+      "centrality_updated_at": "2026-01-03T18:14:23.820000",
       "eigenvector_centrality": 0.04330762985865941,
       "names": [
         "heere vander aa",
@@ -94,9 +94,9 @@
     {
       "person_id": "P0003829",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.306000",
+      "analyzed_at": "2026-01-03T18:14:14.243000",
       "connection_count": 6,
-      "centrality_updated_at": "2026-01-01T04:41:25.580000",
+      "centrality_updated_at": "2026-01-03T18:14:20.348000",
       "eigenvector_centrality": 0.0024919937004842835,
       "names": [
         "ouersten norits",
@@ -121,9 +121,9 @@
     {
       "person_id": "P0005023",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.529000",
+      "analyzed_at": "2026-01-03T18:14:15.828000",
       "connection_count": 12,
-      "centrality_updated_at": "2026-01-01T04:41:25.659000",
+      "centrality_updated_at": "2026-01-03T18:14:20.975000",
       "eigenvector_centrality": 0.002433633076263797,
       "names": [
         "graeff van moeurs",
@@ -161,9 +161,9 @@
     {
       "person_id": "P0005315",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.843000",
+      "analyzed_at": "2026-01-03T18:14:16.190000",
       "connection_count": 6,
-      "centrality_updated_at": "2026-01-01T04:41:25.587000",
+      "centrality_updated_at": "2026-01-03T18:14:20.385000",
       "eigenvector_centrality": 0.0022968410112521606,
       "names": [
         "ouersten schenck"
@@ -185,9 +185,9 @@
     {
       "person_id": "P0008867",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.052000",
+      "analyzed_at": "2026-01-03T18:14:17.481000",
       "connection_count": 6,
-      "centrality_updated_at": "2026-01-01T04:41:25.628000",
+      "centrality_updated_at": "2026-01-03T18:14:20.682000",
       "eigenvector_centrality": 0.0021960085346632557,
       "names": [
         "heere valcke",
@@ -203,9 +203,9 @@
     {
       "person_id": "P0005649",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.272000",
+      "analyzed_at": "2026-01-03T18:14:16.656000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.623000",
+      "centrality_updated_at": "2026-01-03T18:14:20.644000",
       "eigenvector_centrality": 0.001882145520016419,
       "names": [
         "heeren valcke, ende aysma, president van vrieslant gedeputeerde gecommen vuyt engelant metten"
@@ -217,9 +217,9 @@
     {
       "person_id": "P0012606",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.646000",
+      "analyzed_at": "2026-01-03T18:14:18.084000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.618000",
+      "centrality_updated_at": "2026-01-03T18:14:20.607000",
       "eigenvector_centrality": 0.001882145520016419,
       "names": [
         "heeren valcke, ende aysma, president van vrieslant gedeputeerde gecommen vuyt engelant metten"
@@ -231,9 +231,9 @@
     {
       "person_id": "P0004530",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.913000",
+      "analyzed_at": "2026-01-03T18:14:14.985000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:26",
+      "centrality_updated_at": "2026-01-03T18:14:23.857000",
       "eigenvector_centrality": 0.0017201193132828875,
       "names": [
         "heere van famars"
@@ -245,9 +245,9 @@
     {
       "person_id": "P0005577",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.175000",
+      "analyzed_at": "2026-01-03T18:14:16.546000",
       "connection_count": 12,
-      "centrality_updated_at": "2026-01-01T04:41:25.609000",
+      "centrality_updated_at": "2026-01-03T18:14:20.534000",
       "eigenvector_centrality": 0.0010222568438507198,
       "names": [
         "graue van hoenloo",
@@ -281,9 +281,9 @@
     {
       "person_id": "P0004629",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.032000",
+      "analyzed_at": "2026-01-03T18:14:15.188000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.603000",
+      "centrality_updated_at": "2026-01-03T18:14:20.497000",
       "eigenvector_centrality": 0.00048798531911782865,
       "names": [
         "grauen van moeurs",
@@ -301,9 +301,9 @@
     {
       "person_id": "P0004878",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.313000",
+      "analyzed_at": "2026-01-03T18:14:15.561000",
       "connection_count": 11,
-      "centrality_updated_at": "2026-01-01T04:41:25.715000",
+      "centrality_updated_at": "2026-01-03T18:14:21.499000",
       "eigenvector_centrality": 0.00042397440042744574,
       "names": [
         "voers secretaris langen",
@@ -323,9 +323,9 @@
     {
       "person_id": "P0003561",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.989000",
+      "analyzed_at": "2026-01-03T18:14:13.921000",
       "connection_count": 7,
-      "centrality_updated_at": "2026-01-01T04:41:25.477000",
+      "centrality_updated_at": "2026-01-03T18:14:19.521000",
       "eigenvector_centrality": 0.0002948685281904741,
       "names": [
         "zyne g. die graue van moeurs",
@@ -342,9 +342,9 @@
     {
       "person_id": "P0009336",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.146000",
+      "analyzed_at": "2026-01-03T18:14:17.588000",
       "connection_count": 11,
-      "centrality_updated_at": "2026-01-01T04:41:25.446000",
+      "centrality_updated_at": "2026-01-03T18:14:19.284000",
       "eigenvector_centrality": 0.0002656050603406054,
       "names": [
         "heeren brassart alostanus, ende itterzum",
@@ -371,9 +371,9 @@
     {
       "person_id": "P0003349",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.718000",
+      "analyzed_at": "2026-01-03T18:14:13.603000",
       "connection_count": 7,
-      "centrality_updated_at": "2026-01-01T04:41:25.436000",
+      "centrality_updated_at": "2026-01-03T18:14:19.210000",
       "eigenvector_centrality": 0.0002574629261866806,
       "names": [
         "heere van asperen",
@@ -388,9 +388,9 @@
     {
       "person_id": "P0003514",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.935000",
+      "analyzed_at": "2026-01-03T18:14:13.857000",
       "connection_count": 5,
-      "centrality_updated_at": "2026-01-01T04:41:25.651000",
+      "centrality_updated_at": "2026-01-03T18:14:20.869000",
       "eigenvector_centrality": 0.00024314125899396288,
       "names": [
         "graue van culenborch"
@@ -404,9 +404,9 @@
     {
       "person_id": "P0003744",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.204000",
+      "analyzed_at": "2026-01-03T18:14:14.148000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.797000",
+      "centrality_updated_at": "2026-01-03T18:14:22.181000",
       "eigenvector_centrality": 0.00019515268923212274,
       "names": [
         "heeren president vander nylen, ende martenes"
@@ -418,9 +418,9 @@
     {
       "person_id": "P0006127",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.394000",
+      "analyzed_at": "2026-01-03T18:14:16.792000",
       "connection_count": 6,
-      "centrality_updated_at": "2026-01-01T04:41:25.513000",
+      "centrality_updated_at": "2026-01-03T18:14:19.778000",
       "eigenvector_centrality": 0.00018358976037692365,
       "names": [
         "heere heermale",
@@ -437,9 +437,9 @@
     {
       "person_id": "P0012627",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.671000",
+      "analyzed_at": "2026-01-03T18:14:18.106000",
       "connection_count": 6,
-      "centrality_updated_at": "2026-01-01T04:41:25.669000",
+      "centrality_updated_at": "2026-01-03T18:14:21.049000",
       "eigenvector_centrality": 0.00017248567914812137,
       "names": [
         "heeren vosbergen",
@@ -463,9 +463,9 @@
     {
       "person_id": "P0004062",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.505000",
+      "analyzed_at": "2026-01-03T18:14:14.444000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.880000",
+      "centrality_updated_at": "2026-01-03T18:14:22.852000",
       "eigenvector_centrality": 0.00011906305263792041,
       "names": [
         "aerssens",
@@ -482,9 +482,9 @@
     {
       "person_id": "P0004778",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.189000",
+      "analyzed_at": "2026-01-03T18:14:15.390000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.684000",
+      "centrality_updated_at": "2026-01-03T18:14:21.162000",
       "eigenvector_centrality": 0.00011766557467018396,
       "names": [
         "dierick huygen"
@@ -499,9 +499,9 @@
     {
       "person_id": "P0004061",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.481000",
+      "analyzed_at": "2026-01-03T18:14:14.419000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.678000",
+      "centrality_updated_at": "2026-01-03T18:14:21.125000",
       "eigenvector_centrality": 0.0001038564813957113,
       "names": [
         "jan van aernhem"
@@ -513,9 +513,9 @@
     {
       "person_id": "P0003644",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.075000",
+      "analyzed_at": "2026-01-03T18:14:14.019000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.646000",
+      "centrality_updated_at": "2026-01-03T18:14:20.827000",
       "eigenvector_centrality": 9.087959273960522e-05,
       "names": [
         "gillis woltwinckel",
@@ -529,9 +529,9 @@
     {
       "person_id": "P0008715",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.727000",
+      "analyzed_at": "2026-01-03T18:14:17.154000",
       "connection_count": 10,
-      "centrality_updated_at": "2026-01-01T04:41:25.424000",
+      "centrality_updated_at": "2026-01-03T18:14:19.121000",
       "eigenvector_centrality": 8.599410973456507e-05,
       "names": [
         "heere menin",
@@ -551,9 +551,9 @@
     {
       "person_id": "P0008739",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.807000",
+      "analyzed_at": "2026-01-03T18:14:17.242000",
       "connection_count": 6,
-      "centrality_updated_at": "2026-01-01T04:41:25.451000",
+      "centrality_updated_at": "2026-01-03T18:14:19.320000",
       "eigenvector_centrality": 5.813906571864801e-05,
       "names": [
         "heere vander mylen",
@@ -573,9 +573,9 @@
     {
       "person_id": "P0003384",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.751000",
+      "analyzed_at": "2026-01-03T18:14:13.643000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.952000",
+      "centrality_updated_at": "2026-01-03T18:14:23.454000",
       "eigenvector_centrality": 5.322992373031853e-05,
       "names": [
         "arnt berck"
@@ -587,9 +587,9 @@
     {
       "person_id": "P0008585",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.624000",
+      "analyzed_at": "2026-01-03T18:14:17.036000",
       "connection_count": 4,
-      "centrality_updated_at": "2026-01-01T04:41:25.756000",
+      "centrality_updated_at": "2026-01-03T18:14:21.838000",
       "eigenvector_centrality": 4.910385543389844e-05,
       "names": [
         "heeren alostanus foeck, ende dscherff",
@@ -605,9 +605,9 @@
     {
       "person_id": "P0004231",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.616000",
+      "analyzed_at": "2026-01-03T18:14:14.565000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.613000",
+      "centrality_updated_at": "2026-01-03T18:14:20.571000",
       "eigenvector_centrality": 4.869965629382819e-05,
       "names": [
         "brieuen byden graue van hoenloo"
@@ -619,9 +619,9 @@
     {
       "person_id": "P0009399",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.215000",
+      "analyzed_at": "2026-01-03T18:14:17.653000",
       "connection_count": 7,
-      "centrality_updated_at": "2026-01-01T04:41:25.457000",
+      "centrality_updated_at": "2026-01-03T18:14:19.363000",
       "eigenvector_centrality": 4.7752088846642127e-05,
       "names": [
         "heeren vander mylen ende borchgraue, gecommitteert vanden raede van state aen doostzyde der maeze",
@@ -637,9 +637,9 @@
     {
       "person_id": "P0005601",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.239000",
+      "analyzed_at": "2026-01-03T18:14:16.620000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.827000",
+      "centrality_updated_at": "2026-01-03T18:14:22.397000",
       "eigenvector_centrality": 4.6924620382184074e-05,
       "names": [
         "heeren van marquette",
@@ -655,9 +655,9 @@
     {
       "person_id": "P0003652",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.108000",
+      "analyzed_at": "2026-01-03T18:14:14.052000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.939000",
+      "centrality_updated_at": "2026-01-03T18:14:23.336000",
       "eigenvector_centrality": 4.322526390741452e-05,
       "names": [
         "vander goes"
@@ -669,9 +669,9 @@
     {
       "person_id": "P0005249",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.771000",
+      "analyzed_at": "2026-01-03T18:14:16.120000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.693000",
+      "centrality_updated_at": "2026-01-03T18:14:21.247000",
       "eigenvector_centrality": 4.297799593730574e-05,
       "names": [
         "roelsius"
@@ -684,9 +684,9 @@
     {
       "person_id": "P0004650",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.084000",
+      "analyzed_at": "2026-01-03T18:14:15.254000",
       "connection_count": 4,
-      "centrality_updated_at": "2026-01-01T04:41:25.482000",
+      "centrality_updated_at": "2026-01-03T18:14:19.557000",
       "eigenvector_centrality": 2.822120194360596e-05,
       "names": [
         "heeren brassart borchgraue die borgemr van haerlem"
@@ -698,9 +698,9 @@
     {
       "person_id": "P0004993",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.473000",
+      "analyzed_at": "2026-01-03T18:14:15.761000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.733000",
+      "centrality_updated_at": "2026-01-03T18:14:21.649000",
       "eigenvector_centrality": 2.773212160519361e-05,
       "names": [
         "graeff maurits",
@@ -718,9 +718,9 @@
     {
       "person_id": "P0003423",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.796000",
+      "analyzed_at": "2026-01-03T18:14:13.694000",
       "connection_count": 6,
-      "centrality_updated_at": "2026-01-01T04:41:25.702000",
+      "centrality_updated_at": "2026-01-03T18:14:21.338000",
       "eigenvector_centrality": 2.383660486451945e-05,
       "names": [
         "dierick brasser",
@@ -738,9 +738,9 @@
     {
       "person_id": "P0004702",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.108000",
+      "analyzed_at": "2026-01-03T18:14:15.285000",
       "connection_count": 5,
-      "centrality_updated_at": "2026-01-01T04:41:25.903000",
+      "centrality_updated_at": "2026-01-03T18:14:23.047000",
       "eigenvector_centrality": 2.3752248982250618e-05,
       "names": [
         "henrick landonck",
@@ -755,9 +755,9 @@
     {
       "person_id": "P0003420",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.773000",
+      "analyzed_at": "2026-01-03T18:14:13.668000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.441000",
+      "centrality_updated_at": "2026-01-03T18:14:19.246000",
       "eigenvector_centrality": 2.3670638595427825e-05,
       "names": [
         "heeren vander mylen, asperen brakel, ende brassart"
@@ -769,9 +769,9 @@
     {
       "person_id": "P0004000",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.435000",
+      "analyzed_at": "2026-01-03T18:14:14.370000",
       "connection_count": 5,
-      "centrality_updated_at": "2026-01-01T04:41:25.899000",
+      "centrality_updated_at": "2026-01-03T18:14:23.003000",
       "eigenvector_centrality": 2.282228579189155e-05,
       "names": [
         "henrick vande veken"
@@ -784,9 +784,9 @@
     {
       "person_id": "P0003681",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.131000",
+      "analyzed_at": "2026-01-03T18:14:14.075000",
       "connection_count": 5,
-      "centrality_updated_at": "2026-01-01T04:41:25.502000",
+      "centrality_updated_at": "2026-01-03T18:14:19.704000",
       "eigenvector_centrality": 2.0998772988244835e-05,
       "names": [
         "rutger van haersolte"
@@ -798,9 +798,9 @@
     {
       "person_id": "P0005277",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.817000",
+      "analyzed_at": "2026-01-03T18:14:16.167000",
       "connection_count": 5,
-      "centrality_updated_at": "2026-01-01T04:41:25.497000",
+      "centrality_updated_at": "2026-01-03T18:14:19.667000",
       "eigenvector_centrality": 2.0998772988244835e-05,
       "names": [
         "rutger van haersolte"
@@ -812,9 +812,9 @@
     {
       "person_id": "P0005404",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.894000",
+      "analyzed_at": "2026-01-03T18:14:16.237000",
       "connection_count": 13,
-      "centrality_updated_at": "2026-01-01T04:41:25.555000",
+      "centrality_updated_at": "2026-01-03T18:14:20.153000",
       "eigenvector_centrality": 1.6991589258085164e-05,
       "names": [
         "mr. floris thin aduocaet vande staten van vuytrecht",
@@ -834,9 +834,9 @@
     {
       "person_id": "P0010807",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.474000",
+      "analyzed_at": "2026-01-03T18:14:17.914000",
       "connection_count": 6,
-      "centrality_updated_at": "2026-01-01T04:41:25.526000",
+      "centrality_updated_at": "2026-01-03T18:14:19.862000",
       "eigenvector_centrality": 1.6282651578652918e-05,
       "names": [
         "daniel vander moelen",
@@ -858,9 +858,9 @@
     {
       "person_id": "P0003899",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.363000",
+      "analyzed_at": "2026-01-03T18:14:14.302000",
       "connection_count": 6,
-      "centrality_updated_at": "2026-01-01T04:41:25.540000",
+      "centrality_updated_at": "2026-01-03T18:14:20.043000",
       "eigenvector_centrality": 1.385731965921382e-05,
       "names": [
         "heere sille",
@@ -877,9 +877,9 @@
     {
       "person_id": "P0004524",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.868000",
+      "analyzed_at": "2026-01-03T18:14:14.905000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:26.048000",
+      "centrality_updated_at": "2026-01-03T18:14:24.308000",
       "eigenvector_centrality": 1.0811069233734663e-05,
       "names": [
         "johan euerts convoymr tot venloo"
@@ -891,9 +891,9 @@
     {
       "person_id": "P0004744",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.143000",
+      "analyzed_at": "2026-01-03T18:14:15.336000",
       "connection_count": 6,
-      "centrality_updated_at": "2026-01-01T04:41:25.545000",
+      "centrality_updated_at": "2026-01-03T18:14:20.081000",
       "eigenvector_centrality": 1.0748284115289493e-05,
       "names": [
         "heeren van hollant",
@@ -910,9 +910,9 @@
     {
       "person_id": "P0008631",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.656000",
+      "analyzed_at": "2026-01-03T18:14:17.071000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.859000",
+      "centrality_updated_at": "2026-01-03T18:14:22.671000",
       "eigenvector_centrality": 9.909211933348942e-06,
       "names": [
         "vryheeren van hoochsaxen"
@@ -924,9 +924,9 @@
     {
       "person_id": "P0004114",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.561000",
+      "analyzed_at": "2026-01-03T18:14:14.507000",
       "connection_count": 5,
-      "centrality_updated_at": "2026-01-01T04:41:25.419000",
+      "centrality_updated_at": "2026-01-03T18:14:19.084000",
       "eigenvector_centrality": 9.877219721316349e-06,
       "names": [
         "heeren bernevelt ende berckennode",
@@ -944,9 +944,9 @@
     {
       "person_id": "P0010986",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.530000",
+      "analyzed_at": "2026-01-03T18:14:17.972000",
       "connection_count": 4,
-      "centrality_updated_at": "2026-01-01T04:41:25.549000",
+      "centrality_updated_at": "2026-01-03T18:14:20.118000",
       "eigenvector_centrality": 9.08537205479664e-06,
       "names": [
         "jan pauli",
@@ -960,9 +960,9 @@
     {
       "person_id": "P0009789",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.308000",
+      "analyzed_at": "2026-01-03T18:14:17.749000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.521000",
+      "centrality_updated_at": "2026-01-03T18:14:19.822000",
       "eigenvector_centrality": 8.86890037589434e-06,
       "names": [
         "heere van delen",
@@ -980,9 +980,9 @@
     {
       "person_id": "P0008439",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.489000",
+      "analyzed_at": "2026-01-03T18:14:16.883000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.507000",
+      "centrality_updated_at": "2026-01-03T18:14:19.741000",
       "eigenvector_centrality": 7.81627121754156e-06,
       "names": [
         "heeren delen vander beken heermale, ende marotelle"
@@ -994,9 +994,9 @@
     {
       "person_id": "P0003860",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.339000",
+      "analyzed_at": "2026-01-03T18:14:14.278000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.774000",
+      "centrality_updated_at": "2026-01-03T18:14:21.989000",
       "eigenvector_centrality": 5.0730754288390395e-06,
       "names": [
         "agent ramet"
@@ -1009,9 +1009,9 @@
     {
       "person_id": "P0010742",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.448000",
+      "analyzed_at": "2026-01-03T18:14:17.891000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.570000",
+      "centrality_updated_at": "2026-01-03T18:14:20.274000",
       "eigenvector_centrality": 5.001521117122268e-06,
       "names": [
         "heeren vander mylen ende borchgraue, gecommitteert vanden raede van state aen doostzyde der maeze"
@@ -1023,9 +1023,9 @@
     {
       "person_id": "P0003482",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.913000",
+      "analyzed_at": "2026-01-03T18:14:13.822000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.404000",
+      "centrality_updated_at": "2026-01-03T18:14:19.008000",
       "eigenvector_centrality": 4.046527472443409e-06,
       "names": [
         "heere menin, barnevelt cooman ende baerse"
@@ -1037,9 +1037,9 @@
     {
       "person_id": "P0012713",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.717000",
+      "analyzed_at": "2026-01-03T18:14:18.149000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.411000",
+      "centrality_updated_at": "2026-01-03T18:14:19.047000",
       "eigenvector_centrality": 4.046527472443409e-06,
       "names": [
         "heere menin, barnevelt cooman ende baerse"
@@ -1051,9 +1051,9 @@
     {
       "person_id": "P0008717",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.784000",
+      "analyzed_at": "2026-01-03T18:14:17.218000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.575000",
+      "centrality_updated_at": "2026-01-03T18:14:20.311000",
       "eigenvector_centrality": 4.04474233008415e-06,
       "names": [
         "heeren menin vander meren, ende sille"
@@ -1065,9 +1065,9 @@
     {
       "person_id": "P0005551",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.120000",
+      "analyzed_at": "2026-01-03T18:14:16.491000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.761000",
+      "centrality_updated_at": "2026-01-03T18:14:21.876000",
       "eigenvector_centrality": 2.2546575271590766e-06,
       "names": [
         "ontfanger mr. dierick vander does",
@@ -1085,9 +1085,9 @@
     {
       "person_id": "P0003808",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.258000",
+      "analyzed_at": "2026-01-03T18:14:14.196000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.779000",
+      "centrality_updated_at": "2026-01-03T18:14:22.024000",
       "eigenvector_centrality": 1.981626368484519e-06,
       "names": [
         "heeren moerckercke ende roolda"
@@ -1099,9 +1099,9 @@
     {
       "person_id": "P0005532",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.068000",
+      "analyzed_at": "2026-01-03T18:14:16.431000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.593000",
+      "centrality_updated_at": "2026-01-03T18:14:20.422000",
       "eigenvector_centrality": 1.3546561527126223e-06,
       "names": [
         "heere vander moelen, gedeputeerde vande staten van brabant"
@@ -1113,9 +1113,9 @@
     {
       "person_id": "P0000835",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.643000",
+      "analyzed_at": "2026-01-03T18:14:13.513000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.642000",
+      "centrality_updated_at": "2026-01-03T18:14:20.791000",
       "eigenvector_centrality": 1.177345297023801e-06,
       "names": [
         "doctor flrans gecommitteert vande staten van hollant"
@@ -1127,9 +1127,9 @@
     {
       "person_id": "P0004464",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.845000",
+      "analyzed_at": "2026-01-03T18:14:14.880000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.637000",
+      "centrality_updated_at": "2026-01-03T18:14:20.755000",
       "eigenvector_centrality": 1.177345297023801e-06,
       "names": [
         "heeren van gloetingen pensionaris van dordrecht"
@@ -1141,9 +1141,9 @@
     {
       "person_id": "P0005069",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.625000",
+      "analyzed_at": "2026-01-03T18:14:15.948000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.729000",
+      "centrality_updated_at": "2026-01-03T18:14:21.612000",
       "eigenvector_centrality": 1.1297904214620218e-06,
       "names": [
         "heeren raedtsheer nieuborch ende bruninck"
@@ -1155,9 +1155,9 @@
     {
       "person_id": "P0004456",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.822000",
+      "analyzed_at": "2026-01-03T18:14:14.843000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:26.067000",
+      "centrality_updated_at": "2026-01-03T18:14:24.472000",
       "eigenvector_centrality": 9.71298800573397e-07,
       "names": [
         "dom anthonio"
@@ -1169,9 +1169,9 @@
     {
       "person_id": "P0005170",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.714000",
+      "analyzed_at": "2026-01-03T18:14:16.060000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.971000",
+      "centrality_updated_at": "2026-01-03T18:14:23.597000",
       "eigenvector_centrality": 8.632318671581686e-07,
       "names": [
         "poelgeest",
@@ -1188,9 +1188,9 @@
     {
       "person_id": "P0004542",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.937000",
+      "analyzed_at": "2026-01-03T18:14:15.025000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.943000",
+      "centrality_updated_at": "2026-01-03T18:14:23.374000",
       "eigenvector_centrality": 7.577833705823818e-07,
       "names": [
         "mr. floris thin aduocaet vande staten van vuytrecht",
@@ -1204,9 +1204,9 @@
     {
       "person_id": "P0004793",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.234000",
+      "analyzed_at": "2026-01-03T18:14:15.449000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.536000",
+      "centrality_updated_at": "2026-01-03T18:14:19.991000",
       "eigenvector_centrality": 7.203923072169458e-07,
       "names": [
         "jacques vanckart",
@@ -1220,9 +1220,9 @@
     {
       "person_id": "P0003712",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.154000",
+      "analyzed_at": "2026-01-03T18:14:14.099000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.531000",
+      "centrality_updated_at": "2026-01-03T18:14:19.923000",
       "eigenvector_centrality": 6.922087764834267e-07,
       "names": [
         "heeren camel vander moelen, jacques lhermite ende bonauentmra"
@@ -1234,9 +1234,9 @@
     {
       "person_id": "P0008856",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.027000",
+      "analyzed_at": "2026-01-03T18:14:17.457000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.711000",
+      "centrality_updated_at": "2026-01-03T18:14:21.459000",
       "eigenvector_centrality": 6.628776191578724e-07,
       "names": [
         "thomas thomassen"
@@ -1248,9 +1248,9 @@
     {
       "person_id": "P0003454",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.855000",
+      "analyzed_at": "2026-01-03T18:14:13.752000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.431000",
+      "centrality_updated_at": "2026-01-03T18:14:19.162000",
       "eigenvector_centrality": 4.197725151031327e-07,
       "names": [
         "heeren cant borghemr van amsterdam ende joncker jan van duuenvoerde domdeken van utrecht.",
@@ -1264,9 +1264,9 @@
     {
       "person_id": "P0003731",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.178000",
+      "analyzed_at": "2026-01-03T18:14:14.125000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.655000",
+      "centrality_updated_at": "2026-01-03T18:14:20.925000",
       "eigenvector_centrality": 3.6025246264336906e-07,
       "names": [
         "heeren gedeputh vander horst, ende delen"
@@ -1278,9 +1278,9 @@
     {
       "person_id": "P0008931",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.110000",
+      "analyzed_at": "2026-01-03T18:14:17.550000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.664000",
+      "centrality_updated_at": "2026-01-03T18:14:21.013000",
       "eigenvector_centrality": 2.457788122559572e-07,
       "names": [
         "heere vanden warck vranckryck",
@@ -1296,9 +1296,9 @@
     {
       "person_id": "P0008742",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.875000",
+      "analyzed_at": "2026-01-03T18:14:17.307000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.770000",
+      "centrality_updated_at": "2026-01-03T18:14:21.952000",
       "eigenvector_centrality": 2.2576160088058693e-07,
       "names": [
         "coninck van nauarre"
@@ -1311,9 +1311,9 @@
     {
       "person_id": "P0005514",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.019000",
+      "analyzed_at": "2026-01-03T18:14:16.384000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.598000",
+      "centrality_updated_at": "2026-01-03T18:14:20.460000",
       "eigenvector_centrality": 1.935109067435799e-08,
       "names": [
         "gnael norits t utrecht",
@@ -1329,9 +1329,9 @@
     {
       "person_id": "P0008470",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.534000",
+      "analyzed_at": "2026-01-03T18:14:16.938000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.738000",
+      "centrality_updated_at": "2026-01-03T18:14:21.688000",
       "eigenvector_centrality": 1.7839927906466486e-08,
       "names": [
         "bisschop van bremen"
@@ -1343,9 +1343,9 @@
     {
       "person_id": "P0003529",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.956000",
+      "analyzed_at": "2026-01-03T18:14:13.885000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.807000",
+      "centrality_updated_at": "2026-01-03T18:14:22.254000",
       "eigenvector_centrality": 1.7681487482578856e-120,
       "names": [
         "ontfanger generael de bie",
@@ -1363,9 +1363,9 @@
     {
       "person_id": "P0008902",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.086000",
+      "analyzed_at": "2026-01-03T18:14:17.525000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.962000",
+      "centrality_updated_at": "2026-01-03T18:14:23.525000",
       "eigenvector_centrality": 4.1740329892002384e-121,
       "names": [
         "heere van schoonewalle"
@@ -1378,9 +1378,9 @@
     {
       "person_id": "P0004580",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.971000",
+      "analyzed_at": "2026-01-03T18:14:15.081000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.742000",
+      "centrality_updated_at": "2026-01-03T18:14:21.726000",
       "eigenvector_centrality": 1.2577192819212283e-123,
       "names": [
         "heere cantzeler van gelderlant",
@@ -1395,9 +1395,9 @@
     {
       "person_id": "P0006121",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.361000",
+      "analyzed_at": "2026-01-03T18:14:16.755000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.748000",
+      "centrality_updated_at": "2026-01-03T18:14:21.764000",
       "eigenvector_centrality": 1.2577192819212283e-123,
       "names": [
         "heere cantzeler van gelderlant",
@@ -1412,9 +1412,9 @@
     {
       "person_id": "P0005493",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.962000",
+      "analyzed_at": "2026-01-03T18:14:16.327000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.688000",
+      "centrality_updated_at": "2026-01-03T18:14:21.199000",
       "eigenvector_centrality": 1.1139006834186713e-133,
       "names": [
         "heere van treslong",
@@ -1432,9 +1432,9 @@
     {
       "person_id": "P0004783",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.212000",
+      "analyzed_at": "2026-01-03T18:14:15.417000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.836000",
+      "centrality_updated_at": "2026-01-03T18:14:22.474000",
       "eigenvector_centrality": 2.6295628147027926e-134,
       "names": [
         "heere graue van aecester, ende onze gedeputeerde in engelant"
@@ -1446,9 +1446,9 @@
     {
       "person_id": "P0003809",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.281000",
+      "analyzed_at": "2026-01-03T18:14:14.220000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.792000",
+      "centrality_updated_at": "2026-01-03T18:14:22.144000",
       "eigenvector_centrality": 2.4985727535812e-153,
       "names": [
         "colonnel morgan"
@@ -1463,9 +1463,9 @@
     {
       "person_id": "P0005261",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.795000",
+      "analyzed_at": "2026-01-03T18:14:16.142000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.832000",
+      "centrality_updated_at": "2026-01-03T18:14:22.436000",
       "eigenvector_centrality": 2.4985727535812e-153,
       "names": [
         "heere roorda"
@@ -1480,9 +1480,9 @@
     {
       "person_id": "P0014744",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.792000",
+      "analyzed_at": "2026-01-03T18:14:18.220000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.765000",
+      "centrality_updated_at": "2026-01-03T18:14:21.916000",
       "eigenvector_centrality": 2.4985727535812e-153,
       "names": [
         "ontfangere verdoes",
@@ -1498,9 +1498,9 @@
     {
       "person_id": "P0008549",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.559000",
+      "analyzed_at": "2026-01-03T18:14:16.965000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:26.022000",
+      "centrality_updated_at": "2026-01-03T18:14:24.073000",
       "eigenvector_centrality": 1.8913290838330106e-160,
       "names": [
         "don antonio"
@@ -1514,9 +1514,9 @@
     {
       "person_id": "P0010640",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.413000",
+      "analyzed_at": "2026-01-03T18:14:17.856000",
       "connection_count": 3,
-      "centrality_updated_at": "2026-01-01T04:41:25.752000",
+      "centrality_updated_at": "2026-01-03T18:14:21.802000",
       "eigenvector_centrality": 1.6088606140222735e-160,
       "names": [
         "tresorier lonck",
@@ -1530,9 +1530,9 @@
     {
       "person_id": "P0011182",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.585000",
+      "analyzed_at": "2026-01-03T18:14:18.026000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:26.026000",
+      "centrality_updated_at": "2026-01-03T18:14:24.111000",
       "eigenvector_centrality": 1.1689056577199996e-160,
       "names": [
         "herman roodenbeurch vets",
@@ -1546,9 +1546,9 @@
     {
       "person_id": "P0003622",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.054000",
+      "analyzed_at": "2026-01-03T18:14:13.992000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.493000",
+      "centrality_updated_at": "2026-01-03T18:14:19.629000",
       "eigenvector_centrality": 9.943305426267907e-161,
       "names": [
         "goutsmit arent fransz"
@@ -1560,9 +1560,9 @@
     {
       "person_id": "P0004088",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.540000",
+      "analyzed_at": "2026-01-03T18:14:14.480000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.487000",
+      "centrality_updated_at": "2026-01-03T18:14:19.594000",
       "eigenvector_centrality": 9.943305426267907e-161,
       "names": [
         "goutsmit arent fransz"
@@ -1574,9 +1574,9 @@
     {
       "person_id": "P0000673",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.578000",
+      "analyzed_at": "2026-01-03T18:14:13.340000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.788000",
+      "centrality_updated_at": "2026-01-03T18:14:22.108000",
       "eigenvector_centrality": 6.145300713954828e-161,
       "names": [
         "tresorier lonck"
@@ -1588,9 +1588,9 @@
     {
       "person_id": "P0004961",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.414000",
+      "analyzed_at": "2026-01-03T18:14:15.690000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.855000",
+      "centrality_updated_at": "2026-01-03T18:14:22.630000",
       "eigenvector_centrality": 2.3220834390930277e-173,
       "names": [
         "deurwaerder maes",
@@ -1605,9 +1605,9 @@
     {
       "person_id": "P0004243",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.639000",
+      "analyzed_at": "2026-01-03T18:14:14.602000",
       "connection_count": 2,
-      "centrality_updated_at": "2026-01-01T04:41:25.467000",
+      "centrality_updated_at": "2026-01-03T18:14:19.450000",
       "eigenvector_centrality": 2.114683311672134e-173,
       "names": [
         "wylen den hopman bruyn",
@@ -1621,9 +1621,9 @@
     {
       "person_id": "P0000638",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.553000",
+      "analyzed_at": "2026-01-03T18:14:13.171000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.472000",
+      "centrality_updated_at": "2026-01-03T18:14:19.486000",
       "eigenvector_centrality": 1.057341655836067e-173,
       "names": [
         "wylen den hopman bruyn"
@@ -1635,9 +1635,9 @@
     {
       "person_id": "P0005241",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.749000",
+      "analyzed_at": "2026-01-03T18:14:16.096000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.462000",
+      "centrality_updated_at": "2026-01-03T18:14:19.408000",
       "eigenvector_centrality": 1.057341655836067e-173,
       "names": [
         "wylen robert de bruyn"
@@ -1649,9 +1649,9 @@
     {
       "person_id": "P0008851",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.993000",
+      "analyzed_at": "2026-01-03T18:14:17.424000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.813000",
+      "centrality_updated_at": "2026-01-03T18:14:22.288000",
       "eigenvector_centrality": 1.5497858914528314e-182,
       "names": [
         "raedtsheere teelinck",
@@ -1665,9 +1665,9 @@
     {
       "person_id": "P0008713",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.702000",
+      "analyzed_at": "2026-01-03T18:14:17.121000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.818000",
+      "centrality_updated_at": "2026-01-03T18:14:22.324000",
       "eigenvector_centrality": 9.57820356202905e-183,
       "names": [
         "heere meetkercke vande xduysent tynsguld"
@@ -1679,9 +1679,9 @@
     {
       "person_id": "P0003342",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.686000",
+      "analyzed_at": "2026-01-03T18:14:13.567000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.894000",
+      "centrality_updated_at": "2026-01-03T18:14:22.965000",
       "eigenvector_centrality": 7.679382407675219e-200,
       "names": [
         "andries plouch",
@@ -1695,9 +1695,9 @@
     {
       "person_id": "P0004356",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.742000",
+      "analyzed_at": "2026-01-03T18:14:14.723000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.706000",
+      "centrality_updated_at": "2026-01-03T18:14:21.374000",
       "eigenvector_centrality": 7.679382407675219e-200,
       "names": [
         "des",
@@ -1711,9 +1711,9 @@
     {
       "person_id": "P0005129",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.669000",
+      "analyzed_at": "2026-01-03T18:14:16.005000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.845000",
+      "centrality_updated_at": "2026-01-03T18:14:22.558000",
       "eigenvector_centrality": 7.679382407675219e-200,
       "names": [
         "prince van parma"
@@ -1726,9 +1726,9 @@
     {
       "person_id": "P0008800",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.969000",
+      "analyzed_at": "2026-01-03T18:14:17.401000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.697000",
+      "centrality_updated_at": "2026-01-03T18:14:21.301000",
       "eigenvector_centrality": 7.679382407675219e-200,
       "names": [
         "heere van rihouen"
@@ -1741,9 +1741,9 @@
     {
       "person_id": "P0000678",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.600000",
+      "analyzed_at": "2026-01-03T18:14:13.424000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.930000",
+      "centrality_updated_at": "2026-01-03T18:14:23.265000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "vorst van cleue"
@@ -1755,9 +1755,9 @@
     {
       "person_id": "P0000772",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.622000",
+      "analyzed_at": "2026-01-03T18:14:13.471000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.560000",
+      "centrality_updated_at": "2026-01-03T18:14:20.190000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "geuangene broeder heer karel"
@@ -1769,9 +1769,9 @@
     {
       "person_id": "P0004302",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.697000",
+      "analyzed_at": "2026-01-03T18:14:14.674000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.926000",
+      "centrality_updated_at": "2026-01-03T18:14:23.224000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "vorst van cleue"
@@ -1783,9 +1783,9 @@
     {
       "person_id": "P0004525",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.891000",
+      "analyzed_at": "2026-01-03T18:14:14.937000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.983000",
+      "centrality_updated_at": "2026-01-03T18:14:23.705000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "wylen zyne excie"
@@ -1797,9 +1797,9 @@
     {
       "person_id": "P0004821",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.289000",
+      "analyzed_at": "2026-01-03T18:14:15.527000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.565000",
+      "centrality_updated_at": "2026-01-03T18:14:20.236000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "geuangene broeder heer karel"
@@ -1811,9 +1811,9 @@
     {
       "person_id": "P0005325",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.869000",
+      "analyzed_at": "2026-01-03T18:14:16.214000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.885000",
+      "centrality_updated_at": "2026-01-03T18:14:22.889000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "coninck van schotlandt"
@@ -1825,9 +1825,9 @@
     {
       "person_id": "P0005673",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.294000",
+      "analyzed_at": "2026-01-03T18:14:16.679000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.889000",
+      "centrality_updated_at": "2026-01-03T18:14:22.924000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "carolne den ven"
@@ -1839,9 +1839,9 @@
     {
       "person_id": "P0005690",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.316000",
+      "analyzed_at": "2026-01-03T18:14:16.703000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.867000",
+      "centrality_updated_at": "2026-01-03T18:14:22.743000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "heere van villers inde qualiteyt als capiteyn van eene compaignie lichte peerden"
@@ -1853,9 +1853,9 @@
     {
       "person_id": "P0008432",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.465000",
+      "analyzed_at": "2026-01-03T18:14:16.860000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.979000",
+      "centrality_updated_at": "2026-01-03T18:14:23.669000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "guillame de barchon capiteyn vande compaignie van"
@@ -1867,9 +1867,9 @@
     {
       "person_id": "P0008573",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.581000",
+      "analyzed_at": "2026-01-03T18:14:16.991000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:26.043000",
+      "centrality_updated_at": "2026-01-03T18:14:24.264000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "jaspar van eussum soone van"
@@ -1881,9 +1881,9 @@
     {
       "person_id": "P0009542",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.284000",
+      "analyzed_at": "2026-01-03T18:14:17.725000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.876000",
+      "centrality_updated_at": "2026-01-03T18:14:22.816000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "coppen jarges"
@@ -1895,9 +1895,9 @@
     {
       "person_id": "P0010397",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.391000",
+      "analyzed_at": "2026-01-03T18:14:17.829000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.863000",
+      "centrality_updated_at": "2026-01-03T18:14:22.708000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "heere van villers inde qualiteyt als capiteyn van eene compaignie lichte peerden"
@@ -1909,9 +1909,9 @@
     {
       "person_id": "P0011170",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.563000",
+      "analyzed_at": "2026-01-03T18:14:18.005000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:26.039000",
+      "centrality_updated_at": "2026-01-03T18:14:24.224000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "frederick roelofs soon"
@@ -1923,9 +1923,9 @@
     {
       "person_id": "P0013703",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.766000",
+      "analyzed_at": "2026-01-03T18:14:18.196000",
       "connection_count": 1,
-      "centrality_updated_at": "2026-01-01T04:41:25.872000",
+      "centrality_updated_at": "2026-01-03T18:14:22.778000",
       "eigenvector_centrality": 5.430143375791824e-200,
       "names": [
         "coppen jarges"
@@ -1937,9 +1937,9 @@
     {
       "person_id": "P0003459",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:10.890000",
+      "analyzed_at": "2026-01-03T18:14:13.795000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.917000",
+      "centrality_updated_at": "2026-01-03T18:14:23.158000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "heeren caron"
@@ -1951,9 +1951,9 @@
     {
       "person_id": "P0003620",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.031000",
+      "analyzed_at": "2026-01-03T18:14:13.966000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:26.035000",
+      "centrality_updated_at": "2026-01-03T18:14:24.186000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "franchois de veris"
@@ -1965,9 +1965,9 @@
     {
       "person_id": "P0003781",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.230000",
+      "analyzed_at": "2026-01-03T18:14:14.171000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.966000",
+      "centrality_updated_at": "2026-01-03T18:14:23.561000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "lillo leffrassoer anloo"
@@ -1979,9 +1979,9 @@
     {
       "person_id": "P0003959",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.411000",
+      "analyzed_at": "2026-01-03T18:14:14.347000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:26.009000",
+      "centrality_updated_at": "2026-01-03T18:14:23.939000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "bartolt van gent heere tot loehuen"
@@ -1993,9 +1993,9 @@
     {
       "person_id": "P0004056",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.457000",
+      "analyzed_at": "2026-01-03T18:14:14.395000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.822000",
+      "centrality_updated_at": "2026-01-03T18:14:22.360000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "adriaen adriaensz"
@@ -2007,9 +2007,9 @@
     {
       "person_id": "P0004325",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.719000",
+      "analyzed_at": "2026-01-03T18:14:14.699000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:26.071000",
+      "centrality_updated_at": "2026-01-03T18:14:24.511000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "prince van conde"
@@ -2021,9 +2021,9 @@
     {
       "person_id": "P0004388",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.776000",
+      "analyzed_at": "2026-01-03T18:14:14.758000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.850000",
+      "centrality_updated_at": "2026-01-03T18:14:22.601000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "hauer, ende hoy"
@@ -2035,9 +2035,9 @@
     {
       "person_id": "P0004415",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:11.800000",
+      "analyzed_at": "2026-01-03T18:14:14.784000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:26.030000",
+      "centrality_updated_at": "2026-01-03T18:14:24.149000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "syne gen: graue wilhem lodowich van nassau gouuerneur van vrieslant"
@@ -2049,9 +2049,9 @@
     {
       "person_id": "P0004599",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.006000",
+      "analyzed_at": "2026-01-03T18:14:15.146000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:26.060000",
+      "centrality_updated_at": "2026-01-03T18:14:24.428000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "gilles wolfwbinckel"
@@ -2063,9 +2063,9 @@
     {
       "person_id": "P0004795",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.266000",
+      "analyzed_at": "2026-01-03T18:14:15.493000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:26.013000",
+      "centrality_updated_at": "2026-01-03T18:14:23.983000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "peeter janss"
@@ -2077,9 +2077,9 @@
     {
       "person_id": "P0004940",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.362000",
+      "analyzed_at": "2026-01-03T18:14:15.627000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.948000",
+      "centrality_updated_at": "2026-01-03T18:14:23.410000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "randael smis coopman tot londen"
@@ -2091,9 +2091,9 @@
     {
       "person_id": "P0004958",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.384000",
+      "analyzed_at": "2026-01-03T18:14:15.657000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:26.053000",
+      "centrality_updated_at": "2026-01-03T18:14:24.349000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "willem maertens"
@@ -2105,9 +2105,9 @@
     {
       "person_id": "P0004978",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.450000",
+      "analyzed_at": "2026-01-03T18:14:15.731000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.841000",
+      "centrality_updated_at": "2026-01-03T18:14:22.517000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "jouffrouwe maria van caspaue"
@@ -2119,9 +2119,9 @@
     {
       "person_id": "P0005102",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.647000",
+      "analyzed_at": "2026-01-03T18:14:15.977000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.921000",
+      "centrality_updated_at": "2026-01-03T18:14:23.193000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "commiss ortel"
@@ -2133,9 +2133,9 @@
     {
       "person_id": "P0005155",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:12.692000",
+      "analyzed_at": "2026-01-03T18:14:16.031000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.957000",
+      "centrality_updated_at": "2026-01-03T18:14:23.490000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "pierre magghant"
@@ -2147,9 +2147,9 @@
     {
       "person_id": "P0008405",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.430000",
+      "analyzed_at": "2026-01-03T18:14:16.826000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.992000",
+      "centrality_updated_at": "2026-01-03T18:14:23.780000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "heere van st aldegonde",
@@ -2162,9 +2162,9 @@
     {
       "person_id": "P0008458",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.511000",
+      "analyzed_at": "2026-01-03T18:14:16.906000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.803000",
+      "centrality_updated_at": "2026-01-03T18:14:22.217000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "heere van boxtel"
@@ -2176,9 +2176,9 @@
     {
       "person_id": "P0008576",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.602000",
+      "analyzed_at": "2026-01-03T18:14:17.014000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:26.004000",
+      "centrality_updated_at": "2026-01-03T18:14:23.895000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "ontfanger van eyck"
@@ -2190,9 +2190,9 @@
     {
       "person_id": "P0008649",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.679000",
+      "analyzed_at": "2026-01-03T18:14:17.097000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.633000",
+      "centrality_updated_at": "2026-01-03T18:14:20.719000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "heere junius"
@@ -2204,9 +2204,9 @@
     {
       "person_id": "P0008748",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.901000",
+      "analyzed_at": "2026-01-03T18:14:17.331000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:26.057000",
+      "centrality_updated_at": "2026-01-03T18:14:24.390000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "heeren van la noue ende tilligny"
@@ -2218,9 +2218,9 @@
     {
       "person_id": "P0008749",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.925000",
+      "analyzed_at": "2026-01-03T18:14:17.353000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.908000",
+      "centrality_updated_at": "2026-01-03T18:14:23.085000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "heere van oirschot"
@@ -2232,9 +2232,9 @@
     {
       "person_id": "P0008762",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:13.948000",
+      "analyzed_at": "2026-01-03T18:14:17.377000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.974000",
+      "centrality_updated_at": "2026-01-03T18:14:23.634000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "florys pauwels"
@@ -2246,9 +2246,9 @@
     {
       "person_id": "P0009494",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.261000",
+      "analyzed_at": "2026-01-03T18:14:17.699000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.673000",
+      "centrality_updated_at": "2026-01-03T18:14:21.087000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "cleeff pront"
@@ -2260,9 +2260,9 @@
     {
       "person_id": "P0010001",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.365000",
+      "analyzed_at": "2026-01-03T18:14:17.804000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.987000",
+      "centrality_updated_at": "2026-01-03T18:14:23.742000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "ritmr, susarte de fonseca"
@@ -2274,9 +2274,9 @@
     {
       "person_id": "P0011720",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.620000",
+      "analyzed_at": "2026-01-03T18:14:18.059000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.784000",
+      "centrality_updated_at": "2026-01-03T18:14:22.071000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "heere van rebours"
@@ -2288,9 +2288,9 @@
     {
       "person_id": "P0013578",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.741000",
+      "analyzed_at": "2026-01-03T18:14:18.173000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:25.934000",
+      "centrality_updated_at": "2026-01-03T18:14:23.300000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "aelbrecht hayen woonende tot amsterdam"
@@ -2302,9 +2302,9 @@
     {
       "person_id": "P0014813",
       "year": 1585,
-      "analyzed_at": "2026-01-01T04:41:14.828000",
+      "analyzed_at": "2026-01-03T18:14:18.255000",
       "connection_count": 0,
-      "centrality_updated_at": "2026-01-01T04:41:26.018000",
+      "centrality_updated_at": "2026-01-03T18:14:24.035000",
       "eigenvector_centrality": 3.843273446311463e-240,
       "names": [
         "jonnen wellens"

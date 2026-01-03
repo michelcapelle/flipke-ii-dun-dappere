@@ -60,6 +60,24 @@ def trigger_next_pipeline_step(message_data):
     current_step = message_data.get('pipeline_step')
     if not pipeline_task_id or not next_step:
         return
+    from pathlib import Path
+    worker_dir = Path(__file__).parent
+    analysis_file = worker_dir / "flipke-iii-dun-broave" / "public" / "analysis" / f"{pipeline_year}.json"
+    if analysis_file.exists():
+        logger.info(f"Analysis file for year {pipeline_year} already exists at {analysis_file}. Stopping pipeline.")
+        tasks_collection.update_one(
+            {"_id": ObjectId(pipeline_task_id)},
+            {"$set": {
+                f"steps.{current_step}.status": "completed",
+                "status": "completed",
+                "progress": 100,
+                "message": f"Step {current_step} completed. Analysis file already exists, pipeline stopped.",
+                "completed_at": datetime.now(),
+                "updated_at": datetime.now()
+            }}
+        )
+        return
+    
     logger.info(f"Triggering next pipeline step: {next_step} for pipeline {pipeline_task_id}")
     progress_map = {
         "clear_graph": 20,
@@ -80,16 +98,12 @@ def trigger_next_pipeline_step(message_data):
             "updated_at": datetime.now()
         }}
     )
-    
-    # Determine next step after this one
     step_sequence = {
         "parse_entities": "analyze_persons",
         "analyze_persons": "calculate_centrality",
         "calculate_centrality": "export_analysis",
-        "export_analysis": None  # Last step
+        "export_analysis": None
     }
-    
-    # Queue next step
     connection = pika.BlockingConnection(
         pika.ConnectionParameters(
             host='localhost',
@@ -164,8 +178,8 @@ def pre_modern_download(message_data):
         logger.info(f"Downloading from {url}...")
         logger.info(f"Target file: {file_path}")
         downloaded_bytes = 0
-        chunk_size = 1024 * 1024 # 1 MB chunks
-        with httpx.Client(timeout=3600.0) as client: # 1 hour timeout for large file
+        chunk_size = 1024 * 1024
+        with httpx.Client(timeout=3600.0) as client:
             with client.stream('GET', url, follow_redirects=True) as response:
                 response.raise_for_status()
                 total_size = int(response.headers.get('content-length', 0))
@@ -178,7 +192,7 @@ def pre_modern_download(message_data):
                             progress_mb = downloaded_bytes / (1024**2)
                             logger.info(f"Downloaded: {progress_mb:.0f} MB")
                             if task_id and total_size > 0:
-                                download_progress = int((downloaded_bytes / total_size) * 50) + 10 # 10-60%
+                                download_progress = int((downloaded_bytes / total_size) * 50) + 10
                                 update_task_status(
                                     task_id,
                                     status="downloading",
@@ -196,7 +210,7 @@ def pre_modern_download(message_data):
                     progress=70
                 )
             logger.info(f"Extracting .gz file: {file_path}")
-            extracted_file = data_dir / filename[:-3] # Remove .gz extension
+            extracted_file = data_dir / filename[:-3]
             try:
                 with gzip.open(file_path, 'rb') as f_in:
                     with open(extracted_file, 'wb') as f_out:
@@ -297,9 +311,8 @@ def pre_modern_parse_entity(message_data):
                 logger.info(f"Loading resolution_ids for year {filter_year} into cache...")
                 year_resolutions = set()
                 year_prefix = f"{filter_year}-"
-                
                 with open(tsv_file, 'r', encoding='utf-8') as f:
-                    next(f)  # Skip header
+                    next(f)
                     for line in f:
                         parts = line.strip().split('\t')
                         if len(parts) >= 2:
@@ -310,8 +323,6 @@ def pre_modern_parse_entity(message_data):
                 
                 _year_resolution_cache[cache_key] = year_resolutions
                 logger.info(f"Cached {len(year_resolutions)} resolution_ids for year {filter_year}")
-            
-            # Check if document_id is in the cached set
             if document_id not in _year_resolution_cache[cache_key]:
                 return {"status": "skipped", "message": f"Resolution {document_id} not in year {filter_year}"}
         
@@ -355,8 +366,6 @@ def pre_modern_parse_entity(message_data):
                 }}
             )
             logger.info(f"Progress: {annotation_index + 1}/{total_annotations} ({progress}%)")
-        
-        # Increment processed count atomically
         if master_task_id:
             result = tasks_collection.find_one_and_update(
                 {"_id": ObjectId(master_task_id)},
@@ -366,8 +375,6 @@ def pre_modern_parse_entity(message_data):
                 },
                 return_document=True
             )
-            
-            # Check if this was the last annotation to complete
             if result and result.get("processed", 0) >= result.get("total", 0):
                 tasks_collection.update_one(
                     {"_id": ObjectId(master_task_id)},
@@ -416,22 +423,17 @@ def analyze_person_connections(message_data):
     
     try:
         with neo4j_driver.session() as session:
-            # Count connections to other persons through shared documents
             connections_result = session.run("""
                 MATCH (p:Person {id: $person_id})-[:MENTIONED_IN]->(d:Document)<-[:MENTIONED_IN]-(c:Person)
                 WHERE p.id <> c.id
                 RETURN COUNT(DISTINCT c) as connection_count
             """, person_id=person_id)
             connection_count = connections_result.single()["connection_count"]
-            
-            # Get all names associated with this person
             names_result = session.run("""
                 MATCH (p:Person {id: $person_id})-[:HAS_NAME]->(n:Name)
                 RETURN n.name as name
             """, person_id=person_id)
             names = [record["name"] for record in names_result]
-        
-        # Store person analysis in MongoDB
         analysis_data = {
             "person_id": person_id,
             "connection_count": connection_count,
@@ -443,8 +445,6 @@ def analyze_person_connections(message_data):
             {"$set": analysis_data},
             upsert=True
         )
-        
-        # Store person-name combinations in MongoDB
         for name in names:
             name_data = {
                 "person_id": person_id,
@@ -457,8 +457,6 @@ def analyze_person_connections(message_data):
                 {"$set": name_data},
                 upsert=True
             )
-        
-        # Update progress
         if master_task_id and (person_index + 1) % 100 == 0:
             progress = int(((person_index + 1) / total_persons) * 100)
             tasks_collection.update_one(
@@ -471,8 +469,6 @@ def analyze_person_connections(message_data):
                 }}
             )
             logger.info(f"Progress: {person_index + 1}/{total_persons} ({progress}%)")
-        
-        # Increment processed count atomically
         if master_task_id:
             result = tasks_collection.find_one_and_update(
                 {"_id": ObjectId(master_task_id)},
@@ -482,8 +478,6 @@ def analyze_person_connections(message_data):
                 },
                 return_document=True
             )
-            
-            # Check if this was the last person to complete
             if result and result.get("processed_count", 0) >= result.get("total_persons", 0):
                 tasks_collection.update_one(
                     {"_id": ObjectId(master_task_id)},
@@ -529,15 +523,11 @@ def pre_modern_parse_document(message_data):
     if not session_date or not resolution_id:
         logger.warning(f"Incomplete document data at row {row_index}")
         return {"status": "skipped", "message": "Incomplete document data"}
-    
     try:
-        # Store document and date combination in MongoDB
         document_data = {
             "resolution_id": resolution_id,
             "session_date": session_date
         }
-        
-        # Update or insert document
         documents_collection.update_one(
             {"resolution_id": resolution_id, "session_date": session_date},
             {"$set": document_data},
@@ -718,6 +708,7 @@ def post_modern_download_document(message_data):
         return {"status": "error", "message": str(e)}
 
 def maintenance_purge_queues(message_data):
+    """Purge only the 'tasks' queue, not the 'maintenance' queue"""
     task_id = message_data.get('task_id')
     try:
         logger.info("Purging tasks queue...")
@@ -790,11 +781,7 @@ def maintenance_delete_tasks(message_data):
                 message="Deleting tasks",
                 progress=10
             )
-        
-        # Count before deletion (excluding current task)
         count_before = tasks_collection.count_documents({"_id": {"$ne": ObjectId(task_id)}}) if task_id else tasks_collection.count_documents({})
-        
-        # Delete all tasks except current one
         if task_id:
             result = tasks_collection.delete_many({"_id": {"$ne": ObjectId(task_id)}})
         else:
@@ -887,9 +874,7 @@ def maintenance_clear_graph(message_data):
                 message="Clearing graph",
                 progress=10
             )
-        
         with neo4j_driver.session() as session:
-            # Count initial nodes and relationships
             count_result = session.run("""
                 MATCH (n)
                 RETURN count(n) as node_count
@@ -980,8 +965,6 @@ def calculate_eigenvector_centrality(message_data):
     
     try:
         logger.info(f"Calculating eigenvector centrality for year {year}...")
-        
-        # Get all person_ids for this year from MongoDB
         person_docs = list(person_analysis_collection.find(
             {"year": year},
             {"person_id": 1, "_id": 0}
@@ -1002,10 +985,8 @@ def calculate_eigenvector_centrality(message_data):
             if pipeline_task_id:
                 next_step = message_data.get('next_step')
                 if next_step:
-                    # Trigger next step
                     trigger_next_pipeline_step(message_data)
                 else:
-                    # This was the last step, mark pipeline complete
                     pipeline_year = message_data.get('pipeline_year')
                     tasks_collection.update_one(
                         {"_id": ObjectId(pipeline_task_id)},
@@ -1098,8 +1079,6 @@ def calculate_eigenvector_centrality(message_data):
                 year=year,
                 completed_at=datetime.now()
             )
-        
-        # Pipeline handling: trigger next step if applicable
         pipeline_task_id = message_data.get('pipeline_task_id')
         if pipeline_task_id:
             next_step = message_data.get('next_step')
@@ -1239,30 +1218,208 @@ def run_full_pipeline(message_data):
     current_year = message_data.get('current_year')
     start_year = message_data.get('start_year')
     end_year = message_data.get('end_year')
-    
+    doForce = message_data.get('doForce', False)
     try:
-        # Get master pipeline document
         master_doc = tasks_collection.find_one({"_id": ObjectId(master_pipeline_id)})
         if not master_doc:
             logger.error(f"Master pipeline {master_pipeline_id} not found")
             return {"status": "error", "message": "Master pipeline not found"}
-        
         total_years = end_year - start_year + 1
-        
-        # Check if there's an active year pipeline
-        year_pipeline_id = master_doc.get('year_pipelines', {}).get(str(current_year))
-        
-        if year_pipeline_id:
-            # Check if year pipeline is complete
-            year_doc = tasks_collection.find_one({"_id": ObjectId(year_pipeline_id)})
-            if year_doc and year_doc.get('status') == 'completed':
-                # Year completed, move to next year
+        from pathlib import Path
+        import os
+        worker_dir = Path(__file__).parent
+        logger.info(f"Worker directory: {worker_dir}")
+        logger.info(f"Current working directory: {os.getcwd()}")
+        analysis_file = worker_dir / "data" / "analysis" / f"{current_year}.json"
+        logger.info(f"Checking year {current_year}: file exists={analysis_file.exists()}, doForce={doForce}, absolute path={analysis_file.absolute()}")
+        if analysis_file.exists() and not doForce:
+            logger.info(f"Skipping year {current_year} - analysis file already exists")    
+            completed_years = current_year - start_year + 1
+            progress = int((completed_years / total_years) * 100)
+            tasks_collection.update_one(
+                {"_id": ObjectId(master_pipeline_id)},
+                {"$set": {
+                    "completed_years": completed_years,
+                    "progress": progress,
+                    "current_year": current_year,
+                    f"year_pipelines.{current_year}": "skipped",
+                    "message": f"Year {current_year} skipped (file exists). {completed_years}/{total_years} years processed",
+                    "updated_at": datetime.now()
+                }}
+            )
+            
+            # Check if we're done
+            if current_year >= end_year:
+                tasks_collection.update_one(
+                    {"_id": ObjectId(master_pipeline_id)},
+                    {"$set": {
+                        "status": "completed",
+                        "progress": 100,
+                        "message": f"All {total_years} years processed ({start_year}-{end_year})",
+                        "completed_at": datetime.now(),
+                        "updated_at": datetime.now()
+                    }}
+                )
+                logger.info(f"Full pipeline {master_pipeline_id} completed")
+                return {"status": "success", "message": "Full pipeline completed"}
+            
+            # Queue next year immediately
+            connection = pika.BlockingConnection(
+                pika.ConnectionParameters(
+                    host='localhost',
+                    port=5672,
+                    credentials=pika.PlainCredentials('admin', 'admin')
+                )
+            )
+            channel = connection.channel()
+            channel.queue_declare(queue='tasks', durable=True)
+            
+            next_message = {
+                "task": "run_full_pipeline",
+                "master_pipeline_id": master_pipeline_id,
+                "start_year": start_year,
+                "end_year": end_year,
+                "current_year": current_year + 1,
+                "doForce": doForce,
+                "timestamp": datetime.now().isoformat()
+            }
+            
+            channel.basic_publish(
+                exchange='',
+                routing_key='tasks',
+                body=json.dumps(next_message),
+                properties=pika.BasicProperties(delivery_mode=2)
+            )
+            connection.close()
+            logger.info(f"Queued next year {current_year + 1}")
+            return {"status": "success", "message": f"Year {current_year} skipped, queued next year"}
+        year_pipeline_id = master_doc.get('year_pipelines', {}).get(str(current_year))        
+        if year_pipeline_id == "skipped":
+            logger.info(f"Year {current_year} was already skipped, moving to next")
+            if current_year >= end_year:
+                tasks_collection.update_one(
+                    {"_id": ObjectId(master_pipeline_id)},
+                    {"$set": {
+                        "status": "completed",
+                        "progress": 100,
+                        "message": f"All {total_years} years processed ({start_year}-{end_year})",
+                        "completed_at": datetime.now(),
+                        "updated_at": datetime.now()
+                    }}
+                )
+                logger.info(f"Full pipeline {master_pipeline_id} completed")
+                return {"status": "success", "message": "Full pipeline completed"}
+            
+            # Queue next year
+            connection = pika.BlockingConnection(
+                pika.ConnectionParameters(
+                    host='localhost',
+                    port=5672,
+                    credentials=pika.PlainCredentials('admin', 'admin')
+                )
+            )
+            channel = connection.channel()
+            channel.queue_declare(queue='tasks', durable=True)
+            
+            next_message = {
+                "task": "run_full_pipeline",
+                "master_pipeline_id": master_pipeline_id,
+                "start_year": start_year,
+                "end_year": end_year,
+                "current_year": current_year + 1,
+                "doForce": doForce,
+                "timestamp": datetime.now().isoformat()
+            }
+            
+            channel.basic_publish(
+                exchange='',
+                routing_key='tasks',
+                body=json.dumps(next_message),
+                properties=pika.BasicProperties(delivery_mode=2)
+            )
+            connection.close()
+            
+            logger.info(f"Queued next year {current_year + 1}")
+            return {"status": "success", "message": f"Already skipped, queued next year"}
+        if year_pipeline_id and year_pipeline_id != "skipped":
+            if analysis_file.exists() and not doForce:
+                logger.info(f"Year {current_year} has existing pipeline but file already exists - marking as completed")
+                tasks_collection.update_one(
+                    {"_id": ObjectId(year_pipeline_id)},
+                    {"$set": {
+                        "status": "completed",
+                        "message": "Analysis file already exists, pipeline stopped",
+                        "completed_at": datetime.now(),
+                        "updated_at": datetime.now()
+                    }}
+                )
+                
+                # Update master to mark this year as done
                 completed_years = current_year - start_year + 1
                 progress = int((completed_years / total_years) * 100)
                 
-                logger.info(f"Year {current_year} completed ({completed_years}/{total_years})")
+                tasks_collection.update_one(
+                    {"_id": ObjectId(master_pipeline_id)},
+                    {"$set": {
+                        "completed_years": completed_years,
+                        "progress": progress,
+                        "message": f"Year {current_year} completed (file exists). {completed_years}/{total_years} years processed",
+                        "updated_at": datetime.now()
+                    }}
+                )
                 
-                # Update master pipeline
+                # Check if we're done
+                if current_year >= end_year:
+                    tasks_collection.update_one(
+                        {"_id": ObjectId(master_pipeline_id)},
+                        {"$set": {
+                            "status": "completed",
+                            "progress": 100,
+                            "message": f"All {total_years} years processed ({start_year}-{end_year})",
+                            "completed_at": datetime.now(),
+                            "updated_at": datetime.now()
+                        }}
+                    )
+                    logger.info(f"Full pipeline {master_pipeline_id} completed")
+                    return {"status": "success", "message": "Full pipeline completed"}
+                
+                # Queue next year
+                connection = pika.BlockingConnection(
+                    pika.ConnectionParameters(
+                        host='localhost',
+                        port=5672,
+                        credentials=pika.PlainCredentials('admin', 'admin')
+                    )
+                )
+                channel = connection.channel()
+                channel.queue_declare(queue='tasks', durable=True)
+                
+                next_message = {
+                    "task": "run_full_pipeline",
+                    "master_pipeline_id": master_pipeline_id,
+                    "start_year": start_year,
+                    "end_year": end_year,
+                    "current_year": current_year + 1,
+                    "doForce": doForce,
+                    "timestamp": datetime.now().isoformat()
+                }
+                
+                channel.basic_publish(
+                    exchange='',
+                    routing_key='tasks',
+                    body=json.dumps(next_message),
+                    properties=pika.BasicProperties(delivery_mode=2)
+                )
+                connection.close()
+                
+                logger.info(f"Queued next year {current_year + 1}")
+                return {"status": "success", "message": f"Year {current_year} file exists, queued next year"}
+            
+            year_doc = tasks_collection.find_one({"_id": ObjectId(year_pipeline_id)})
+            if year_doc and year_doc.get('status') == 'completed':
+                completed_years = current_year - start_year + 1
+                progress = int((completed_years / total_years) * 100)
+                logger.info(f"Year {current_year} completed ({completed_years}/{total_years})")
                 tasks_collection.update_one(
                     {"_id": ObjectId(master_pipeline_id)},
                     {"$set": {
@@ -1316,17 +1473,15 @@ def run_full_pipeline(message_data):
                 )
                 channel = connection.channel()
                 channel.queue_declare(queue='tasks', durable=True)
-                
-                # Re-queue this monitoring task with delay (check again in 10 seconds)
                 import time
                 time.sleep(10)
-                
                 monitor_message = {
                     "task": "run_full_pipeline",
                     "master_pipeline_id": master_pipeline_id,
                     "start_year": start_year,
                     "end_year": end_year,
                     "current_year": current_year,
+                    "doForce": doForce,
                     "timestamp": datetime.now().isoformat()
                 }
                 
@@ -1420,13 +1575,11 @@ def run_full_pipeline(message_data):
             "start_year": start_year,
             "end_year": end_year,
             "current_year": current_year,
+            "doForce": doForce,
             "timestamp": datetime.now().isoformat()
         }
-        
-        # Delay before first check (30 seconds)
         import time
         time.sleep(30)
-        
         channel.basic_publish(
             exchange='',
             routing_key='tasks',
@@ -1781,14 +1934,20 @@ def main():
             )
             channel = connection.channel()
             channel.queue_declare(queue='tasks', durable=True)
+            channel.queue_declare(queue='maintenance', durable=True)
             logger.info("Queue declared successfully: tasks")
-            channel.basic_qos(prefetch_count=10)
+            logger.info("Queue declared successfully: maintenance")
+            channel.basic_qos(prefetch_count=20)
             channel.basic_consume(
                 queue='tasks',
                 on_message_callback=callback
             )
+            channel.basic_consume(
+                queue='maintenance',
+                on_message_callback=callback
+            )
             logger.info("Connected to RabbitMQ successfully")
-            logger.info("Listening on single 'tasks' queue (prefetch_count=10)")
+            logger.info("Listening on 'tasks' and 'maintenance' queues (prefetch_count=20)")
             logger.info("Waiting for messages... (Press CTRL+C to stop)")
             channel.start_consuming()
             break
