@@ -28,7 +28,7 @@ export interface YearAnalysisResponse {
 })
 export class AnalysisService {
   private yearCache: Map<number, YearAnalysisResponse> = new Map();
-  private wikipediaCache: { [key: string]: string } | null = null;
+  private perEntitiesCache: any[] | null = null;
 
   constructor(private http: HttpClient) { }
 
@@ -60,16 +60,16 @@ export class AnalysisService {
     );
   }
 
-  getWikipediaMapping(): Observable<{ [key: string]: string }> {
+  getPersonEntities(): Observable<any[]> {
     // Check cache first
-    if (this.wikipediaCache) {
-      return of(this.wikipediaCache);
+    if (this.perEntitiesCache) {
+      return of(this.perEntitiesCache);
     }
 
-    return this.http.get<{ [key: string]: string }>('/wikipedia.json').pipe(
-      tap(mapping => {
+    return this.http.get<any[]>('/PER-entities.json').pipe(
+      tap(entities => {
         // Store in cache
-        this.wikipediaCache = mapping;
+        this.perEntitiesCache = entities;
       })
     );
   }

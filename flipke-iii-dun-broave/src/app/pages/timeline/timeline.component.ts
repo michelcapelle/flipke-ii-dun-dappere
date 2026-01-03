@@ -15,7 +15,7 @@ export class TimelineComponent implements OnInit {
   yearsData: Map<number, any[]> = new Map(); // Map van jaar -> top 10 personen
   currentYear = 1576;
   startYear = 1576;
-  endYear = 1666;
+  endYear = 1800;
   loadedYears: number[] = [];
   consecutiveErrors = 0;
   maxConsecutiveErrors = 5; // Stop na 5 opeenvolgende fouten
@@ -23,7 +23,7 @@ export class TimelineComponent implements OnInit {
   hoveredYear: number | null = null;
   pinnedPersonId: string | null = null;
   pinnedYear: number | null = null;
-  wikipediaMapping: { [key: string]: string } = {};
+  personEntities: any[] = [];
   personColors: Map<string, string> = new Map(); // Map van person_id -> kleur
   colorPalette: string[] = [
     '#FFB3BA', '#FFDFBA', '#FFFFBA', '#BAFFC9', '#BAE1FF',
@@ -55,14 +55,14 @@ export class TimelineComponent implements OnInit {
   constructor(private analysisService: AnalysisService) {}
 
   ngOnInit(): void {
-    // Load Wikipedia mapping
-    this.analysisService.getWikipediaMapping().subscribe({
-      next: (mapping) => {
-        this.wikipediaMapping = mapping;
-        console.log('Wikipedia mapping loaded:', Object.keys(mapping).length, 'entries');
+    // Load PER entities
+    this.analysisService.getPersonEntities().subscribe({
+      next: (entities) => {
+        this.personEntities = entities;
+        console.log('Person entities loaded:', entities.length, 'entries');
       },
       error: (err) => {
-        console.warn('Failed to load Wikipedia mapping:', err);
+        console.warn('Failed to load person entities:', err);
       }
     });
     
@@ -220,12 +220,7 @@ export class TimelineComponent implements OnInit {
     const personId = this.getDisplayedPersonId();
     if (!personId) return '';
     
-    // Check if person has Wikipedia link
-    if (this.wikipediaMapping[personId]) {
-      return this.wikipediaMapping[personId];
-    }
-    
-    // Fallback to DuckDuckGo
+    // Use first name from analysis data for DuckDuckGo search
     const names = this.getHoveredPersonNames();
     if (names.length === 0) return '';
     const encodedName = encodeURIComponent(names[0]);
@@ -236,25 +231,24 @@ export class TimelineComponent implements OnInit {
     const personId = this.getDisplayedPersonId();
     if (!personId) return '';
     
-    // Check if person has Wikipedia link
-    if (this.wikipediaMapping[personId]) {
-      const wikiUrl = this.wikipediaMapping[personId];
-      // Extract suffix after last /
-      const parts = wikiUrl.split('/');
-      const suffix = parts[parts.length - 1];
-      // Replace underscores with spaces and decode URI
-      return decodeURIComponent(suffix.replace(/_/g, ' '));
+    // Look up name in PER-entities.json
+    const entity = this.personEntities.find(e => e.id === personId);
+    if (entity && entity.name) {
+      return entity.name;
     }
     
-    // Fallback to first name
+    // Fallback to first name from analysis data
     const names = this.getHoveredPersonNames();
     return names.length > 0 ? names[0] : '';
   }
 
-  hasWikipediaLink(): boolean {
+  getPersonIdUrl(): string {
     const personId = this.getDisplayedPersonId();
-    return personId ? !!this.wikipediaMapping[personId] : false;
+    if (!personId) return '';
+    return `https://entiteiten.goetgevonden.nl/persoon/${personId}`;
   }
+
+
 
   getConnectionLines(): any[] {
     const lines: any[] = [];
