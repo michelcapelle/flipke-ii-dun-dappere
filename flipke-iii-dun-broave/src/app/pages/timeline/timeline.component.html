@@ -7,7 +7,7 @@
     <div class="person-info" *ngIf="getDisplayedPersonId()">
       <div class="person-names" *ngIf="getHoveredPersonNames().length > 0">
         <strong>
-          <span class="mobile-format"><a href="https://github.com/michelcapelle/flipke-ii-dun-dappere?tab=readme-ov-file#flipke-dn-dappere" target="_blank" rel="noopener">ℹ️</a></span> • <a [href]="getPersonSearchUrl()" target="_blank" rel="noopener" class="no-wiki">{{ getPersonDisplayName() }}<span class="external-link-icon">↗</span></a> • 
+          <span class="mobile-format"><a href="https://github.com/michelcapelle/flipke-ii-dun-dappere?tab=readme-ov-file#flipke-dn-dappere" target="_blank" rel="noopener">ℹ️</a></span><span class="mobile-format"> • </span><a [href]="getPersonSearchUrl()" target="_blank" rel="noopener" class="no-wiki">{{ getPersonDisplayName() }}<span class="external-link-icon">↗</span></a><span class="mobile-format"> • </span>
           <span class="mobile-format"><a [href]="getPersonIdUrl()" target="_blank" rel="noopener">{{ getDisplayedPersonId() }}</a></span>
         </strong>
         <span class="centrality-mobile"><a href="https://en.wikipedia.org/wiki/Eigenvector_centrality" target="_blank" rel="noopener">{{ getHoveredPersonCentrality() }}<span class="external-link-icon">↗</span></a></span>
