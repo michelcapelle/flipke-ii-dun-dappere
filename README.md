@@ -4,10 +4,10 @@ In 1386, the Brabantian Philip the Bold (Brabantian Dutch: Flipke d'n Dappere) e
 
 Flipke is an API for network analysis and visualization of named entities in historical governance documents from the Low Countries.
 
-- https://en.wikipedia.org/wiki/Philip_the_Bold
-- https://en.wikipedia.org/wiki/States_General_of_the_Netherlands
-- https://nl.wikipedia.org/wiki/Filips_de_Stoute
-- https://nl.wikipedia.org/wiki/Staten-Generaal_van_de_Nederlanden
+- [Wikipedia: Philip the Bold](https://en.wikipedia.org/wiki/Philip_the_Bold)
+- [Wikipedia: States-General of the Netherlands](https://en.wikipedia.org/wiki/States_General_of_the_Netherlands)
+- [Wikipedia: Filips de Stoute (Dutch)](https://nl.wikipedia.org/wiki/Filips_de_Stoute)
+- [Wikipedia: Staten-Generaal van de Nederlanden (Dutch)](https://nl.wikipedia.org/wiki/Staten-Generaal_van_de_Nederlanden)
 
 ## How Does This App Work?
 
@@ -25,14 +25,14 @@ The visualization app shows a year-by-year distribution of power with the most p
 
 From the third step onwards, this API provides the endpoints to replicate the process yourself.
 
-- https://www.huygens.knaw.nl/projecten/resoluties-staten-generaal-1576-1796-de-oerbronnen-van-de-parlementaire-democratie/
-- https://resources.huygens.knaw.nl/retroboeken/instrumenten_macht/#view=homePane&page=0&accessor=toc
-- https://nl.wikipedia.org/wiki/Optical_character_recognition
-- https://zenodo.org/records/7695131
-- https://en.wikipedia.org/wiki/Named-entity_recognition
-- https://zenodo.org/records/15495712
-- https://app.goetgevonden.nl/
-- https://en.wikipedia.org/wiki/Eigenvector_centrality
+- [Huygens Institute: Resoluties van de Staten-Generaal (Dutch)](https://www.huygens.knaw.nl/projecten/resoluties-staten-generaal-1576-1796-de-oerbronnen-van-de-parlementaire-democratie/)
+- [Huygens Institute: Instrumenten van macht (Dutch)](https://resources.huygens.knaw.nl/retroboeken/instrumenten_macht/#view=homePane&page=0&accessor=toc)
+- [Wikipedia: Optical character recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition)
+- [Huygens Institute: REPUBLIC PageXML ground truth handwritten resolutions States General](https://zenodo.org/records/7695131)
+- [Wikipedia: Named-entity recognition (NER)](https://en.wikipedia.org/wiki/Named-entity_recognition)
+- [Huygens Institute: Entities recognised in the resolutions of the States General of the Dutch Republic (1576-1796)](https://zenodo.org/records/15495712)
+- [Goetgevonden (Dutch)](https://app.goetgevonden.nl/)
+- [Wikipedia: Eigenvector centrality](https://en.wikipedia.org/wiki/Eigenvector_centrality)
 
 ## Install Flipke
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ## Dowload, Install, and Start Docker (Desktop)
 
-`https://www.docker.com/products/docker-desktop/`
+[Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 ## Start Services
 
@@ -60,7 +60,7 @@ docker-compose up -d
 python main.py
 ```
 
-API will be available at: `http://localhost:8000/`
+API will be available at: [localhost:8000](http://localhost:8000/)
 
 ### Terminal 2 - Background Worker
 
@@ -68,25 +68,25 @@ API will be available at: `http://localhost:8000/`
 python worker.py
 ```
 
-The worker processes messages from the RabbitMQ queue. Check `http://localhost:8000/queue/status` to verify the worker is connected (consumers should be > 0).
+The worker processes messages from the RabbitMQ queue. Check [localhost:8000/queue/status](http://localhost:8000/queue/status) to verify the worker is connected (consumers should be > 0).
 
 ### Service URLs
 
 ### Queuing
 
-`http://localhost:15672/#/queues`
+[localhost:15672](http://localhost:15672/#/queues)
 
 Username/password: `admin/admin`
 
 ### Document Store
 
-`http://localhost:8081/db/flipke_db/`
+[localhost:8081](http://localhost:8081/db/flipke_db/)
 
 Username/password: `admin/admin`
 
 ### Graph Store
 
-`http://localhost:7474/`
+[localhost:7474](http://localhost:7474/)
 
 Username/password: `neo4j/password`
 
@@ -98,7 +98,7 @@ Query: `MATCH (n)-[r]->(m) RETURN n, r, m`
 python main.py
 ```
 
-`http://localhost:8000/`
+[localhost:8000](http://localhost:8000/)
 
 ## Stop Services
 

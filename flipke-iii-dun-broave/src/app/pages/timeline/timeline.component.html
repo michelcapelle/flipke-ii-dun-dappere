@@ -11,8 +11,8 @@
           <span class="mobile-format"><a [href]="getPersonIdUrl()" target="_blank" rel="noopener">({{ getDisplayedPersonId() }})</a></span>
         </strong>
         <span class="centrality-mobile"><a href="https://en.wikipedia.org/wiki/Eigenvector_centrality" target="_blank" rel="noopener">{{ getHoveredPersonCentrality() }}<span class="external-link-icon">↗</span></a></span>
-        <span class="aka-names" *ngIf="getHoveredPersonNames().length > 0"><em>, a.k.a.</em><br>
-          {{ getHoveredPersonNames().join(' • ') }}
+        <span class="aka-names" *ngIf="getHoveredPersonNames().length > 0"><br>
+          <em>a.k.a.</em> {{ getHoveredPersonNames().join(' • ') }}
         </span>
       </div>
       <div class="person-details">
