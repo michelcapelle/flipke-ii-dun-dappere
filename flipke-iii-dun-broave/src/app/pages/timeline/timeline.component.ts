@@ -15,7 +15,7 @@ export class TimelineComponent implements OnInit {
   yearsData: Map<number, any[]> = new Map(); // Map van jaar -> personen
   currentYear = 1576;
   startYear = 1576;
-  endYear = 1599;
+  endYear = 1604;
   loadedYears: number[] = [];
   consecutiveErrors = 0;
   maxConsecutiveErrors = 5; // Stop na 5 opeenvolgende fouten
@@ -245,8 +245,6 @@ export class TimelineComponent implements OnInit {
     if (!personId) return '';
     return `https://entiteiten.goetgevonden.nl/persoon/${personId}`;
   }
-
-
 
   getConnectionLines(): any[] {
     const lines: any[] = [];
