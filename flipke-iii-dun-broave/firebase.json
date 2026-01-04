@@ -9,7 +9,7 @@
     "frameworksBackend": {
       "region": "europe-west1"
     }
-  },
+  }, 
   "emulators": {
     "dataconnect": {
       "dataDir": "dataconnect/.dataconnect/pgliteData"
