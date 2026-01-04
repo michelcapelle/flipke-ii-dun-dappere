@@ -595,6 +595,10 @@
     zoom: 1.5;
   }
 
+  .title-content, .person-info {
+    background-color: rgb(212, 197, 216, 0.9);
+  }
+
   .title-bar {
     padding: 10px 15px;
   }
