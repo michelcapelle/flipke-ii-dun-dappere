@@ -1,4 +1,4 @@
-# Flipke d'n Dappere
+# [Flipke d'n Dappere](https://flipke-2334a.web.app/)
 
 In 1386, the Brabantian [Philip the Bold](https://en.wikipedia.org/wiki/Philip_the_Bold) (Dutch: [Filips de Stoute](https://nl.wikipedia.org/wiki/Filips_de_Stoute), as in 'stoutmoedig'; Brabantian Dutch: Flipke d'n Dappere) established a Council Chamber in Lille for financial and legal matters concerning Flanders, Artois, Antwerp, and Mechlin. This regional body was a seed from which the [States-General of the Netherlands](https://en.wikipedia.org/wiki/States_General_of_the_Netherlands) would later grow.
 
@@ -14,7 +14,7 @@ This app visualizes the distribution of power in the Low Countries by measuring 
 4. I parse the personal [named entities](https://zenodo.org/records/15495712), the [resolutions](https://zenodo.org/records/7695131) they are mentioned in, and their ambiguous textual names. The obtained entities and relations I store as nodes and vertices in a graph.
 5. For every person, I count the number of other people that share resolutions in which both of them are mentioned.
 6. For every person, I calculate the 'normalized [eigenvector centrality](https://en.wikipedia.org/wiki/Eigenvector_centrality) score' that measures the centrality of the person in the graph -- an approximation measure of relative power.
-7. The data is propagated to the visualization app.
+7. The data is propagated to the [visualization app](https://flipke-2334a.web.app/).
 
 The visualization app shows a year-by-year distribution of power with the most prominent statesmen at the top of the page. The size of the circle reflects the person's relative power position. By clicking on one of the circles one can highlight its position over time. At the top of the page the personal named entity is shown, together with all the ambiguous names that were found across the resolutions, a link with more [information](https://app.goetgevonden.nl/) about the personal named entity (the P identifier), and the calculated normalized eigenvector centrality score. The years in red represent the years in which the Dutch Republic was at war. Click on the year (mobile) or the conflict bar (desktop) to find more information about the conflict.
 
