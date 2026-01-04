@@ -15,7 +15,7 @@ export class TimelineComponent implements OnInit {
   yearsData: Map<number, any[]> = new Map(); // Map van jaar -> personen
   currentYear = 1577;
   startYear = 1577;
-  endYear = 1633;
+  endYear = 1800;
   loadedYears: number[] = [];
   consecutiveErrors = 0;
   maxConsecutiveErrors = 5; // Stop na 5 opeenvolgende fouten
