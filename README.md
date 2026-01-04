@@ -4,6 +4,8 @@ In 1386, the Brabantian [Philip the Bold](https://en.wikipedia.org/wiki/Philip_t
 
 Flipke is an API for network analysis and visualization of named entities in historical governance documents from the Low Countries.
 
+Take a look at the timeline: [flipke-2334a.web.app](https://flipke-2334a.web.app/)
+
 ## How Does This App Work?
 
 This app visualizes the distribution of power in the Low Countries by measuring the eigenvector centrality of persons mentioned in the resolutions of the States-General and their (power) position in relation to others mentioned in the same documents.
