@@ -80,14 +80,6 @@ Username/password: `neo4j/password`
 
 Query: `MATCH (n)-[r]->(m) RETURN n, r, m`
 
-## Start Flipke
-
-```bash
-python main.py
-```
-
-[localhost:8000](http://localhost:8000/)
-
 ## Stop Services
 
 ```bash
