@@ -15,7 +15,7 @@ export class TimelineComponent implements OnInit {
   yearsData: Map<number, any[]> = new Map(); // Map van jaar -> personen
   currentYear = 1576;
   startYear = 1576;
-  endYear = 1587;
+  endYear = 1593;
   loadedYears: number[] = [];
   consecutiveErrors = 0;
   maxConsecutiveErrors = 5; // Stop na 5 opeenvolgende fouten
@@ -264,7 +264,7 @@ export class TimelineComponent implements OnInit {
       // Desktop: padding-top (10px) + year-label (23px with padding) + margin-bottom (45px) + first circle top margin (7px) + half circle height (15px) = 100px
       // Mobile: padding-top (10px) + year-label (15px) + margin-bottom (30px) + first circle top margin (4px) + half circle height (10px) = 69px
       // Adjust upward (lower Y value) to better align with actual circle centers
-      const circlesStartY = isMobile ? 63 : 90;
+      const circlesStartY = isMobile ? 48 : 90;
       const columnWidth = isMobile ? 50 : 80;
       
       // Calculate Y position for each person based on actual circle sizes
