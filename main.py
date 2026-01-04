@@ -343,9 +343,7 @@ async def analyze_persons_connections(year: Optional[int] = Query(None, descript
             response["note"] = "Tasks will remain in queue until a worker connects"
         else:
             response["note"] = f"Worker(s) will process {queued_count} person analysis tasks. This may take several minutes."
-        
-        return response
-        
+        return response 
     except HTTPException:
         raise
     except pika.exceptions.AMQPConnectionError:
@@ -504,12 +502,9 @@ async def calculate_eigenvector_centrality(year: int = Query(..., description="Y
             "total_persons": person_count,
             "worker_connected": worker_connected
         }
-        
         if not worker_connected:
             response["warning"] = "No worker is currently connected! Start the worker with: python worker.py"
-        
         return response
-        
     except HTTPException:
         raise
     except pika.exceptions.AMQPConnectionError:
@@ -1464,27 +1459,6 @@ async def run_pre_modern_full_pipeline(
         start_year = 1576
         end_year = 1796
         total_years = end_year - start_year + 1
-        
-        # If doForce is False, check if there are any years that need processing
-        if not doForce:
-            years_to_process = []
-            for year in range(start_year, end_year + 1):
-                analysis_file = Path(f"data/analysis/{year}.json")
-                if not analysis_file.exists():
-                    years_to_process.append(year)
-            
-            if not years_to_process:
-                return {
-                    "status": "skipped",
-                    "message": f"All years ({start_year}-{end_year}) already have analysis files. Use doForce=true to reprocess.",
-                    "start_year": start_year,
-                    "end_year": end_year,
-                    "total_years": total_years,
-                    "years_to_process": 0
-                }
-            
-            logger.info(f"Found {len(years_to_process)} years to process (out of {total_years})")
-        
         master_pipeline_doc = {
             "task_type": "pre_modern_full_pipeline",
             "status": "queued",
@@ -1497,7 +1471,7 @@ async def run_pre_modern_full_pipeline(
             "total_years": total_years,
             "completed_years": 0,
             "year_pipelines": {},
-            "doForce": doForce,
+            "do_force": doForce,
             "message": f"Pipeline initialized. Will process years {start_year}-{end_year} sequentially{' (forced)' if doForce else ''}"
         }
         result = tasks_collection.insert_one(master_pipeline_doc)
@@ -1511,17 +1485,15 @@ async def run_pre_modern_full_pipeline(
         )
         channel = connection.channel()
         channel.queue_declare(queue='tasks', durable=True, passive=False)
-        
         message = {
             "task": "run_full_pipeline",
             "master_pipeline_id": master_pipeline_id,
             "start_year": start_year,
             "end_year": end_year,
             "current_year": start_year,
-            "doForce": doForce,
+            "do_force": doForce,
             "timestamp": datetime.now().isoformat()
         }
-        
         channel.basic_publish(
             exchange='',
             routing_key='tasks',
@@ -1529,7 +1501,6 @@ async def run_pre_modern_full_pipeline(
             properties=pika.BasicProperties(delivery_mode=2)
         )
         connection.close()
-        
         return {
             "status": "queued",
             "message": f"Pre-modern full pipeline started. Processing years {start_year}-{end_year} sequentially{' (forced)' if doForce else ''}",
@@ -1537,7 +1508,7 @@ async def run_pre_modern_full_pipeline(
             "start_year": start_year,
             "end_year": end_year,
             "total_years": total_years,
-            "doForce": doForce,
+            "do_force": doForce,
             "status_endpoint": f"/tasks/{master_pipeline_id}",
             "note": "Each year will be processed completely before the next begins" + (" (will skip years with existing analysis files)" if not doForce else " (will force all years)")
         }
@@ -1589,7 +1560,6 @@ def get_latest_full_pipeline_status():
             "master_pipeline": master_doc,
             "current_year_pipeline": current_year_pipeline
         }
-        
     except Exception as e:
         if isinstance(e, HTTPException):
             raise e
@@ -1620,17 +1590,6 @@ def run_pre_modern_year_pipeline(
     - **doForce**: If False (default), skip pipeline if data/analysis/{year}.json already exists
     """
     try:
-        # Check if analysis file already exists
-        analysis_file = Path(f"data/analysis/{year}.json")
-        if analysis_file.exists() and not doForce:
-            return {
-                "status": "skipped",
-                "message": f"Analysis for year {year} already exists. Use doForce=true to rerun.",
-                "year": year,
-                "file": str(analysis_file),
-                "note": "Set doForce=true in query parameters to force pipeline execution"
-            }
-        
         pipeline_doc = {
             "task_type": "year_analysis_pipeline",
             "year": year,
@@ -1639,6 +1598,7 @@ def run_pre_modern_year_pipeline(
             "updated_at": datetime.now(),
             "progress": 0,
             "current_step": "clear_graph",
+            "do_force": doForce,
             "steps": {
                 "clear_graph": {"status": "pending", "task_id": None},
                 "parse_entities": {"status": "pending", "task_id": None},

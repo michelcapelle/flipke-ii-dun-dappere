@@ -9,6 +9,31 @@ Flipke is an API for network analysis and visualization of named entities in his
 - https://nl.wikipedia.org/wiki/Filips_de_Stoute
 - https://nl.wikipedia.org/wiki/Staten-Generaal_van_de_Nederlanden
 
+## How Does This App Work?
+
+This app visualizes the distribution of power in the Low Countries by measuring the eigenvector centrality of persons mentioned in the resolutions of the States-General and their (power) position in relation to others mentioned in the same documents.
+
+1. The REPUBLIC project digitalized the handwritten resolutions of the States-General between 1576 and 1796.
+2. The REPUBLIC project applied the NLP techniques OCR and NER to extract named entities from the texts.
+3. I download the relevant datasets from steps (1) and (2).
+4. I parse the personal named entities, the resolutions they are mentioned in, and their ambiguous textual names. The obtained entities and relations I store as nodes and vertices in a graph.
+5. For every person, I count the number of other people that share resolutions in which both of them are mentioned.
+6. For every person, I calculate the 'normalized eigenvector centrality score' that measures the centrality of the person in the graph -- a approximation measure of relative power.
+7. The data is propagated to the visualization app.
+
+The visualization app shows a year-by-year distribution of power with the most prominent statesmen at the top of the page. The size of the circle reflects the person's relative power position. By clicking on one of the circles one can highlight its position over time. At the top of the page the personal named entity is shown, together with all the ambiguous names that were found across the resolutions, a link with more information about the personal named entity (the P identifier), and the calculated normalized eigenvector centrality score. The years in red represent the years in which the Dutch Republic was at war. Click on the year (mobile) or the conflict bar (desktop) to find more information about the conflict.
+
+From the third step onwards, this API provides the endpoints to replicate the process yourself.
+
+- https://www.huygens.knaw.nl/projecten/resoluties-staten-generaal-1576-1796-de-oerbronnen-van-de-parlementaire-democratie/
+- https://resources.huygens.knaw.nl/retroboeken/instrumenten_macht/#view=homePane&page=0&accessor=toc
+- https://nl.wikipedia.org/wiki/Optical_character_recognition
+- https://zenodo.org/records/7695131
+- https://en.wikipedia.org/wiki/Named-entity_recognition
+- https://zenodo.org/records/15495712
+- https://app.goetgevonden.nl/
+- https://en.wikipedia.org/wiki/Eigenvector_centrality
+
 ## Install Flipke
 
 ```bash
@@ -38,22 +63,18 @@ python main.py
 API will be available at: `http://localhost:8000/`
 
 ### Terminal 2 - Background Worker
+
 ```bash
 python worker.py
 ```
 
-Or use the batch file (Windows):
-```bash
-start_worker.bat
-```
-
-The worker processes download tasks from the RabbitMQ queue. Check `http://localhost:8000/queue/status` to verify the worker is connected (consumers should be > 0).
+The worker processes messages from the RabbitMQ queue. Check `http://localhost:8000/queue/status` to verify the worker is connected (consumers should be > 0).
 
 ### Service URLs
 
 ### Queuing
 
-`http://localhost:15672/#/queues/%2F/tasks`
+`http://localhost:15672/#/queues`
 
 Username/password: `admin/admin`
 

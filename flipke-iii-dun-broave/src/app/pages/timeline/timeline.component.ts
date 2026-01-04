@@ -12,10 +12,10 @@ import { AnalysisService, PersonAnalysis, YearAnalysisResponse } from '../../ser
 export class TimelineComponent implements OnInit {
   loading = true;
   error: string | null = null;
-  yearsData: Map<number, any[]> = new Map(); // Map van jaar -> top 10 personen
+  yearsData: Map<number, any[]> = new Map(); // Map van jaar -> personen
   currentYear = 1576;
   startYear = 1576;
-  endYear = 1800;
+  endYear = 1583;
   loadedYears: number[] = [];
   consecutiveErrors = 0;
   maxConsecutiveErrors = 5; // Stop na 5 opeenvolgende fouten
@@ -87,12 +87,10 @@ export class TimelineComponent implements OnInit {
         // Reset error counter bij succesvolle load
         this.consecutiveErrors = 0;
         
-        // Sla top 10 personen op voor dit jaar
-        const topPersons = data.persons.slice(0, 10);
-        this.yearsData.set(year, topPersons);
+        const allPersons = data.persons;
+        this.yearsData.set(year, allPersons);
         this.loadedYears.push(year);
-        
-        console.log(`Loaded data for year ${year}: ${topPersons.length} persons`);
+        console.log(`Loaded data for year ${year}: ${allPersons.length} persons`);
         
         // Laad volgend jaar
         setTimeout(() => {

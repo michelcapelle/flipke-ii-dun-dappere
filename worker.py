@@ -63,7 +63,9 @@ def trigger_next_pipeline_step(message_data):
     from pathlib import Path
     worker_dir = Path(__file__).parent
     analysis_file = worker_dir / "flipke-iii-dun-broave" / "public" / "analysis" / f"{pipeline_year}.json"
-    if analysis_file.exists():
+    task = tasks_collection.find_one({"_id": ObjectId(pipeline_task_id)})
+    do_force = task.get('do_force', False)
+    if not do_force and analysis_file.exists():
         logger.info(f"Analysis file for year {pipeline_year} already exists at {analysis_file}. Stopping pipeline.")
         tasks_collection.update_one(
             {"_id": ObjectId(pipeline_task_id)},
@@ -77,7 +79,6 @@ def trigger_next_pipeline_step(message_data):
             }}
         )
         return
-    
     logger.info(f"Triggering next pipeline step: {next_step} for pipeline {pipeline_task_id}")
     progress_map = {
         "clear_graph": 20,
@@ -85,8 +86,7 @@ def trigger_next_pipeline_step(message_data):
         "analyze_persons": 60,
         "calculate_centrality": 80,
         "export_analysis": 100
-    }
-    
+    }    
     tasks_collection.update_one(
         {"_id": ObjectId(pipeline_task_id)},
         {"$set": {
@@ -113,7 +113,6 @@ def trigger_next_pipeline_step(message_data):
     )
     channel = connection.channel()
     channel.queue_declare(queue='tasks', durable=True)
-    
     next_message = {
         "pipeline_task_id": pipeline_task_id,
         "pipeline_year": pipeline_year,
@@ -121,7 +120,6 @@ def trigger_next_pipeline_step(message_data):
         "next_step": step_sequence.get(next_step),
         "timestamp": datetime.now().isoformat()
     }
-    
     if next_step == "parse_entities":
         next_message["task"] = "pre_modern_parse_entities"
         next_message["year"] = pipeline_year
@@ -141,13 +139,12 @@ def trigger_next_pipeline_step(message_data):
         properties=pika.BasicProperties(delivery_mode=2)
     )
     connection.close()
-    
     logger.info(f"Queued next step: {next_step}")
 
 def pre_modern_download(message_data):
     url = message_data['url']
     filename = message_data['filename']
-    do_force = message_data['doForce']
+    do_force = message_data['do_force']
     task_id = message_data.get('task_id')
     data_dir = Path("data")
     data_dir.mkdir(exist_ok=True)
@@ -307,7 +304,6 @@ def pre_modern_parse_entity(message_data):
                 if not tsv_file.exists():
                     logger.error(f"TSV file not found for year filtering: {tsv_file}")
                     return {"status": "error", "message": "TSV file not found for year filtering"}
-                
                 logger.info(f"Loading resolution_ids for year {filter_year} into cache...")
                 year_resolutions = set()
                 year_prefix = f"{filter_year}-"
@@ -319,15 +315,12 @@ def pre_modern_parse_entity(message_data):
                             session_date = parts[0]
                             resolution_id = parts[1]
                             if session_date.startswith(year_prefix):
-                                year_resolutions.add(resolution_id)
-                
+                                year_resolutions.add(resolution_id)                
                 _year_resolution_cache[cache_key] = year_resolutions
                 logger.info(f"Cached {len(year_resolutions)} resolution_ids for year {filter_year}")
             if document_id not in _year_resolution_cache[cache_key]:
                 return {"status": "skipped", "message": f"Resolution {document_id} not in year {filter_year}"}
-        
         name = reference.get('tag_text', '')
-        
         with neo4j_driver.session() as session:
             if document_id and name:
                 session.run("""
@@ -561,7 +554,7 @@ def pre_modern_parse_document(message_data):
 def post_modern_scrape_page(message_data):
     url = message_data.get('url')
     task_id = message_data.get('task_id')
-    do_force = message_data.get('doForce', False)
+    do_force = message_data.get('do_force', False)
     try:
         logger.info(f"Scraping page: {url}")
         if task_id:
@@ -626,7 +619,7 @@ def post_modern_scrape_page(message_data):
                             message = {
                                 "task": "post_modern_scrape_page",
                                 "url": next_url,
-                                "doForce": do_force,
+                                "do_force": do_force,
                                 "timestamp": datetime.now().isoformat()
                             }
                             channel.basic_publish(
@@ -1124,15 +1117,11 @@ def export_analysis(message_data):
     """
     year = message_data.get('year')
     pipeline_task_id = message_data.get('pipeline_task_id')
-    
     if not year:
         logger.error("No year provided for export_analysis")
         return {"status": "error", "message": "No year provided"}
-    
     try:
         logger.info(f"Exporting analysis data for year {year}...")
-        
-        # Update pipeline status
         if pipeline_task_id:
             tasks_collection.update_one(
                 {"_id": ObjectId(pipeline_task_id)},
@@ -1142,8 +1131,6 @@ def export_analysis(message_data):
                     "updated_at": datetime.now()
                 }}
             )
-        
-        # Call the analyzed endpoint via HTTP
         import requests
         api_url = "http://localhost:8000/graph/persons/analyzed"
         params = {
@@ -1161,17 +1148,14 @@ def export_analysis(message_data):
                 key=lambda p: p.get('eigenvector_centrality', 0),
                 reverse=True
             )
-            logger.info(f"Sorted {len(data['persons'])} persons by centrality")
-        
+            data['persons'] = data['persons'][0:25]
+            logger.info(f"Sorted and filtered {len(data['persons'])} persons by centrality")
         analysis_dir = Path("flipke-iii-dun-broave/public/analysis")
         analysis_dir.mkdir(parents=True, exist_ok=True)
         output_file = analysis_dir / f"{year}.json"
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-        
         logger.info(f"Successfully exported analysis to {output_file}")
-        
-        # Mark pipeline complete
         if pipeline_task_id:
             tasks_collection.update_one(
                 {"_id": ObjectId(pipeline_task_id)},
@@ -1186,14 +1170,12 @@ def export_analysis(message_data):
                 }}
             )
             logger.info(f"Pipeline {pipeline_task_id} completed for year {year}")
-        
         return {
             "status": "success",
             "year": year,
             "output_file": str(output_file),
             "persons_count": data.get('count', 0)
-        }
-        
+        }        
     except Exception as e:
         logger.error(f"Error exporting analysis for year {year}: {str(e)}", exc_info=True)
         if pipeline_task_id:
@@ -1218,7 +1200,7 @@ def run_full_pipeline(message_data):
     current_year = message_data.get('current_year')
     start_year = message_data.get('start_year')
     end_year = message_data.get('end_year')
-    doForce = message_data.get('doForce', False)
+    do_force = message_data.get('do_force', False)
     try:
         master_doc = tasks_collection.find_one({"_id": ObjectId(master_pipeline_id)})
         if not master_doc:
@@ -1230,69 +1212,6 @@ def run_full_pipeline(message_data):
         worker_dir = Path(__file__).parent
         logger.info(f"Worker directory: {worker_dir}")
         logger.info(f"Current working directory: {os.getcwd()}")
-        analysis_file = worker_dir / "data" / "analysis" / f"{current_year}.json"
-        logger.info(f"Checking year {current_year}: file exists={analysis_file.exists()}, doForce={doForce}, absolute path={analysis_file.absolute()}")
-        if analysis_file.exists() and not doForce:
-            logger.info(f"Skipping year {current_year} - analysis file already exists")    
-            completed_years = current_year - start_year + 1
-            progress = int((completed_years / total_years) * 100)
-            tasks_collection.update_one(
-                {"_id": ObjectId(master_pipeline_id)},
-                {"$set": {
-                    "completed_years": completed_years,
-                    "progress": progress,
-                    "current_year": current_year,
-                    f"year_pipelines.{current_year}": "skipped",
-                    "message": f"Year {current_year} skipped (file exists). {completed_years}/{total_years} years processed",
-                    "updated_at": datetime.now()
-                }}
-            )
-            
-            # Check if we're done
-            if current_year >= end_year:
-                tasks_collection.update_one(
-                    {"_id": ObjectId(master_pipeline_id)},
-                    {"$set": {
-                        "status": "completed",
-                        "progress": 100,
-                        "message": f"All {total_years} years processed ({start_year}-{end_year})",
-                        "completed_at": datetime.now(),
-                        "updated_at": datetime.now()
-                    }}
-                )
-                logger.info(f"Full pipeline {master_pipeline_id} completed")
-                return {"status": "success", "message": "Full pipeline completed"}
-            
-            # Queue next year immediately
-            connection = pika.BlockingConnection(
-                pika.ConnectionParameters(
-                    host='localhost',
-                    port=5672,
-                    credentials=pika.PlainCredentials('admin', 'admin')
-                )
-            )
-            channel = connection.channel()
-            channel.queue_declare(queue='tasks', durable=True)
-            
-            next_message = {
-                "task": "run_full_pipeline",
-                "master_pipeline_id": master_pipeline_id,
-                "start_year": start_year,
-                "end_year": end_year,
-                "current_year": current_year + 1,
-                "doForce": doForce,
-                "timestamp": datetime.now().isoformat()
-            }
-            
-            channel.basic_publish(
-                exchange='',
-                routing_key='tasks',
-                body=json.dumps(next_message),
-                properties=pika.BasicProperties(delivery_mode=2)
-            )
-            connection.close()
-            logger.info(f"Queued next year {current_year + 1}")
-            return {"status": "success", "message": f"Year {current_year} skipped, queued next year"}
         year_pipeline_id = master_doc.get('year_pipelines', {}).get(str(current_year))        
         if year_pipeline_id == "skipped":
             logger.info(f"Year {current_year} was already skipped, moving to next")
@@ -1309,8 +1228,6 @@ def run_full_pipeline(message_data):
                 )
                 logger.info(f"Full pipeline {master_pipeline_id} completed")
                 return {"status": "success", "message": "Full pipeline completed"}
-            
-            # Queue next year
             connection = pika.BlockingConnection(
                 pika.ConnectionParameters(
                     host='localhost',
@@ -1320,17 +1237,15 @@ def run_full_pipeline(message_data):
             )
             channel = connection.channel()
             channel.queue_declare(queue='tasks', durable=True)
-            
             next_message = {
                 "task": "run_full_pipeline",
                 "master_pipeline_id": master_pipeline_id,
                 "start_year": start_year,
                 "end_year": end_year,
                 "current_year": current_year + 1,
-                "doForce": doForce,
+                "do_force": do_force,
                 "timestamp": datetime.now().isoformat()
             }
-            
             channel.basic_publish(
                 exchange='',
                 routing_key='tasks',
@@ -1338,83 +1253,9 @@ def run_full_pipeline(message_data):
                 properties=pika.BasicProperties(delivery_mode=2)
             )
             connection.close()
-            
             logger.info(f"Queued next year {current_year + 1}")
             return {"status": "success", "message": f"Already skipped, queued next year"}
         if year_pipeline_id and year_pipeline_id != "skipped":
-            if analysis_file.exists() and not doForce:
-                logger.info(f"Year {current_year} has existing pipeline but file already exists - marking as completed")
-                tasks_collection.update_one(
-                    {"_id": ObjectId(year_pipeline_id)},
-                    {"$set": {
-                        "status": "completed",
-                        "message": "Analysis file already exists, pipeline stopped",
-                        "completed_at": datetime.now(),
-                        "updated_at": datetime.now()
-                    }}
-                )
-                
-                # Update master to mark this year as done
-                completed_years = current_year - start_year + 1
-                progress = int((completed_years / total_years) * 100)
-                
-                tasks_collection.update_one(
-                    {"_id": ObjectId(master_pipeline_id)},
-                    {"$set": {
-                        "completed_years": completed_years,
-                        "progress": progress,
-                        "message": f"Year {current_year} completed (file exists). {completed_years}/{total_years} years processed",
-                        "updated_at": datetime.now()
-                    }}
-                )
-                
-                # Check if we're done
-                if current_year >= end_year:
-                    tasks_collection.update_one(
-                        {"_id": ObjectId(master_pipeline_id)},
-                        {"$set": {
-                            "status": "completed",
-                            "progress": 100,
-                            "message": f"All {total_years} years processed ({start_year}-{end_year})",
-                            "completed_at": datetime.now(),
-                            "updated_at": datetime.now()
-                        }}
-                    )
-                    logger.info(f"Full pipeline {master_pipeline_id} completed")
-                    return {"status": "success", "message": "Full pipeline completed"}
-                
-                # Queue next year
-                connection = pika.BlockingConnection(
-                    pika.ConnectionParameters(
-                        host='localhost',
-                        port=5672,
-                        credentials=pika.PlainCredentials('admin', 'admin')
-                    )
-                )
-                channel = connection.channel()
-                channel.queue_declare(queue='tasks', durable=True)
-                
-                next_message = {
-                    "task": "run_full_pipeline",
-                    "master_pipeline_id": master_pipeline_id,
-                    "start_year": start_year,
-                    "end_year": end_year,
-                    "current_year": current_year + 1,
-                    "doForce": doForce,
-                    "timestamp": datetime.now().isoformat()
-                }
-                
-                channel.basic_publish(
-                    exchange='',
-                    routing_key='tasks',
-                    body=json.dumps(next_message),
-                    properties=pika.BasicProperties(delivery_mode=2)
-                )
-                connection.close()
-                
-                logger.info(f"Queued next year {current_year + 1}")
-                return {"status": "success", "message": f"Year {current_year} file exists, queued next year"}
-            
             year_doc = tasks_collection.find_one({"_id": ObjectId(year_pipeline_id)})
             if year_doc and year_doc.get('status') == 'completed':
                 completed_years = current_year - start_year + 1
@@ -1429,8 +1270,6 @@ def run_full_pipeline(message_data):
                         "updated_at": datetime.now()
                     }}
                 )
-                
-                # Check if we're done
                 if current_year >= end_year:
                     tasks_collection.update_one(
                         {"_id": ObjectId(master_pipeline_id)},
@@ -1446,12 +1285,9 @@ def run_full_pipeline(message_data):
                     )
                     logger.info(f"Full pipeline {master_pipeline_id} completed")
                     return {"status": "success", "message": "Full pipeline completed"}
-                
-                # Queue next year
                 current_year += 1
-                year_pipeline_id = None  # Reset for next year
+                year_pipeline_id = None
             elif year_doc and year_doc.get('status') == 'failed':
-                # Year pipeline failed
                 tasks_collection.update_one(
                     {"_id": ObjectId(master_pipeline_id)},
                     {"$set": {
@@ -1463,7 +1299,6 @@ def run_full_pipeline(message_data):
                 logger.error(f"Full pipeline {master_pipeline_id} failed at year {current_year}")
                 return {"status": "error", "message": f"Year {current_year} pipeline failed"}
             else:
-                # Year pipeline still running, re-queue monitoring task
                 connection = pika.BlockingConnection(
                     pika.ConnectionParameters(
                         host='localhost',
@@ -1481,25 +1316,71 @@ def run_full_pipeline(message_data):
                     "start_year": start_year,
                     "end_year": end_year,
                     "current_year": current_year,
-                    "doForce": doForce,
+                    "do_force": do_force,
                     "timestamp": datetime.now().isoformat()
                 }
-                
                 channel.basic_publish(
                     exchange='',
                     routing_key='tasks',
                     body=json.dumps(monitor_message),
                     properties=pika.BasicProperties(delivery_mode=2)
                 )
-                connection.close()
-                
+                connection.close() 
                 logger.info(f"Year {current_year} pipeline still running, re-queued monitor")
                 return {"status": "monitoring", "message": f"Monitoring year {current_year}"}
-        
-        # No year pipeline yet, create one for current year
         logger.info(f"Starting year pipeline for year {current_year}")
-        
-        # Update master pipeline status
+        if not do_force:
+            analysis_file = worker_dir / "flipke-iii-dun-broave" / "public" / "analysis" / f"{current_year}.json"
+            if analysis_file.exists():
+                logger.info(f"Analysis file for year {current_year} already exists at {analysis_file}. Skipping year.")
+                tasks_collection.update_one(
+                    {"_id": ObjectId(master_pipeline_id)},
+                    {"$set": {
+                        f"year_pipelines.{current_year}": "skipped",
+                        "message": f"Year {current_year} skipped (file exists), moving to next",
+                        "updated_at": datetime.now()
+                    }}
+                )
+                if current_year >= end_year:
+                    tasks_collection.update_one(
+                        {"_id": ObjectId(master_pipeline_id)},
+                        {"$set": {
+                            "status": "completed",
+                            "progress": 100,
+                            "message": f"All {total_years} years processed ({start_year}-{end_year})",
+                            "completed_at": datetime.now(),
+                            "updated_at": datetime.now()
+                        }}
+                    )
+                    logger.info(f"Full pipeline {master_pipeline_id} completed")
+                    return {"status": "success", "message": "Full pipeline completed"}
+                connection = pika.BlockingConnection(
+                    pika.ConnectionParameters(
+                        host='localhost',
+                        port=5672,
+                        credentials=pika.PlainCredentials('admin', 'admin')
+                    )
+                )
+                channel = connection.channel()
+                channel.queue_declare(queue='tasks', durable=True)
+                next_message = {
+                    "task": "run_full_pipeline",
+                    "master_pipeline_id": master_pipeline_id,
+                    "start_year": start_year,
+                    "end_year": end_year,
+                    "current_year": current_year + 1,
+                    "do_force": do_force,
+                    "timestamp": datetime.now().isoformat()
+                }
+                channel.basic_publish(
+                    exchange='',
+                    routing_key='tasks',
+                    body=json.dumps(next_message),
+                    properties=pika.BasicProperties(delivery_mode=2)
+                )
+                connection.close()
+                logger.info(f"Skipped year {current_year}, queued next year {current_year + 1}")
+                return {"status": "success", "message": f"Year {current_year} skipped, queued next year"}
         tasks_collection.update_one(
             {"_id": ObjectId(master_pipeline_id)},
             {"$set": {
@@ -1509,8 +1390,6 @@ def run_full_pipeline(message_data):
                 "updated_at": datetime.now()
             }}
         )
-        
-        # Create year pipeline
         pipeline_doc = {
             "task_type": "year_analysis_pipeline",
             "year": current_year,
@@ -1519,6 +1398,7 @@ def run_full_pipeline(message_data):
             "updated_at": datetime.now(),
             "progress": 0,
             "current_step": "clear_graph",
+            "do_force": do_force,
             "steps": {
                 "clear_graph": {"status": "pending", "task_id": None},
                 "parse_entities": {"status": "pending", "task_id": None},
@@ -1575,7 +1455,7 @@ def run_full_pipeline(message_data):
             "start_year": start_year,
             "end_year": end_year,
             "current_year": current_year,
-            "doForce": doForce,
+            "do_force": do_force,
             "timestamp": datetime.now().isoformat()
         }
         import time
