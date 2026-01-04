@@ -11,7 +11,7 @@
 }
 
 .title-content, .person-info {
-  background-color: rgb(212, 197, 216, 0.9);
+  background-color: rgb(212, 197, 216, 0.8);
   padding: 10px;
   border-radius: 8px;
 }
@@ -41,11 +41,13 @@
 .title-content h1 a {
   color: #2E5084;
   text-decoration: none;
+  opacity: 1;
 }
 
 .title-content h1 a:hover {
   text-decoration: underline;
   color: #1A3A66;
+  opacity: 1;
 }
 
 .title-content h1 .external-link-icon {
@@ -56,6 +58,7 @@
   margin: 5px 0 0 0;
   font-size: 12px;
   font-weight: 600;
+  opacity: 1;
 }
 
 .person-info {
@@ -95,6 +98,7 @@
 
 .person-names a.no-wiki {
   color: #A94442;
+  opacity: 1;
 }
 
 .person-names a.no-wiki:hover {
@@ -456,7 +460,7 @@
   .person-names strong {
     font-size: 11px;
     font-weight: 600;
-    max-width: 125px;
+    max-width: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -487,10 +491,12 @@
   .centrality-mobile a {
     color: #2E5084;
     text-decoration: none;
+    opacity: 1;
   }
 
   .centrality-mobile a:hover {
     text-decoration: underline;
+    opacity: 1;
   }
 
   .centrality-mobile .external-link-icon {
@@ -526,6 +532,7 @@
 
   .person-id .mobile-format {
     display: inline;
+    opacity: 1;
   }
 
   .circles-column {
@@ -631,6 +638,7 @@
 
   .mobile-format {
     display: inline;
+    opacity: 1;
   }
 
 }

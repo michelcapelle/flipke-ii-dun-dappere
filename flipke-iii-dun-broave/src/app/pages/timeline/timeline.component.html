@@ -1,14 +1,14 @@
 <div class="page-container">
   <header class="title-bar">
     <div class="title-content" [class.has-person]="getDisplayedPersonId()" [class.no-person]="!getDisplayedPersonId()">
-      <h1><a href="https://github.com/michelcapelle/flipke-ii-dun-dappere" target="_blank" rel="noopener">Flipke d'n Dappere<span class="external-link-icon">ℹ️↗</span></a></h1>
+      <h1><a href="https://github.com/michelcapelle/flipke-ii-dun-dappere?tab=readme-ov-file#flipke-dn-dappere" target="_blank" rel="noopener"><span class="mobile-format">ℹ️</span>Flipke d'n Dappere<span class="external-link-icon">ℹ️↗</span></a></h1>
       <p class="subtitle">Historical Power-Distribution Governance Analysis • Pre-modern Era (1576-1796)</p>
     </div>
     <div class="person-info" *ngIf="getDisplayedPersonId()">
       <div class="person-names" *ngIf="getHoveredPersonNames().length > 0">
         <strong>
           <a [href]="getPersonSearchUrl()" target="_blank" rel="noopener" class="no-wiki">{{ getPersonDisplayName() }}<span class="external-link-icon">↗</span></a>&nbsp;
-          <span class="mobile-format"><a [href]="getPersonIdUrl()" target="_blank" rel="noopener">({{ getDisplayedPersonId() }})</a></span>
+          <span class="mobile-format"><a [href]="getPersonIdUrl()" target="_blank" rel="noopener">({{ getDisplayedPersonId() }})</a> <a href="https://github.com/michelcapelle/flipke-ii-dun-dappere?tab=readme-ov-file#flipke-dn-dappere" target="_blank" rel="noopener">ℹ️</a></span>
         </strong>
         <span class="centrality-mobile"><a href="https://en.wikipedia.org/wiki/Eigenvector_centrality" target="_blank" rel="noopener">{{ getHoveredPersonCentrality() }}<span class="external-link-icon">↗</span></a></span>
         <span class="aka-names" *ngIf="getHoveredPersonNames().length > 0"><br>
