@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI, HTTPException, Query, BackgroundTasks
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
@@ -1456,8 +1457,15 @@ async def run_pre_modern_full_pipeline(
     - **doForce**: If False (default), skip years where data/analysis/{year}.json already exists
     """
     try:
+        worker_dir = Path(__file__).parent
         start_year = 1576
         end_year = 1796
+        if not doForce:
+            for year in range(start_year, end_year + 1):
+                analysis_file = worker_dir / "flipke-iii-dun-broave" / "public" / "analysis" / f"{year}.json"
+                if not analysis_file.exists():
+                    start_year = year
+                    break
         total_years = end_year - start_year + 1
         master_pipeline_doc = {
             "task_type": "pre_modern_full_pipeline",
@@ -1619,7 +1627,6 @@ def run_pre_modern_year_pipeline(
         )
         channel = connection.channel()
         channel.queue_declare(queue='tasks', durable=True, passive=False)
-        
         message = {
             "task": "clear_graph",
             "pipeline_task_id": pipeline_task_id,

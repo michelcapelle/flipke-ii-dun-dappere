@@ -46,7 +46,7 @@ export class TimelineComponent implements OnInit {
     'eighty_years_war_1621_1648': { name: 'Eighty Years\' War (1621-1648)', wiki: 'https://en.wikipedia.org/wiki/Eighty_Years%27_War,_1621%E2%80%931648', startYear: 1621, endYear: 1648 },
     'first_anglo_dutch_war': { name: 'First Anglo-Dutch War', wiki: 'https://en.wikipedia.org/wiki/First_Anglo-Dutch_War', startYear: 1652, endYear: 1654 },
     'second_anglo_dutch_war': { name: 'Second Anglo-Dutch War', wiki: 'https://en.wikipedia.org/wiki/Second_Anglo-Dutch_War', startYear: 1665, endYear: 1667 },
-    'franco-dutch_war': { name: 'Franco-Dutch_War', wiki: 'https://en.wikipedia.org/wiki/Franco-Dutch_War', startYear: 1672, endYear: 1678 },
+    'franco-dutch_war': { name: 'Franco-Dutch War', wiki: 'https://en.wikipedia.org/wiki/Franco-Dutch_War', startYear: 1672, endYear: 1678 },
     'nine_years_war': { name: 'Nine Years\' War', wiki: 'https://en.wikipedia.org/wiki/Nine_Years%27_War', startYear: 1688, endYear: 1697 },
     'war_spanish_succession': { name: 'War of Spanish Succession', wiki: 'https://en.wikipedia.org/wiki/War_of_the_Spanish_Succession', startYear: 1701, endYear: 1714 },
     'war_austrian_succession': { name: 'War of Austrian Succession', wiki: 'https://en.wikipedia.org/wiki/War_of_the_Austrian_Succession', startYear: 1740, endYear: 1748 },

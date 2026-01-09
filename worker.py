@@ -15,6 +15,7 @@ import shutil
 from bs4 import BeautifulSoup
 import networkx as nx
 from networkx.algorithms import bipartite
+import requests
 
 data_dir = Path("data")
 data_dir.mkdir(exist_ok=True)
@@ -346,7 +347,6 @@ def pre_modern_parse_entity(message_data):
                 session.run("""
                     MERGE (p:Person {id: $person_id})
                 """, person_id=person_id)
-        
         if master_task_id and (annotation_index + 1) % 1000 == 0:
             progress = int(((annotation_index + 1) / total_annotations) * 100)
             tasks_collection.update_one(
@@ -524,9 +524,8 @@ def pre_modern_parse_document(message_data):
         documents_collection.update_one(
             {"resolution_id": resolution_id, "session_date": session_date},
             {"$set": document_data},
-            upsert=True
+            upsert=True,
         )
-        
         if master_task_id and (row_index + 1) % 1000 == 0:
             progress = int(((row_index + 1) / total_rows) * 100)
             tasks_collection.update_one(
@@ -1131,14 +1130,13 @@ def export_analysis(message_data):
                     "updated_at": datetime.now()
                 }}
             )
-        import requests
         api_url = "http://localhost:8000/graph/persons/analyzed"
         params = {
             "year": year,
-            "limit": 10000
+            "limit": 10000,
         }
         logger.info(f"Calling API: {api_url} with params {params}")
-        response = requests.get(api_url, params=params, timeout=300)
+        response = requests.get(api_url, params=params, timeout=600)
         response.raise_for_status()
         data = response.json()
         logger.info(f"Retrieved {data.get('count', 0)} persons from API")
