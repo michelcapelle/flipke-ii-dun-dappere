@@ -40,19 +40,18 @@ export class TimelineComponent implements OnInit {
     'eighty_years_war_1572_1576': { name: 'Eighty Years\' War (1572-1576)', wiki: 'https://en.wikipedia.org/wiki/Eighty_Years%27_War,_1572%E2%80%931576', startYear: 1572, endYear: 1576 },
     'eighty_years_war_1576_1579': { name: 'Eighty Years\' War (1576-1578)', wiki: 'https://en.wikipedia.org/wiki/Eighty_Years%27_War,_1576%E2%80%931579', startYear: 1576, endYear: 1578 },
     'eighty_years_war_1579_1588': { name: 'Eighty Years\' War (1579-1587)', wiki: 'https://en.wikipedia.org/wiki/Eighty_Years%27_War,_1579%E2%80%931588', startYear: 1579, endYear: 1587 },
-    'ten_years_eighty_years_war': { name: 'Ten Years (Eighty Years\' War)', wiki: 'https://en.wikipedia.org/wiki/Ten_Years_(Eighty_Years%27_War)', startYear: 1588, endYear: 1598 },
+    'ten_years_eighty_years_war': { name: 'Ten Years (Eighty Years\' War, 1588-1598)', wiki: 'https://en.wikipedia.org/wiki/Ten_Years_(Eighty_Years%27_War)', startYear: 1588, endYear: 1598 },
     'eighty_years_war_1599_1609': { name: 'Eighty Years\' War (1599-1608)', wiki: 'https://en.wikipedia.org/wiki/Eighty_Years%27_War,_1599%E2%80%931609', startYear: 1599, endYear: 1608 },
-    'twelve_years_truce': { name: 'Twelve Years\' Truce (1609-1620)', wiki: 'https://en.wikipedia.org/wiki/Twelve_Years%27_Truce', startYear: 1609, endYear: 1620 },
+    'twelve_years_truce': { name: 'Twelve Years\' Truce (Eighty Years\' War, 1609-1620)', wiki: 'https://en.wikipedia.org/wiki/Twelve_Years%27_Truce', startYear: 1609, endYear: 1620 },
     'eighty_years_war_1621_1648': { name: 'Eighty Years\' War (1621-1648)', wiki: 'https://en.wikipedia.org/wiki/Eighty_Years%27_War,_1621%E2%80%931648', startYear: 1621, endYear: 1648 },
-    'first_anglo_dutch_war': { name: 'First Anglo-Dutch War', wiki: 'https://en.wikipedia.org/wiki/First_Anglo-Dutch_War', startYear: 1652, endYear: 1654 },
-    'second_anglo_dutch_war': { name: 'Second Anglo-Dutch War', wiki: 'https://en.wikipedia.org/wiki/Second_Anglo-Dutch_War', startYear: 1665, endYear: 1667 },
-    'franco-dutch_war': { name: 'Franco-Dutch War', wiki: 'https://en.wikipedia.org/wiki/Franco-Dutch_War', startYear: 1672, endYear: 1678 },
-    'nine_years_war': { name: 'Nine Years\' War', wiki: 'https://en.wikipedia.org/wiki/Nine_Years%27_War', startYear: 1688, endYear: 1697 },
-    'war_spanish_succession': { name: 'War of Spanish Succession', wiki: 'https://en.wikipedia.org/wiki/War_of_the_Spanish_Succession', startYear: 1701, endYear: 1714 },
-    'war_austrian_succession': { name: 'War of Austrian Succession', wiki: 'https://en.wikipedia.org/wiki/War_of_the_Austrian_Succession', startYear: 1740, endYear: 1748 },
-    'seven_years_war': { name: 'Seven Years\' War', wiki: 'https://en.wikipedia.org/wiki/Seven_Years%27_War', startYear: 1756, endYear: 1763 },
-    'fourth_anglo_dutch_war': { name: 'Fourth Anglo-Dutch War', wiki: 'https://en.wikipedia.org/wiki/Fourth_Anglo-Dutch_War', startYear: 1780, endYear: 1784 },
-    'war_first_coalition': { name: 'War of the First Coalition', wiki: 'https://en.wikipedia.org/wiki/War_of_the_First_Coalition', startYear: 1792, endYear: 1797 }
+    'first_anglo_dutch_war': { name: '1st Anglo-Dutch War (1652-1654)', wiki: 'https://en.wikipedia.org/wiki/First_Anglo-Dutch_War', startYear: 1652, endYear: 1654 },
+    'second_anglo_dutch_war': { name: '2nd Anglo-Dutch War (1665-1667)', wiki: 'https://en.wikipedia.org/wiki/Second_Anglo-Dutch_War', startYear: 1665, endYear: 1667 },
+    'franco-dutch_war': { name: 'Franco-Dutch War (1672-1678)', wiki: 'https://en.wikipedia.org/wiki/Franco-Dutch_War', startYear: 1672, endYear: 1678 },
+    'nine_years_war': { name: 'Nine Years\' War (1688-1697)', wiki: 'https://en.wikipedia.org/wiki/Nine_Years%27_War', startYear: 1688, endYear: 1697 },
+    'war_spanish_succession': { name: 'War of Spanish Succession (1701-1714)', wiki: 'https://en.wikipedia.org/wiki/War_of_the_Spanish_Succession', startYear: 1701, endYear: 1714 },
+    'war_austrian_succession': { name: 'War of Austrian Succession (1744-1748)', wiki: 'https://en.wikipedia.org/wiki/War_of_the_Austrian_Succession', startYear: 1744, endYear: 1748 },
+    'fourth_anglo_dutch_war': { name: '4th Anglo-Dutch War (1780-1784)', wiki: 'https://en.wikipedia.org/wiki/Fourth_Anglo-Dutch_War', startYear: 1780, endYear: 1784 },
+    'war_first_coalition': { name: 'War of the 1st Coalition (1792-1795)', wiki: 'https://en.wikipedia.org/wiki/War_of_the_First_Coalition', startYear: 1792, endYear: 1795 }
   };
 
   constructor(private analysisService: AnalysisService) {}
