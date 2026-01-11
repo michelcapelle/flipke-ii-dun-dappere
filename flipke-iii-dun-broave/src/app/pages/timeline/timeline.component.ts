@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AnalysisService, PersonAnalysis, YearAnalysisResponse } from '../../services/analysis.service';
+import { AnalysisService, PersonAnalysis } from '../../services/analysis.service';
+import { firstValueFrom } from 'rxjs';
 
 @Component({
   selector: 'app-timeline',
@@ -67,27 +68,27 @@ export class TimelineComponent implements OnInit {
     this.loadYearData(this.startYear);
   }
 
-  loadYearData(year: number): void {
+  async loadYearData(year: number) {
     if (year > this.endYear) {
       this.loading = false;
       console.log('All years loaded');
       return;
     }
     this.currentYear = year;
-    this.analysisService.getYearAnalysis(year).subscribe({
-      next: (data) => {
-        const allPersons = data.persons;
-        this.yearsData.set(year, allPersons);
-        this.loadedYears.push(year);
-        console.log(`Loaded data for year ${year}: ${allPersons.length} persons`);
+    try {
+      const data = await firstValueFrom(this.analysisService.getYearAnalysis(year));
+      const allPersons = data.persons;
+      this.yearsData.set(year, allPersons);
+      this.loadedYears.push(year);
+      console.log(`Loaded data for year ${year}: ${allPersons.length} persons`);
+      setTimeout(() => {
         this.loadYearData(year + 1);
-      },
-      error: (err) => {
-        console.warn(`Failed to load year ${year}`);
-        this.loading = false;
-        this.error = `Stopped loading: ${this.loadedYears.length} years loaded successfully`;
-      }
-    });
+      }, 0);
+    } catch (error) {
+      console.warn(`Failed to load year ${year}`);
+      this.loading = false;
+      this.error = `Stopped loading: ${this.loadedYears.length} years loaded successfully`;
+    }
   }
 
   getTopPersonsForYear(year: number): any[] {
