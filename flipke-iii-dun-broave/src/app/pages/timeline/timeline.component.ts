@@ -17,14 +17,12 @@ export class TimelineComponent implements OnInit {
   startYear = 1577;
   endYear = 1796;
   loadedYears: number[] = [];
-  consecutiveErrors = 0;
-  maxConsecutiveErrors = 5; // Stop na 5 opeenvolgende fouten
   hoveredPersonId: string | null = null;
   hoveredYear: number | null = null;
   pinnedPersonId: string | null = null;
   pinnedYear: number | null = null;
   personEntities: any[] = [];
-  personColors: Map<string, string> = new Map(); // Map van person_id -> kleur
+  personColors: Map<string, string> = new Map();
   colorPalette: string[] = [
     '#FFB3BA', '#FFDFBA', '#FFFFBA', '#BAFFC9', '#BAE1FF',
     '#FFB6C1', '#FFDAB9', '#FFF8DC', '#E0FFE0', '#B0E0E6',
@@ -57,7 +55,6 @@ export class TimelineComponent implements OnInit {
   constructor(private analysisService: AnalysisService) {}
 
   ngOnInit(): void {
-    // Load PER entities
     this.analysisService.getPersonEntities().subscribe({
       next: (entities) => {
         this.personEntities = entities;
@@ -67,51 +64,28 @@ export class TimelineComponent implements OnInit {
         console.warn('Failed to load person entities:', err);
       }
     });
-    
     this.loadYearData(this.startYear);
   }
 
   loadYearData(year: number): void {
-    if (year > this.endYear || this.consecutiveErrors >= this.maxConsecutiveErrors) {
+    if (year > this.endYear) {
       this.loading = false;
-      if (this.consecutiveErrors >= this.maxConsecutiveErrors) {
-        console.log(`Stopped loading after ${this.maxConsecutiveErrors} consecutive errors`);
-      } else {
-        console.log('All years loaded');
-      }
+      console.log('All years loaded');
       return;
     }
-
     this.currentYear = year;
-    
     this.analysisService.getYearAnalysis(year).subscribe({
       next: (data) => {
-        // Reset error counter bij succesvolle load
-        this.consecutiveErrors = 0;
-        
         const allPersons = data.persons;
         this.yearsData.set(year, allPersons);
         this.loadedYears.push(year);
         console.log(`Loaded data for year ${year}: ${allPersons.length} persons`);
-        
-        // Laad volgend jaar
-        setTimeout(() => {
-          this.loadYearData(year + 1);
-        }, 100);
+        this.loadYearData(year + 1);
       },
       error: (err) => {
-        this.consecutiveErrors++;
-        console.warn(`Failed to load year ${year} (${this.consecutiveErrors}/${this.maxConsecutiveErrors} consecutive errors)`);
-        
-        // Bij fout, probeer volgend jaar (tenzij te veel errors)
-        if (this.consecutiveErrors < this.maxConsecutiveErrors) {
-          setTimeout(() => {
-            this.loadYearData(year + 1);
-          }, 100);
-        } else {
-          this.loading = false;
-          this.error = `Stopped loading: ${this.maxConsecutiveErrors} consecutive years not available. ${this.loadedYears.length} years loaded successfully.`;
-        }
+        console.warn(`Failed to load year ${year}`);
+        this.loading = false;
+        this.error = `Stopped loading: ${this.loadedYears.length} years loaded successfully`;
       }
     });
   }

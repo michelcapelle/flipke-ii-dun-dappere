@@ -45,11 +45,6 @@ export class AnalysisService {
 
     return this.http.get<YearAnalysisResponse>(`/analysis/${year}.json`).pipe(
       map(response => {
-        // Sort persons by eigenvector_centrality (high to low)
-        if (response.persons && response.persons.length > 0) {
-          response.persons = response.persons
-            .sort((a, b) => (b.eigenvector_centrality || 0) - (a.eigenvector_centrality || 0));
-        }
         return response;
       }),
       tap(response => {
