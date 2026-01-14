@@ -1136,7 +1136,7 @@ def export_analysis(message_data):
             "limit": 10000,
         }
         logger.info(f"Calling API: {api_url} with params {params}")
-        response = requests.get(api_url, params=params, timeout=600)
+        response = requests.get(api_url, params=params, timeout=1200)
         response.raise_for_status()
         data = response.json()
         logger.info(f"Retrieved {data.get('count', 0)} persons from API")

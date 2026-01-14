@@ -83,7 +83,7 @@ export class TimelineComponent implements OnInit {
       console.log(`Loaded data for year ${year}: ${allPersons.length} persons`);
       setTimeout(() => {
         this.loadYearData(year + 1);
-      }, 25);
+      }, 5);
     } catch (error) {
       console.warn(`Failed to load year ${year}`);
       this.loading = false;
