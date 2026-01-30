@@ -93,12 +93,14 @@ export class TimelineComponent implements OnInit {
 
   getTopPersonsForYear(year: number): any[] {
     const persons = this.yearsData.get(year) || [];
-    // Create a copy and sort by eigenvector_centrality descending (highest first)
-    const sorted = [...persons].sort((a, b) => {
-      const aVal = a.eigenvector_centrality || 0;
-      const bVal = b.eigenvector_centrality || 0;
-      return bVal - aVal;
-    });
+    // Sorteer op eigenvector_centrality en neem maximaal 20 personen
+    const sorted = [...persons]
+      .sort((a, b) => {
+        const aVal = a.eigenvector_centrality || 0;
+        const bVal = b.eigenvector_centrality || 0;
+        return bVal - aVal;
+      })
+      .slice(0, 20);
     return sorted;
   }
 

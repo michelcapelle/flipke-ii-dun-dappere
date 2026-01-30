@@ -32,37 +32,28 @@ export class AnalysisService {
 
   constructor(private http: HttpClient) { }
 
-  /**
-   * Get analysis data for a specific year from the public/analysis folder
-   * @param year The year to retrieve analysis data for (e.g., 1600)
-   * @returns Observable with the year's analysis data (sorted by centrality)
-   */
   getYearAnalysis(year: number): Observable<YearAnalysisResponse> {
-    // Check cache first
     if (this.yearCache.has(year)) {
       return of(this.yearCache.get(year)!);
     }
 
     return this.http.get<YearAnalysisResponse>(`/analysis/${year}.json`).pipe(
       map(response => {
-        return response;
+        const limitedPersons = response.persons.slice(0, 15);
+        return { ...response, persons: limitedPersons, limit: 15 };
       }),
       tap(response => {
-        // Store in cache
         this.yearCache.set(year, response);
       })
     );
   }
 
   getPersonEntities(): Observable<any[]> {
-    // Check cache first
     if (this.perEntitiesCache) {
       return of(this.perEntitiesCache);
     }
-
     return this.http.get<any[]>('/PER-entities.json').pipe(
       tap(entities => {
-        // Store in cache
         this.perEntitiesCache = entities;
       })
     );
